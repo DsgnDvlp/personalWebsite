@@ -1,0 +1,14 @@
+DirectoryIndex routing.php
+IndexIgnore */*
+
+
+Options +FollowSymlinks
+RewriteEngine On
+
+# Explicitly disable rewriting for front controllers
+RewriteRule ^routing.php - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Change below before deploying to production
+RewriteRule . routing.php
