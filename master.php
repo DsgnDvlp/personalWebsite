@@ -16,6 +16,7 @@
         
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 
         <!--Let browser know website is optimized for mobile-->
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -29,5 +30,10 @@
     <body>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
         <?php echo content($path); ?>
+        
+        <div class="borderNorth"></div>
+		<div class="borderSouth"></div>
+		<div class="borderEast"></div>
+		<div class="borderWest"></div>
     </body>
 </html>

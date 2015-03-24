@@ -1,0 +1,50 @@
+/*----------- BORDER FIXED SECTION -----------*/
+.borderNorth{
+	position:fixed;
+	height:15px;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	z-index: 12;
+	-webkit-transition: background-color .5s ease;
+	transition: background-color .5s ease;
+}
+
+.borderSouth{
+	position:fixed;
+	height: 15px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 12;
+	background-color: #000;
+	-webkit-transition: background-color .5s ease;
+	transition: background-color .5s ease;
+}
+
+.borderEast{
+	position:fixed;
+	width: 15px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 12;
+	background-color: #000;
+	-webkit-transition: background-color .5s ease;
+	transition: background-color .5s ease;
+}
+
+.borderWest{
+	position:fixed;
+	width: 15px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 12;
+	background-color: #000;
+	-webkit-transition: background-color .5s ease;
+	transition: background-color .5s ease;
+}
+
+/*----------- END BORDER FIXED SECTION -----------*/
