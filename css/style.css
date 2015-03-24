@@ -48,3 +48,12 @@
 }
 
 /*----------- END BORDER FIXED SECTION -----------*/
+
+body{
+    /*  FIX PER NON SOVRAPPORSI AI BORDI  */
+    padding: 15px;
+}
+
+.container{
+   
+}

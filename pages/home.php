@@ -10,11 +10,11 @@
 	//user controll per il content..
 	function content($path){ ?>
 		<!-- 		CONTENUTO DELLA PAGINA	 -->
+		
 		<div class="container">
-            <br/><br/>
             <?php 
+                /* CALCOLO DELL'ORA PER IL CAMBIO DEL MESSAGGIO*/
                 $hour = intVal(Date("G"));
-                $minutes = intVal(Date("i"));
                 if($hour >= 6 && $hour < 12){ ?>
                     GOOD MORNING
                 <?php } else if($hour >= 12 && $hour<14 ){ ?>

@@ -28,6 +28,14 @@
     
 
     <body>
+      <div class="row">
+          
+      </div>
+       <div class="row">
+           <div class="col s1 offset-s10 offset-m11">
+               MENU
+           </div>
+       </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
         <?php echo content($path); ?>
         
