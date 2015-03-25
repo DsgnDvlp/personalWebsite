@@ -63,7 +63,7 @@ body{
 /*----------- MENU ICON -----------*/
 
 .menuRow{
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 .logoContainer{
@@ -96,8 +96,4 @@ body{
     .languageBar{
         text-align: right;
     }
-}
-
-@media screen and (max-width: 700px){
-    
 }

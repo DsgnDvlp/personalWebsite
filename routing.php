@@ -15,6 +15,10 @@
 		case 'index':
 			include "pages/home.php";
 			break;
+        
+        case 'about':
+			include "pages/about.php";
+			break;
 
 		default:
 			include "404.php";

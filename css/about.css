@@ -1,0 +1,9 @@
+#fullpage {
+    position: absolute !important;
+    top: 0;
+}
+
+.bigDiv{
+    height: 2000px;
+    background-color: red;
+}
