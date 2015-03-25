@@ -1,3 +1,9 @@
+/*----------- GENERAL STYLE -----------*/
+a{
+    color: #F24E41;
+}
+
+
 /*----------- BORDER FIXED SECTION -----------*/
 .borderNorth{
 	position:fixed;
@@ -5,7 +11,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: #000;
+	background-color: #F24E41;
 	z-index: 12;
 	-webkit-transition: background-color .5s ease;
 	transition: background-color .5s ease;
@@ -18,7 +24,7 @@
 	left: 0;
 	right: 0;
 	z-index: 12;
-	background-color: #000;
+	background-color: #F24E41;
 	-webkit-transition: background-color .5s ease;
 	transition: background-color .5s ease;
 }
@@ -30,7 +36,7 @@
 	bottom: 0;
 	right: 0;
 	z-index: 12;
-	background-color: #000;
+	background-color: #F24E41;
 	-webkit-transition: background-color .5s ease;
 	transition: background-color .5s ease;
 }
@@ -42,7 +48,7 @@
 	left: 0;
 	bottom: 0;
 	z-index: 12;
-	background-color: #000;
+	background-color: #F24E41;
 	-webkit-transition: background-color .5s ease;
 	transition: background-color .5s ease;
 }
@@ -54,6 +60,44 @@ body{
     padding: 15px;
 }
 
-.container{
-   
+/*----------- MENU ICON -----------*/
+
+.menuRow{
+    margin-top: 65px;
+}
+
+.logoContainer{
+    text-align: right;
+}
+
+.logo{
+    width: 60%;
+    min-width: 40px;
+}
+
+.languageBar{
+    text-align: center;
+}
+
+.languageBar a{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.menu{
+    
+}
+
+@media screen and (max-width: 992px) and (min-width: 700px){
+    .menuContainer{
+        text-align: center;
+    }
+    
+    .languageBar{
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 700px){
+    
 }

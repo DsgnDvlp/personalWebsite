@@ -28,12 +28,15 @@
     
 
     <body>
-      <div class="row">
-          
-      </div>
-       <div class="row">
-           <div class="col s1 offset-s10 offset-m11">
-               MENU
+       <div class="row menuRow">
+            <div class="col s2  l1 logoContainer">
+                <img class="logo" src="img/Logo.svg"/>
+            </div>
+            <div class="col s2 l1 offset-s6 offset-l9 languageBar">
+                <a href ="#">ENG</a>
+            </div>
+            <div class="col s2 l1 menuContainer">
+               <img class="menu" src="img/Menu.svg"/>
            </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
