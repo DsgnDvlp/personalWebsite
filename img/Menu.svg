@@ -1,7 +1,7 @@
 <svg width="41px" height="26px" viewBox="0 0 41 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs></defs>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-1324.000000, -65.000000)" fill="#F34E40">
+    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g transform="translate(-1324.000000, -65.000000)">
             <g transform="translate(1324.000000, 65.000000)">
                 <path d="M0.0738215042,11.0514469 L40.0738215,11.0514469 L40.0738215,14.0610932 L0.0738215042,14.0610932 L0.0738215042,11.0514469 Z M0.0738215042,22.9903537 L40.0738215,22.9903537 L40.0738215,26 L0.0738215042,26 L0.0738215042,22.9903537 Z M0.0738215042,0 L40.0738215,0 L40.0738215,3.0096463 L0.0738215042,3.0096463 L0.0738215042,0 Z"></path>
             </g>

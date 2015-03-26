@@ -1,3 +1,64 @@
 .container{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.homeContent{
     text-align: center;
+    margin: auto;
+}
+
+.mainTitle{
+    font-family: "effra";
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 10px;
+    line-height: 48px;
+    margin-top: 30%;
+}
+
+.subtitle{
+    font-family: "effra light";
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.buttonRow{
+    margin-top: 20%;
+}
+
+.homeButtonContainer{
+    
+}
+
+.homeButton{
+    font-family: "effra";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 52px;
+    height: 55px;
+    width: 100%;
+    max-width: 160px;
+    border: 2px solid #000;
+    background: transparent;
+    text-transform: uppercase;
+    margin-top: 20px;
+    -webkit-transition: color .5s ease, background-color .5s ease;
+    transition: color .5s ease, background-color .5s ease;
+}
+
+.homeButton:hover, .homeButton:active, .homeButton:focus{
+    color: #fff;
+    background-color:#F24E41;
+    border-color: #F24E41;
+}
+
+.homeButton:not(:first-child){
+    margin-left: 20%;
 }

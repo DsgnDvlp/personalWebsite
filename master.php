@@ -30,21 +30,48 @@
     <body>
        <div class="row menuRow">
             <div class="col s2  l1 logoContainer">
-                <img class="logo" src="img/Logo.svg"/>
+                <div class="logo">
+                    <?php include "img/logo.svg"; ?>
+                </div>
             </div>
             <div class="col s2 l1 offset-s6 offset-l9 languageBar">
                 <a href ="#">ENG</a>
             </div>
             <div class="col s2 l1 menuContainer">
-               <img class="menu" src="img/Menu.svg"/>
+              <div class="menu" onclick="toggleMenu()">
+                  <?php include "img/Menu.svg"; ?>
+              </div>
            </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
         <?php echo content($path); ?>
         
+        <!--   MENU   -->
+        <div class="overlayMenu">
+            <div class="valign-wrapper">
+                <ul class="valign">
+                    <li class="menuEntry">About</li>
+                    <li class="menuEntry">Portfolio</li>
+                    <li class="menuEntry">Free Stuff</li>
+                    <li class="menuEntry">Contact</li>
+                </ul>
+            </div>
+        </div>
+        
         <div class="borderNorth"></div>
 		<div class="borderSouth"></div>
 		<div class="borderEast"></div>
 		<div class="borderWest"></div>
+        <script type="text/javascript">
+            function toggleMenu(){
+                if($(".menu").hasClass("opened")){
+                    $(".menu").removeClass("opened");
+                    $("body").removeClass("openedMenu")
+                }else{
+                    $(".menu").addClass("opened");
+                    $("body").addClass("openedMenu");
+                }
+            }
+        </script>
     </body>
 </html>

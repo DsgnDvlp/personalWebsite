@@ -1,4 +1,8 @@
 /*----------- GENERAL STYLE -----------*/
+body{
+    font-family: 'kepler std' serif;
+}
+
 a{
     color: #F24E41;
 }
@@ -66,6 +70,28 @@ body{
     margin-top: 50px;
 }
 
+.menu{
+    cursor: pointer;
+    z-index: 9;
+    position: relative;
+}
+
+.menu svg{
+    fill: #F34E40;
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition: fill .5s ease, -webkit-transform .2s ease;
+    transition: fill .5s ease, transform .2s ease;
+}
+
+.menu.opened{
+}
+
+.menu.opened svg{
+    fill: #fff;
+    transform: rotate(90deg);
+}
+
 .logoContainer{
     text-align: right;
 }
@@ -73,6 +99,17 @@ body{
 .logo{
     width: 60%;
     min-width: 40px;
+    z-index: 9;
+    position: relative;
+}
+
+.logo svg{
+    fill: #F24E41;
+    transition: fill .7s ease;
+}
+
+.openedMenu .logo svg{
+    fill: #fff;
 }
 
 .languageBar{
@@ -80,12 +117,77 @@ body{
 }
 
 .languageBar a{
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: 2px;
+    font-family: 'effra';
 }
 
 .menu{
     
+}
+
+/*----------- MENU BODY -----------*/
+
+.overlayMenu{
+    background-color: #F24E41;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    width: 100%;
+/*    left: -100%;*/
+/*    transition: left .5s ease;*/
+    opacity: 0;
+    transform: scale(2, 1);
+    visibility: hidden;
+    transition: opacity .5s ease, transform .5s ease, visibility 0s ease .5s;
+}
+
+.openedMenu .overlayMenu{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1,1);
+    transition: opacity .5s ease, transform .5s ease, visibility 0s ease;
+}
+
+.overlayMenu > div{
+    height: 100%;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.overlayMenu > div > ul{
+    width: 100%;
+}
+
+.menuEntry{
+    color: #fff;
+    font-family: 'effra';
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 6px;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 42px 65px;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 50%;
+}
+
+.menuEntry:after{
+    content: " ";
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    margin-top: 18px;
+    margin-left: 100%;
+    transition: margin-left .4s ease;
+}
+
+.menuEntry:hover:after{
+    margin-left: 0;
 }
 
 @media screen and (max-width: 992px) and (min-width: 700px){
