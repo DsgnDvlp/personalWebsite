@@ -86,10 +86,6 @@ body{
     transition: transform .2s ease;
 }
 
-.menuContent:hover{
-    -webkit-transform: scale(1, 1.1);
-    transform: scale(1, 1.1);
-}
 
 .menuItem{
     display: block;
@@ -101,7 +97,7 @@ body{
     height: 3px;
     margin: auto;
     background: #F24E41;
-     -webkit-transition: background-color .5s ease, border-color .5s ease;
+    -webkit-transition: background-color .5s ease, border-color .5s ease;
     transition: background-color .5s ease, border-color .5s ease;
 }
 
@@ -114,8 +110,8 @@ body{
     right: 0;
     border: 1px solid #F24E41;
     background: #F24E41;
-     -webkit-transition: background-color .5s ease, border-color .5s ease;
-    transition: background-color .5s ease, border-color .5s ease;
+    -webkit-transition: background-color .5s ease, border-color .5s ease, -webkit-transform .2s ease;
+    transition: background-color .5s ease, border-color .5s ease, transform .2s ease;
 }
 
 .menuContent:before{
@@ -127,8 +123,18 @@ body{
     right: 0;
     border: 1px solid #F24E41;
     background: #F24E41;
-    -webkit-transition: background-color .5s ease, border-color .5s ease;
-    transition: background-color .5s ease, border-color .5s ease;
+    -webkit-transition: background-color .5s ease, border-color .5s ease, -webkit-transform .2s ease;
+    transition: background-color .5s ease, border-color .5s ease, transform .2s ease;
+}
+
+.menuContent:hover:after{
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+    
+.menuContent:hover:before{
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .menu.opened .menuContent{
@@ -227,7 +233,7 @@ body{
 .menuEntry{
     text-align: right;
     text-transform: uppercase;
-    margin: 42px 65px;
+    margin: 42px 0;
     cursor: pointer;
     overflow: hidden;
 }
@@ -239,6 +245,7 @@ body{
     font-size: 32px;
     letter-spacing: 6px;
     opacity: .3;
+    overflow: hidden;
     -webkit-transition: opacity .4s ease;
     transition: opacity .4s ease;
 }
@@ -268,6 +275,7 @@ body{
     float: left;
     font-family: 'kepler std';
     text-transform: none;
+    font-weight: normal;
     opacity: 0;
     -webkit-transform: translateY(10px);
     transform: translateY(10px);

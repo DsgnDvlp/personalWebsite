@@ -53,25 +53,25 @@
             <div class="valign-wrapper">
                 <ul class="valign">
                     <li class="row menuEntry">
-                        <a class="col s7 offset-s5" href="#">
+                        <a class="col s7 offset-s4" href="#">
                             <span class="description">Wanna know something about me?</span>
                             About
                         </a>
                     </li>
                     <li class="row menuEntry">
-                        <a class="col s7 offset-s5" href="#">
+                        <a class="col s7 offset-s4" href="#">
                             <span class="description">Wanna know something about me?</span>
                             Portfolio
                         </a>
                     </li>
                     <li class="row menuEntry">
-                        <a class="col s7 offset-s5" href="#">
+                        <a class="col s7 offset-s4" href="#">
                             <span class="description">Wanna know something about me?</span>
                             Free Stuff
                         </a>
                     </li>
                     <li class="row menuEntry">
-                        <a class="col s7 offset-s5" href="#">
+                        <a class="col s7 offset-s4 m10 offset-m1 l7 offset-l4" href="#">
                             <span class="description">Wanna know something about me?</span>
                             Contact
                         </a>
