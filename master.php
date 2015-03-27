@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+   <?php include_once "lang.php" ?>
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -21,6 +22,7 @@
         <!--Let browser know website is optimized for mobile-->
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/master.js"></script>
         
         <!-- SPECIFIC PAGE HEADER PLACEHOLDER -->
         <?php echo head($path); ?>
@@ -35,7 +37,20 @@
                 </div>
             </div>
             <div class="col s2 l1 offset-s6 offset-l9 languageBar">
-                <a href ="#">ENG</a>
+               <?php 
+                    if($_SESSION["lang"] != "ita"){ ?>
+                        <a href ="#" onclick="switchLanguage('ita')">ITA</a> 
+                        -
+                    <?php }
+                    if($_SESSION["lang"] != "esp"){ ?>
+                        <a href ="#" onclick="switchLanguage('esp')">ESP</a>
+                            <?php if($_SESSION["lang"] != "eng"){ ?>
+                            -
+                    <?php   }
+                    }
+                    if($_SESSION["lang"] != "eng"){ ?>
+                        <a href ="#" onclick="switchLanguage('eng')">ENG</a>
+                    <?php } ?>
             </div>
             <div class="col s2 l1 menuContainer">
                 <div class="menu" onclick="toggleMenu()">

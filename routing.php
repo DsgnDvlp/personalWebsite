@@ -1,4 +1,5 @@
 <?php
+    session_start();
 	// --------  development settings -------//
 	//TODO remove when deploy
 	error_reporting (E_ALL);

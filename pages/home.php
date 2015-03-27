@@ -18,21 +18,20 @@
                         /* CALCOLO DELL'ORA PER IL CAMBIO DEL MESSAGGIO*/
                         $hour = intVal(Date("G"));
                         if($hour >= 6 && $hour < 12){ ?>
-                            GOOD MORNING
+                            <?=tr_("morningTitle")?>
                         <?php } else if($hour >= 12 && $hour<14 ){ ?>
-                            TIME TO EAT SOMETHING!
+                            <?=tr_("noonTitle")?>
                         <?php } else if($hour >= 14 && $hour < 18){ ?>
-                            GOOD AFTERNOON
+                            <?=tr_("afternoonTitle")?>
                         <?php } else if($hour >=18 || $hour < 22){ ?>
-                            PARTY TIME
+                            <?=tr_("eveningTitle")?>
                         <?php } else{ ?>
-                            Zzzz
+                            <?=tr_("nightTitle")?>
                         <?php } 
                     ?>
                 </p>
                 <p class="subtitle">
-                    My name is Paul Jesus Benites Romero<br/>
-                    &amp; I’m a graphic designer.
+                    <?=tr_("subtitle")?>
                 </p>
                 <div class="row buttonRow">
                     <div class="col s10 offset-s1 m5 ">
