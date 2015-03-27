@@ -76,20 +76,69 @@ body{
     position: relative;
 }
 
-.menu svg{
-    fill: #F34E40;
+.menuContent{
+    height: 26px;
+    width: 41px;
+    position: relative;
     -webkit-transform-origin: 50%;
     transform-origin: 50%;
-    -webkit-transition: fill .5s ease, -webkit-transform .2s ease;
-    transition: fill .5s ease, transform .2s ease;
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
 }
 
-.menu.opened{
+.menuContent:hover{
+    -webkit-transform: scale(1, 1.1);
+    transform: scale(1, 1.1);
 }
 
-.menu.opened svg{
-    fill: #fff;
+.menuItem{
+    display: block;
+    border: 1px solid #F24E41;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    height: 3px;
+    margin: auto;
+    background: #F24E41;
+     -webkit-transition: background-color .5s ease, border-color .5s ease;
+    transition: background-color .5s ease, border-color .5s ease;
+}
+
+.menuContent:after{
+    content: " ";
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #F24E41;
+    background: #F24E41;
+     -webkit-transition: background-color .5s ease, border-color .5s ease;
+    transition: background-color .5s ease, border-color .5s ease;
+}
+
+.menuContent:before{
+    content: " ";
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #F24E41;
+    background: #F24E41;
+    -webkit-transition: background-color .5s ease, border-color .5s ease;
+    transition: background-color .5s ease, border-color .5s ease;
+}
+
+.menu.opened .menuContent{
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.menu.opened .menuContent:before, .menu.opened .menuContent:after, .menu.opened .menuItem{
+    background-color: #fff;
+    border-color: #fff;
 }
 
 .logoContainer{
@@ -101,10 +150,12 @@ body{
     min-width: 40px;
     z-index: 9;
     position: relative;
+    display: inline-block;
 }
 
 .logo svg{
     fill: #F24E41;
+    -webkit-transition: fill .7s ease;
     transition: fill .7s ease;
 }
 
@@ -120,6 +171,14 @@ body{
     font-size: 17px;
     letter-spacing: 2px;
     font-family: 'effra';
+    z-index: 9;
+    position: relative;
+    -webkit-transition: color .4s ease;
+    transition: color .4s ease;
+}
+
+.openedMenu .languageBar a{
+    color: #fff;
 }
 
 .menu{
@@ -134,61 +193,96 @@ body{
     height: 100%;
     top: 0;
     width: 100%;
-/*    left: -100%;*/
-/*    transition: left .5s ease;*/
     opacity: 0;
-    transform: scale(2, 1);
     visibility: hidden;
-    transition: opacity .5s ease, transform .5s ease, visibility 0s ease .5s;
+    -webkit-transition: opacity .5s ease, visibility 0s ease .5s;
+    transition: opacity .5s ease, visibility 0s ease .5s;
 }
 
 .openedMenu .overlayMenu{
     left: 0;
     opacity: 1;
     visibility: visible;
-    transform: scale(1,1);
-    transition: opacity .5s ease, transform .5s ease, visibility 0s ease;
+    -webkit-transition: opacity .4s ease, visibility 0s ease;
+    transition: opacity .4s ease, visibility 0s ease;
 }
 
 .overlayMenu > div{
     height: 100%;
-    top: 0;
-    position: absolute;
-    width: 100%;
 }
 
 .overlayMenu > div > ul{
     width: 100%;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+}
+
+.openedMenu .overlayMenu > div > ul{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
 }
 
 .menuEntry{
-    color: #fff;
-    font-family: 'effra';
-    font-weight: bold;
-    font-size: 32px;
-    letter-spacing: 6px;
     text-align: right;
     text-transform: uppercase;
     margin: 42px 65px;
     cursor: pointer;
     overflow: hidden;
-    max-width: 50%;
 }
 
-.menuEntry:after{
+.menuEntry a{
+    color: #fff;
+    font-family: 'effra';
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 6px;
+    opacity: .3;
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+.menuEntry a:hover{
+    opacity: 1;
+}
+
+.menuEntry a:after{
     content: " ";
     height: 1px;
     width: 100%;
     display: block;
     background-color: #fff;
     margin-top: 18px;
-    margin-left: 100%;
+    margin-left: 105%;
+    -webkit-transition: margin-left .4s ease;
     transition: margin-left .4s ease;
 }
 
-.menuEntry:hover:after{
+.menuEntry a:hover:after{
     margin-left: 0;
 }
+
+.menuEntry a .description{
+    font-size: 20px;
+    float: left;
+    font-family: 'kepler std';
+    text-transform: none;
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    vertical-align: bottom;
+    margin-top: 10px;
+    -webkit-transition: -webkit-transform .5s ease .3s, opacity .5s ease .3s;
+    transition: transform .5s ease .3s, opacity .5s ease .3s;
+}
+
+.menuEntry a:hover .description{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
 
 @media screen and (max-width: 992px) and (min-width: 700px){
     .menuContainer{

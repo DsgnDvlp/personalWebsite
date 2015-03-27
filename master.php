@@ -38,9 +38,11 @@
                 <a href ="#">ENG</a>
             </div>
             <div class="col s2 l1 menuContainer">
-              <div class="menu" onclick="toggleMenu()">
-                  <?php include "img/Menu.svg"; ?>
-              </div>
+                <div class="menu" onclick="toggleMenu()">
+                    <div class="menuContent">
+                      <span class="menuItem"></span>
+                    </div>
+                </div>
            </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
@@ -50,10 +52,30 @@
         <div class="overlayMenu">
             <div class="valign-wrapper">
                 <ul class="valign">
-                    <li class="menuEntry">About</li>
-                    <li class="menuEntry">Portfolio</li>
-                    <li class="menuEntry">Free Stuff</li>
-                    <li class="menuEntry">Contact</li>
+                    <li class="row menuEntry">
+                        <a class="col s7 offset-s5" href="#">
+                            <span class="description">Wanna know something about me?</span>
+                            About
+                        </a>
+                    </li>
+                    <li class="row menuEntry">
+                        <a class="col s7 offset-s5" href="#">
+                            <span class="description">Wanna know something about me?</span>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="row menuEntry">
+                        <a class="col s7 offset-s5" href="#">
+                            <span class="description">Wanna know something about me?</span>
+                            Free Stuff
+                        </a>
+                    </li>
+                    <li class="row menuEntry">
+                        <a class="col s7 offset-s5" href="#">
+                            <span class="description">Wanna know something about me?</span>
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
