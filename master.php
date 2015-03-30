@@ -31,12 +31,19 @@
 
     <body>
        <div class="row menuRow">
-            <div class="col s2  l1 logoContainer">
+            <div class="logoContainer">
                 <div class="logo">
                     <?php include "img/logo.svg"; ?>
                 </div>
             </div>
-            <div class="col s2 l1 offset-s6 offset-l9 languageBar">
+            <div class="menuContainer">
+                <div class="menu" onclick="toggleMenu()">
+                    <div class="menuContent">
+                      <span class="menuItem"></span>
+                    </div>
+                </div>
+           </div>
+           <div class="languageBar">
                <?php 
                     if($_SESSION["lang"] != "ita"){ ?>
                         <a href ="#" onclick="switchLanguage('ita')">ITA</a> 
@@ -52,13 +59,6 @@
                         <a href ="#" onclick="switchLanguage('eng')">ENG</a>
                     <?php } ?>
             </div>
-            <div class="col s2 l1 menuContainer">
-                <div class="menu" onclick="toggleMenu()">
-                    <div class="menuContent">
-                      <span class="menuItem"></span>
-                    </div>
-                </div>
-           </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
         <?php echo content($path); ?>
@@ -67,26 +67,26 @@
         <div class="overlayMenu">
             <div class="valign-wrapper">
                 <ul class="valign">
-                    <li class="row menuEntry">
-                        <a class="col s7 offset-s4" href="#">
+                    <li class="menuEntry">
+                        <a href="#">
                             <span class="description">Wanna know something about me?</span>
                             About
                         </a>
                     </li>
-                    <li class="row menuEntry">
-                        <a class="col s7 offset-s4" href="#">
+                    <li class="menuEntry">
+                        <a href="#">
                             <span class="description">Wanna know something about me?</span>
                             Portfolio
                         </a>
                     </li>
-                    <li class="row menuEntry">
-                        <a class="col s7 offset-s4" href="#">
+                    <li class="menuEntry">
+                        <a href="#">
                             <span class="description">Wanna know something about me?</span>
                             Free Stuff
                         </a>
                     </li>
-                    <li class="row menuEntry">
-                        <a class="col s7 offset-s4 m10 offset-m1 l7 offset-l4" href="#">
+                    <li class="menuEntry">
+                        <a href="#">
                             <span class="description">Wanna know something about me?</span>
                             Contact
                         </a>
