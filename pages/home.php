@@ -34,18 +34,23 @@
                     <?=tr_("subtitle")?>
                 </p>
                 <div class="row buttonRow">
-                    <div class="col s10 offset-s1 m5 ">
+                    <div class="col s5 offset-s1">
                         <button class="homeButton">
-                            About
+                            I am death
                         </button>
                     </div>
-                    <div class="col s10 offset-s1 m5 offset-m2">
+                    <div class="col s5">
                         <button class="homeButton">
-                            Portfolio
+                            Good $tuff
                         </button>
                     </div>
                 </div>
             </div>
+            <div class="lowRow row">
+                   <div class="col s5 first">IT’S <?= Date("H:i") ?>! TIME FOR COFFE</div>
+                   <div class="col s2 center"><img src="img/Icona.svg"></div>
+                   <div class="col s5 second">COME BACK FOR NEW GIFTS</div>
+                </div>
 		</div>
 		
 	<?php }
