@@ -11,22 +11,6 @@
     margin: auto;
 }
 
-.mainTitle{
-    font-family: "effra";
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 10px;
-    line-height: 48px;
-}
-
-.subtitle{
-    font-family: "effra light";
-    font-size: 32px;
-    line-height: 36px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-}
-
 .buttonRow{
     margin-top: 50px;
 }

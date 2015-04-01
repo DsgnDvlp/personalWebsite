@@ -23,7 +23,10 @@
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/master.js"></script>
-        
+        <script type="text/javascript">
+            
+        </script>
+            
         <!-- SPECIFIC PAGE HEADER PLACEHOLDER -->
         <?php echo head($path); ?>
     </head>
@@ -33,7 +36,7 @@
        <div class="row menuRow">
             <div class="logoContainer">
                 <div class="logo">
-                    <?php include "img/logo.svg"; ?>
+                    <a href="index"><?php include "img/logo.svg"; ?></a>
                 </div>
             </div>
             <div class="menuContainer">
@@ -44,20 +47,21 @@
                 </div>
            </div>
            <div class="languageBar">
-               <?php 
-                    if($_SESSION["lang"] != "ita"){ ?>
-                        <a href ="#" onclick="switchLanguage('ita')">ITA</a> 
-                        -
-                    <?php }
-                    if($_SESSION["lang"] != "esp"){ ?>
-                        <a href ="#" onclick="switchLanguage('esp')">ESP</a>
-                            <?php if($_SESSION["lang"] != "eng"){ ?>
-                            -
-                    <?php   }
-                    }
-                    if($_SESSION["lang"] != "eng"){ ?>
-                        <a href ="#" onclick="switchLanguage('eng')">ENG</a>
-                    <?php } ?>
+               <a class="dropdown-button" data-activates="dropLanguages">
+                   <?= $_SESSION["lang"] ?>
+               </a>
+               <ul id="dropLanguages" class="dropdown-content">
+                    <li class="<?= $_SESSION["lang"] == "ita" ? "active" : "" ?>" onclick="switchLanguage('ita')">ITA</li>
+                    <li class="<?= $_SESSION["lang"] == "eng" ? "active" : "" ?>" onclick="switchLanguage('eng')">ENG</li>
+                    <li class="<?= $_SESSION["lang"] == "esp" ? "active" : "" ?>" onclick="switchLanguage('esp')">ESP</li>
+               </ul>
+<!--
+                <select onchange="switchLanguage(value)">
+                   <option value="ita" </option>
+                   <option value="eng" <?= $_SESSION["lang"] == "eng" ? "selected" : "" ?>>ENG</option>
+                   <option value="esp" <?= $_SESSION["lang"] == "esp" ? "selected" : "" ?>>ESP</option>
+               </select>
+-->
             </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
@@ -68,25 +72,25 @@
             <div class="valign-wrapper">
                 <ul class="valign">
                     <li class="menuEntry">
-                        <a href="#">
+                        <a href="about">
                             <span class="description">Wanna know something about me?</span>
                             About
                         </a>
                     </li>
                     <li class="menuEntry">
-                        <a href="#">
+                        <a href="portfolio">
                             <span class="description">Wanna know something about me?</span>
                             Portfolio
                         </a>
                     </li>
                     <li class="menuEntry">
-                        <a href="#">
+                        <a href="freeStuff">
                             <span class="description">Wanna know something about me?</span>
                             Free Stuff
                         </a>
                     </li>
                     <li class="menuEntry">
-                        <a href="#">
+                        <a href="contact">
                             <span class="description">Wanna know something about me?</span>
                             Contact
                         </a>

@@ -174,8 +174,11 @@ body{
     float: right;
     margin-right: 50px;
     line-height: 26px;
+    width: 40px;
+/*    margin-top: -9px;*/
 }
 
+/*
 .languageBar a{
     font-size: 17px;
     letter-spacing: 2px;
@@ -188,6 +191,61 @@ body{
 
 .openedMenu .languageBar a{
     color: #fff;
+}
+*/
+
+.languageBar a.dropdown-button, #dropLanguages li {
+    font-family: 'effra';
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 9;
+    position: relative;
+    color: #F24E41;
+    -webkit-transition: color .4s ease;
+    transition: color .4s ease;
+}
+
+#dropLanguages{
+    min-width: 50px;  
+    box-shadow: none;
+}
+
+#dropLanguages li{
+    padding: 10px 5px;
+}
+
+.languageBar .select-wrapper{
+    margin-top: 0;
+}
+
+.languageBar .select-wrapper > input{
+    margin-bottom: 0;
+    color: #F24E41;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: 'effra';
+    z-index: 9;
+    position: relative;
+    height: 32px;
+    border: none !important;
+    -webkit-transition: color .4s ease, border-color .4s ease;
+    transition: color .4s ease, border-color .4s ease;
+}
+
+.languageBar .select-wrapper > .mdi-navigation-arrow-drop-down{
+    display: none;
+}
+
+.dropdown-content.select-dropdown{
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: 'effra';
+    min-width: 70px;
+}
+
+.dropdown-content.select-dropdown > li > span{
+    color: #F24E41 !important;
 }
 
 .menu{
@@ -289,6 +347,7 @@ body{
     transform: translateY(10px);
     vertical-align: bottom;
     margin-top: 10px;
+    letter-spacing: 0;
     -webkit-transition: -webkit-transform .5s ease .3s, opacity .5s ease .3s;
     transition: transform .5s ease .3s, opacity .5s ease .3s;
 }
@@ -297,6 +356,23 @@ body{
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
+}
+
+
+.mainTitle{
+    font-family: "effra";
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 10px;
+    line-height: 48px;
+}
+
+.subtitle{
+    font-family: "effra light";
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 992px){
