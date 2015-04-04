@@ -32,6 +32,10 @@
         case 'freeStuff':
 			include "pages/freeStuff.php";
 			break;
+        
+        case 'countdown':
+            include "countdown/index.html";
+            break;
 
 		default:
 			include "404.php";

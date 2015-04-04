@@ -206,6 +206,10 @@ body{
     transition: color .4s ease;
 }
 
+.openedMenu .languageBar a.dropdown-button{
+    color: #fff;
+}
+
 #dropLanguages{
     min-width: 50px;  
     box-shadow: none;
@@ -275,21 +279,16 @@ body{
     transition: opacity .4s ease, visibility 0s ease;
 }
 
-.overlayMenu > div{
+.overlayMenu > div.valign-wrapper{
     height: 100%;
 }
 
 .overlayMenu > div > ul{
     width: 100%;
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
-    -webkit-transition: -webkit-transform .4s ease;
-    transition: transform .4s ease;
 }
 
 .openedMenu .overlayMenu > div > ul{
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    
 }
 
 .menuEntry{
@@ -299,6 +298,35 @@ body{
     cursor: pointer;
     overflow: hidden;
     padding-right: 75px;
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+}
+
+.openedMenu .menuEntry:nth-child(1){
+    -webkit-transition: -webkit-transform .4s ease .2s;
+    transition: transform .4s ease .2s;
+}
+
+.openedMenu .menuEntry:nth-child(2){
+   -webkit-transition: -webkit-transform .4s ease .3s;
+    transition: transform .4s ease .3s;
+}
+
+.openedMenu .menuEntry:nth-child(3){
+    -webkit-transition: -webkit-transform .4s ease .4s;
+    transition: transform .4s ease .4s;
+}
+
+.openedMenu .menuEntry:nth-child(4){
+    -webkit-transition: -webkit-transform .4s ease .5s;
+    transition: transform .4s ease .5s;
+}
+
+.openedMenu .menuEntry{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
 }
 
 .menuEntry a{
@@ -309,11 +337,11 @@ body{
     letter-spacing: 6px;
     opacity: .3;
     overflow: hidden;
-    -webkit-transition: opacity .4s ease;
-    transition: opacity .4s ease;
     display: inline-block;
     width: 100%;
     max-width: 900px;
+     -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
 }
 
 .menuEntry a:hover{
@@ -358,6 +386,34 @@ body{
     transform: translateY(0);
 }
 
+
+.socialBar{
+    position: absolute;
+    bottom: 96px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.socialEntry{
+    font-family: 'effra';
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 19px;
+}
+
+
+.socialEntry a{
+    color: #fff;
+    opacity: .4;
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+.socialEntry a:hover{
+    opacity: 1;
+}
 
 .mainTitle{
     font-family: "effra";

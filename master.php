@@ -97,6 +97,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="socialBar row">
+                <div class="socialEntry col s2 offset-s1"><a href="#">facebook</a></div>
+                <div class="socialEntry col s2"><a href="#">twitter</a></div>
+                <div class="socialEntry col s2"><a href="#">behance</a></div>
+                <div class="socialEntry col s2"><a href="#">medium</a></div>
+                <div class="socialEntry col s2"><a href="#">linkedin</a></div>
+            </div>
         </div>
         
         <div class="borderNorth"></div>

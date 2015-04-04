@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#countdown").countdown("2016/01/01", function(event) {
+                    $(this).text(
+                    event.strftime('%D:%H:%M:%S')
+                    );
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="logoContainer">
+            <img src="img/Logo.svg"/>
+        </div>
+        <div class="centralContainer">
+            <p>
+                Hi, I'm Paul, your new favourite designer. <br/>
+                Are you skeptical? Come back in:
+            </p>
+            <div id="countdown"></div>
+        </div>
+        <div class="footer">
+            Please feel free to drop me a line: <a href="mailTo:info@paulromerodesign.com">info@paulromerodesign.</a>
+        </div>
+    </body>
+</html>
