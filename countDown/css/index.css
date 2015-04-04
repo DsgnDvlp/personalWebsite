@@ -2,6 +2,8 @@ body{
     background-color: #F24E41;
     font-family: 'effra';
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 .logoContainer{
@@ -56,7 +58,7 @@ body{
     font-weight: bold;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 769px){
      .logoContainer img{
         margin-top: 40px;
     }
@@ -76,7 +78,7 @@ body{
     }
 }
 
-@media screen and (min-width: 769px) and (orientation: landscape){
+@media screen and (max-width: 769px) and (orientation: landscape){
     .logoContainer img{
         margin-top: 20px;
     }
@@ -90,6 +92,7 @@ body{
     }
 }
 
+/*
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px) and (orientation: portrait),
 only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px) and (orientation: portrait),
@@ -118,4 +121,5 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
         font-size: 44pX;
     }
 }
+*/
 
