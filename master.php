@@ -15,6 +15,9 @@
         <!-- CSS RESET -->
         <link type="text/css" rel="stylesheet" href="css/reset.css"  media="screen,projection"/>
         
+        <script src="//use.typekit.net/cqp8ytj.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
