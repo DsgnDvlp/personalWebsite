@@ -50,21 +50,10 @@
                 </div>
            </div>
            <div class="languageBar">
-               <a class="dropdown-button" data-activates="dropLanguages">
-                   <?= $_SESSION["lang"] ?>
-               </a>
-               <ul id="dropLanguages" class="dropdown-content">
-                    <li class="<?= $_SESSION["lang"] == "ita" ? "active" : "" ?>" onclick="switchLanguage('ita')">ITA</li>
-                    <li class="<?= $_SESSION["lang"] == "eng" ? "active" : "" ?>" onclick="switchLanguage('eng')">ENG</li>
-                    <li class="<?= $_SESSION["lang"] == "esp" ? "active" : "" ?>" onclick="switchLanguage('esp')">ESP</li>
-               </ul>
-<!--
-                <select onchange="switchLanguage(value)">
-                   <option value="ita" </option>
-                   <option value="eng" <?= $_SESSION["lang"] == "eng" ? "selected" : "" ?>>ENG</option>
-                   <option value="esp" <?= $_SESSION["lang"] == "esp" ? "selected" : "" ?>>ESP</option>
-               </select>
--->
+                <p class="languageEntry"><?= $_SESSION["lang"] ?></p>
+                <?= $_SESSION["lang"] != "ita" ? "<p class='languageEntry' onclick='switchLanguage(\"ita\")'>ITA</p>" : "" ?>
+                <?= $_SESSION["lang"] != "eng" ? "<p class='languageEntry' onclick='switchLanguage(\"eng\")'>ENG</p>" : "" ?>
+                <?= $_SESSION["lang"] != "esp" ? "<p class='languageEntry' onclick='switchLanguage(\"esp\")'>ESP</p>" : "" ?>
             </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
