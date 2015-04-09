@@ -1,3 +1,4 @@
+
 /*----------- GENERAL STYLE -----------*/
 body{
     font-family: 'kepler std' serif;
@@ -404,15 +405,19 @@ body{
 }
 
 
-.socialEntry a{
+.socialEntry a, .socialEntryMobile a{
     color: #fff;
     opacity: .4;
     -webkit-transition: opacity .4s ease;
     transition: opacity .4s ease;
 }
 
-.socialEntry a:hover{
+.socialEntry a:hover, .socialEntryMobile a:hover{
     opacity: 1;
+}
+
+.socialEntryMobile{
+    display: none;
 }
 
 .mainTitle{
@@ -424,16 +429,36 @@ body{
 }
 
 .subtitle{
-    font-family: "effra light";
+    font-family: "effra";
+    font-weight: 300;
     font-size: 32px;
     line-height: 36px;
     letter-spacing: 1px;
     margin-top: 20px;
 }
 
+
 @media screen and (max-width: 992px){
     .menuEntry a .description, .menuEntry a:after{
         display: none;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .logoContainer{
+        margin-left: 25px;
+    }
+    
+    .menu{
+        margin-right: 25px;
+    }
+    
+    .socialEntry{
+        display: none;
+    }
+    
+    .socialEntryMobile{
+        display: block;
     }
 }
 
@@ -446,8 +471,6 @@ body{
     .languageBar{
         text-align: right;
     }
-    
-    
 }
 
 

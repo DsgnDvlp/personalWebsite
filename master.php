@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <title>Paul Romero</title>
         <link rel="icon" type="image/png" href="img/Favicon.png" />
@@ -39,7 +39,7 @@
        <div class="row menuRow">
             <div class="logoContainer">
                 <div class="logo">
-                    <a href="index"><?php include "img/logo.svg"; ?></a>
+                    <a href="index"><?php include __DIR__."/img/Logo.svg"; ?></a>
                 </div>
             </div>
             <div class="menuContainer">
@@ -106,6 +106,21 @@
                 <div class="socialEntry col s2"><a href="#">behance</a></div>
                 <div class="socialEntry col s2"><a href="#">medium</a></div>
                 <div class="socialEntry col s2"><a href="#">linkedin</a></div>
+                <div class="socialEntryMobile col s2 offset-s1"><a href="#">
+                    <img src="img/facebook.svg" alt=""/>
+                </a></div>
+                <div class="socialEntryMobile col s2"><a href="#">
+                    <img src="img/twitter.svg" alt=""/>
+                </a></div>
+                <div class="socialEntryMobile col s2"><a href="#">
+                    <img src="img/behance.svg" alt=""/>
+                </a></div>
+                <div class="socialEntryMobile col s2"><a href="#">
+                    <img src="img/medium.svg" alt="">
+                </a></div>
+                <div class="socialEntryMobile col s2"><a href="#">
+                    <img src="img/linkedin.svg" alt="">
+                </a></div>
             </div>
         </div>
         

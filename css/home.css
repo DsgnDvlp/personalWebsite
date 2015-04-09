@@ -4,6 +4,7 @@
     left: 0;
     top: 0;
     bottom: 0;
+    min-height: 800px;
 }
 
 .homeContent{
@@ -57,6 +58,7 @@
     left: 0;
     right: 0;
     line-height: 76px;
+    text-transform: uppercase;
 }
 
 .lowRow .first{
@@ -71,12 +73,25 @@
     text-align: left;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 769px){
     .container{
         padding: 0 !important;
     }
     
     .lowRow{
+        text-align: center;
+    }
+    
+    .lowRow .first, .lowRow .center{
+        width: auto !important;
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+        height: 73px !important;
+    }
+    
+  
+    .lowRow .second{
         display: none;
     }
 }

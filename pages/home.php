@@ -31,26 +31,27 @@
                     ?>
                 </p>
                 <p class="subtitle">
-                    <?=tr_("subtitle")?>
+                    <?=tr_("subtitleRow1")?><br/>
+                    <?=tr_("subtitleRow2")?>
                 </p>
                 <div class="row buttonRow">
-                    <div class="col s5 offset-s1">
+                    <div class="col s10 offset-s1 m5 offset-m1">
                         <button class="homeButton">
-                            I am death
+                            <?=tr_("homeButtonDeath")?>
                         </button>
                     </div>
-                    <div class="col s5">
+                    <div class="col s10 offset-s1 m5">
                         <button class="homeButton">
-                            Good $tuff
+                            <?=tr_("homeButtonStuff")?>
                         </button>
                     </div>
                 </div>
             </div>
             <div class="lowRow row">
-                   <div class="col s5 first">IT’S <?= Date("H:i") ?>! TIME FOR COFFE</div>
-                   <div class="col s2 center"><img src="img/Icona.svg"></div>
-                   <div class="col s5 second">COME BACK FOR NEW GIFTS</div>
-                </div>
+                <div class="col s5 first"><?=tr_("lowRowString1", array(Date("H:i")))?></div>
+                <div class="col s2 center"><img src="img/Icona.svg"></div>
+                <div class="col s5 second"><?=tr_("lowRowString2")?></div>
+            </div>
 		</div>
 		
 	<?php }
