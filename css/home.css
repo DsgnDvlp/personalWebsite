@@ -1,10 +1,11 @@
 .container{
     position: absolute;
-    right: 0;
-    left: 0;
+    right: 15px;
+    left: 15px;
     top: 0;
     bottom: 0;
     min-height: 800px;
+    width: auto !important;
 }
 
 .homeContent{
@@ -48,7 +49,8 @@
 }
 
 .lowRow{
-    margin-top: 145px;
+    margin: 145px 10px 0;
+    text-align: center;
     font-family: 'effra';
     font-weight: bold;
     font-size: 16px;
@@ -63,14 +65,20 @@
 
 .lowRow .first{
     text-align: right;
+    display: inline-block;
 }
 
 .lowRow .center{
     text-align: center;
+    display: inline-block;
+    margin: 0 40px;
+    height: 74px;
+    vertical-align: middle;
 }
 
 .lowRow .second{
     text-align: left;
+    display: inline-block;
 }
 
 @media screen and (max-width: 769px){
@@ -78,16 +86,8 @@
         padding: 0 !important;
     }
     
-    .lowRow{
-        text-align: center;
-    }
-    
-    .lowRow .first, .lowRow .center{
-        width: auto !important;
-        display: inline-block;
-        float: none;
-        vertical-align: middle;
-        height: 73px !important;
+    .lowRow .center{
+        margin: 0 25px;       
     }
     
   

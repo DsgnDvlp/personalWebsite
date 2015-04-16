@@ -1,18 +1,15 @@
 $(document).ready(function(){
-//    $("select").material_select();
-//    $(".languageBar select").change(function(val){
-//        switchLanguage(val);
+//    $(".languageBar").hover(function(){
+//        $("languageBar").toggleClass("opened");
+//    },function(){
+//        $("languageBar").toggleClass("opened");
 //    });
-    
-    $(".dropdown-button").dropdown({
-        inDuration: 400,
-        outDuration: 200,
-        constrain_width: true,
-        hover: true,
-        alignment: 'left',
-        gutter: 0,
-        belowOrigin: false
-    });
+//    
+//    $(".languageBar").click(function((){
+//        if('ontouchstart' in document.documentElement){
+//            alert("touch");
+//        }
+//    }));
 });
 
 function switchLanguage(language){

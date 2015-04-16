@@ -1,0 +1,454 @@
+/*----------- GENERAL STYLE ----------- */
+/* line 10, ../sass/master.sass */
+body {
+  font-family: "kepler std" serif;
+  padding: 15px;
+}
+/* line 14, ../sass/master.sass */
+body a {
+  color: #F24E41;
+}
+
+/*----------- BORDER FIXED SECTION ----------- */
+/* line 19, ../sass/master.sass */
+.borderGeneric, .borderGenericOrizzontal, .borderNorth, .borderSouth, .borderGenericVertical, .borderEast, .borderWest {
+  position: fixed;
+  background-color: #F24E41;
+  z-index: 12;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+/* line 26, ../sass/master.sass */
+.borderGenericOrizzontal, .borderNorth, .borderSouth {
+  height: 15px;
+  left: 0;
+  right: 0;
+}
+
+/* line 32, ../sass/master.sass */
+.borderGenericVertical, .borderEast, .borderWest {
+  width: 15px;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 38, ../sass/master.sass */
+.borderNorth {
+  top: 0;
+}
+
+/* line 42, ../sass/master.sass */
+.borderSouth {
+  bottom: 0;
+}
+
+/* line 46, ../sass/master.sass */
+.borderEast {
+  right: 0;
+}
+
+/* line 50, ../sass/master.sass */
+.borderWest {
+  left: 0;
+}
+
+/*----------- END BORDER FIXED SECTION ----------- */
+/*----------- MENU ICON ----------- */
+/* line 58, ../sass/master.sass */
+.menuRow {
+  margin-top: 50px;
+  z-index: 999999;
+  position: relative;
+}
+/* line 63, ../sass/master.sass */
+.menuRow .menu {
+  cursor: pointer;
+  z-index: 9;
+  position: relative;
+  float: right;
+  margin-right: 55px;
+}
+@media screen and (max-width: 769px) {
+  /* line 63, ../sass/master.sass */
+  .menuRow .menu {
+    margin-right: 25px;
+  }
+}
+/* line 72, ../sass/master.sass */
+.menuRow .menu .menuContent {
+  height: 26px;
+  width: 41px;
+  position: relative;
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 80, ../sass/master.sass */
+.menuRow .menu .menuContent .menuItem {
+  display: block;
+  border: 1px solid #F24E41;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  height: 3px;
+  margin: auto;
+  background: #F24E41;
+  -webkit-transition: background-color 0.5s ease, border-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease, border-color 0.5s ease;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+/* line 92, ../sass/master.sass */
+.menuRow .menu .menuContent:after {
+  content: " ";
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #F24E41;
+  background: #F24E41;
+  -webkit-transition: background-color 0.5s ease, border-color 0.5s ease, -webkit-transform 0.2s ease;
+  -moz-transition: background-color 0.5s ease, border-color 0.5s ease, -moz-transform 0.2s ease;
+  transition: background-color 0.5s ease, border-color 0.5s ease, transform 0.2s ease;
+}
+/* line 103, ../sass/master.sass */
+.menuRow .menu .menuContent:before {
+  content: " ";
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #F24E41;
+  background: #F24E41;
+  -webkit-transition: background-color 0.5s ease, border-color 0.5s ease, -webkit-transform 0.2s ease;
+  -moz-transition: background-color 0.5s ease, border-color 0.5s ease, -moz-transform 0.2s ease;
+  transition: background-color 0.5s ease, border-color 0.5s ease, transform 0.2s ease;
+}
+/* line 114, ../sass/master.sass */
+.menuRow .menu .menuContent:hover:after {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+}
+/* line 117, ../sass/master.sass */
+.menuRow .menu .menuContent:hover:before {
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+/* line 121, ../sass/master.sass */
+.menuRow .menu.opened .menuContent {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 124, ../sass/master.sass */
+.menuRow .menu.opened .menuContent:before, .menuRow .menu.opened .menuContent:after, .menuRow .menu.opened .menuContent .menuItem {
+  background-color: #fff;
+  border-color: #fff;
+}
+/* line 130, ../sass/master.sass */
+.menuRow .logoContainer {
+  float: left;
+  margin: 0 0 0 55px;
+}
+@media screen and (max-width: 769px) {
+  /* line 130, ../sass/master.sass */
+  .menuRow .logoContainer {
+    margin-left: 25px;
+  }
+}
+/* line 136, ../sass/master.sass */
+.menuRow .logoContainer .logo {
+  width: 55px;
+  min-width: 40px;
+  z-index: 9;
+  position: relative;
+  display: inline-block;
+}
+/* line 143, ../sass/master.sass */
+.menuRow .logoContainer .logo svg {
+  fill: #F24E41;
+  -webkit-transition: fill 0.7s ease;
+  transition: fill 0.7s ease;
+}
+/* line 148, ../sass/master.sass */
+.menuRow .languageBar {
+  float: right;
+  margin-right: 50px;
+  line-height: 26px;
+  width: 40px;
+  max-height: 30px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease;
+  -moz-transition: max-height 0.2s ease;
+  transition: max-height 0.2s ease;
+}
+/* line 158, ../sass/master.sass */
+.menuRow .languageBar:hover {
+  max-height: 80px;
+}
+/* line 161, ../sass/master.sass */
+.menuRow .languageBar .languageEntry {
+  text-transform: uppercase;
+  color: #F24E41;
+  font-family: "effra" sans-serif;
+  font-weight: "bold";
+  font-size: 14x;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+/*----------- MENU BODY ----------- */
+/* line 173, ../sass/master.sass */
+.overlayMenu {
+  background-color: #F24E41;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s ease, visibility 0s ease 0.5s;
+  -moz-transition: opacity 0.5s ease, visibility 0s ease 0.5s;
+  transition: opacity 0.5s ease, visibility 0s ease 0.5s;
+}
+/* line 184, ../sass/master.sass */
+.overlayMenu > div.valign-wrapper {
+  height: 100%;
+}
+/* line 187, ../sass/master.sass */
+.overlayMenu > div > ul {
+  width: 100%;
+}
+/* line 190, ../sass/master.sass */
+.overlayMenu > div > ul .menuEntry {
+  text-align: right;
+  text-transform: uppercase;
+  margin: 42px 0;
+  cursor: pointer;
+  overflow: hidden;
+  padding-right: 75px;
+  -webkit-transform: translateX(400px);
+  -moz-transform: translateX(400px);
+  -ms-transform: translateX(400px);
+  -o-transform: translateX(400px);
+  transform: translateX(400px);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -moz-transition: -moz-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+/* line 200, ../sass/master.sass */
+.overlayMenu > div > ul .menuEntry a {
+  color: #fff;
+  font-family: "effra" sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 6px;
+  opacity: 0.3;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  max-width: 900px;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+/* line 213, ../sass/master.sass */
+.overlayMenu > div > ul .menuEntry a:after {
+  content: " ";
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  margin-top: 18px;
+  margin-left: 105%;
+  -webkit-transition: margin-left 0.4s ease;
+  -moz-transition: margin-left 0.4s ease;
+  transition: margin-left 0.4s ease;
+}
+@media screen and (max-width: 992px) {
+  /* line 213, ../sass/master.sass */
+  .overlayMenu > div > ul .menuEntry a:after {
+    display: none;
+  }
+}
+/* line 225, ../sass/master.sass */
+.overlayMenu > div > ul .menuEntry a .description {
+  font-size: 20px;
+  float: left;
+  font-family: "kepler std";
+  text-transform: none;
+  font-weight: normal;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  vertical-align: bottom;
+  margin-top: 10px;
+  letter-spacing: 0;
+  -webkit-transition: -webkit-transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s;
+  -moz-transition: -moz-transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s;
+  transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s;
+}
+@media screen and (max-width: 992px) {
+  /* line 225, ../sass/master.sass */
+  .overlayMenu > div > ul .menuEntry a .description {
+    display: none;
+  }
+}
+/* line 241, ../sass/master.sass */
+.overlayMenu > div > ul .menuEntry a:hover {
+  opacity: 1;
+}
+/* line 244, ../sass/master.sass */
+.overlayMenu > div > ul .menuEntry a:hover:after {
+  margin-left: 0;
+}
+/* line 247, ../sass/master.sass */
+.overlayMenu > div > ul .menuEntry a:hover .description {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 251, ../sass/master.sass */
+.overlayMenu .socialBar {
+  position: absolute;
+  bottom: 96px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+/* line 258, ../sass/master.sass */
+.overlayMenu .socialBar .socialEntry {
+  font-family: "effra";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 19px;
+}
+@media screen and (max-width: 769px) {
+  /* line 258, ../sass/master.sass */
+  .overlayMenu .socialBar .socialEntry {
+    display: none;
+  }
+}
+/* line 267, ../sass/master.sass */
+.overlayMenu .socialBar .socialEntry .socialEntryLink {
+  color: #fff;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+/* line 272, ../sass/master.sass */
+.overlayMenu .socialBar .socialEntry .socialEntryLink:hover {
+  opacity: 1;
+}
+/* line 275, ../sass/master.sass */
+.overlayMenu .socialBar .socialEntryMobile {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  /* line 275, ../sass/master.sass */
+  .overlayMenu .socialBar .socialEntryMobile {
+    display: block;
+  }
+}
+
+/* line 284, ../sass/master.sass */
+body.openedMenu {
+  overflow: hidden;
+}
+/* line 289, ../sass/master.sass */
+body.openedMenu .logoContainer .logo svg {
+  fill: #fff;
+}
+/* line 292, ../sass/master.sass */
+body.openedMenu .languageBar {
+  position: relative;
+  z-index: 9;
+}
+/* line 296, ../sass/master.sass */
+body.openedMenu .languageBar .languageEntry {
+  color: #fff;
+}
+/* line 299, ../sass/master.sass */
+body.openedMenu .overlayMenu {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.4s ease, visibility 0s ease;
+  -moz-transition: opacity 0.4s ease, visibility 0s ease;
+  transition: opacity 0.4s ease, visibility 0s ease;
+}
+/* line 305, ../sass/master.sass */
+body.openedMenu .overlayMenu .menuEntry {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+/* line 308, ../sass/master.sass */
+body.openedMenu .overlayMenu .menuEntry:nth-child(1) {
+  -webkit-transition: -webkit-transform 0.4s ease 0.2s;
+  -moz-transition: -moz-transform 0.4s ease 0.2s;
+  transition: transform 0.4s ease 0.2s;
+}
+/* line 311, ../sass/master.sass */
+body.openedMenu .overlayMenu .menuEntry:nth-child(2) {
+  -webkit-transition: -webkit-transform 0.4s ease 0.3s;
+  -moz-transition: -moz-transform 0.4s ease 0.3s;
+  transition: transform 0.4s ease 0.3s;
+}
+/* line 314, ../sass/master.sass */
+body.openedMenu .overlayMenu .menuEntry:nth-child(3) {
+  -webkit-transition: -webkit-transform 0.4s ease 0.4s;
+  -moz-transition: -moz-transform 0.4s ease 0.4s;
+  transition: transform 0.4s ease 0.4s;
+}
+/* line 317, ../sass/master.sass */
+body.openedMenu .overlayMenu .menuEntry:nth-child(4) {
+  -webkit-transition: -webkit-transform 0.4s ease 0.5s;
+  -moz-transition: -moz-transform 0.4s ease 0.5s;
+  transition: transform 0.4s ease 0.5s;
+}
+
+/* line 1, ../sass/_titleSubtitle.sass */
+.mainTitle {
+  font-family: "effra" sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 10px;
+  line-height: 48px;
+}
+
+/* line 8, ../sass/_titleSubtitle.sass */
+.subtitle {
+  font-family: "effra" sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}

@@ -1,0 +1,320 @@
+@import bourbon/bourbon
+
+$fontKep: 'kepler std' serif
+$fontEffra: 'effra' sans-serif
+$generalOrange: #F24E41
+$borderDimension: 15px
+
+
+/*----------- GENERAL STYLE -----------*/
+body
+	font-family: $fontKep
+	padding: $borderDimension
+	
+	a
+		color: $generalOrange
+
+/*----------- BORDER FIXED SECTION -----------*/
+
+.borderGeneric
+	position: fixed
+	background-color: $generalOrange
+	z-index: 12
+	-webkit-transition: background-color .5s ease
+	transition: background-color .5s ease
+    
+.borderGenericOrizzontal
+	@extend .borderGeneric
+	height: $borderDimension
+	left: 0
+	right: 0
+
+.borderGenericVertical
+	@extend .borderGeneric
+	width: $borderDimension
+	top: 0
+	bottom: 0
+
+.borderNorth
+	@extend .borderGenericOrizzontal
+	top: 0
+
+.borderSouth
+	@extend .borderGenericOrizzontal
+	bottom: 0
+
+.borderEast
+	@extend .borderGenericVertical
+	right: 0
+
+.borderWest
+	@extend .borderGenericVertical
+	left: 0
+
+/*----------- END BORDER FIXED SECTION -----------*/
+
+/*----------- MENU ICON -----------*/
+
+.menuRow
+	margin-top: 50px
+	z-index: 999999
+	position: relative
+	
+	.menu
+		cursor: pointer
+		z-index: 9
+		position: relative
+		float: right
+		margin-right: 55px
+		@media screen and (max-width: 769px)
+			margin-right: 25px
+
+		.menuContent
+			height: 26px
+			width: 41px
+			position: relative
+			-webkit-transform-origin: 50%
+			transform-origin: 50%
+			@include transition(transform .2s ease)
+
+			.menuItem
+				display: block
+				border: 1px solid $generalOrange
+				position: absolute
+				width: 100%
+				top: 0
+				bottom: 0
+				height: 3px
+				margin: auto
+				background: $generalOrange
+				@include transition(background-color .5s ease, border-color .5s ease)
+		
+			&:after
+				content: " "
+				height: 3px
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				border: 1px solid $generalOrange
+				background: $generalOrange
+				@include transition(background-color .5s ease, border-color .5s ease, transform .2s ease)
+			
+			&:before
+				content: " "
+				height: 3px
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				border: 1px solid #F24E41
+				background: #F24E41
+				@include transition(background-color .5s ease, border-color .5s ease, transform .2s ease)
+
+			&:hover:after
+				@include transform(translateY(2px))
+			
+			&:hover:before
+				@include transform(translateY(-2px))
+  
+		&.opened
+			.menuContent
+				@include transform(rotate(90deg))
+				
+				&:before, &:after, & .menuItem
+					background-color: #fff
+					border-color: #fff
+
+	
+	
+	.logoContainer
+		float: left
+		margin: 0 0 0 55px
+		@media screen and (max-width: 769px)
+			margin-left: 25px
+
+		.logo
+			width: 55px
+			min-width: 40px
+			z-index: 9
+			position: relative
+			display: inline-block
+
+			svg
+				fill: #F24E41
+				-webkit-transition: fill .7s ease
+				transition: fill .7s ease
+	
+	.languageBar
+		float: right
+		margin-right: 50px
+		line-height: 26px
+		width: 40px
+		max-height: 30px
+		overflow: hidden
+		@include transition(max-height .2s ease)
+
+
+		&:hover
+			max-height: 80px
+
+		.languageEntry
+			text-transform: uppercase
+			color: $generalOrange
+			font-family: $fontEffra
+			font-weight: "bold"
+			font-size: 14x
+			letter-spacing: 2px
+			cursor: pointer
+			@include transition(color .5s ease)
+
+
+/*----------- MENU BODY -----------*/
+.overlayMenu
+	background-color: $generalOrange
+	position: fixed
+	height: 100%
+	top: 0
+	width: 100%
+	opacity: 0
+	visibility: hidden
+	@include transition(opacity .5s ease, visibility 0s ease .5s)
+	
+		
+	& > div.valign-wrapper
+		height: 100%
+
+	& > div > ul
+		width: 100%
+
+		.menuEntry
+			text-align: right
+			text-transform: uppercase
+			margin: 42px 0
+			cursor: pointer
+			overflow: hidden
+			padding-right: 75px
+			@include transform(translateX(400px))
+			@include transition(transform .4s ease)
+
+			a
+				color: #fff
+				font-family: $fontEffra
+				font-weight: bold
+				font-size: 32px
+				letter-spacing: 6px
+				opacity: .3
+				overflow: hidden
+				display: inline-block
+				width: 100%
+				max-width: 900px
+				@include transition(opacity .4s ease)
+
+				&:after
+					content: " "
+					height: 1px
+					width: 100%
+					display: block
+					background-color: #fff
+					margin-top: 18px
+					margin-left: 105%
+					@include transition(margin-left .4s ease)
+					@media screen and (max-width: 992px)
+						display: none
+
+				.description
+					font-size: 20px
+					float: left
+					font-family: 'kepler std'
+					text-transform: none
+					font-weight: normal
+					opacity: 0
+					@include transform(translateY(10px))
+					vertical-align: bottom
+					margin-top: 10px
+					letter-spacing: 0
+					@include transition(transform .5s ease .3s, opacity .5s ease .3s)
+					
+					@media screen and (max-width: 992px)
+						display: none
+	
+				&:hover
+					opacity: 1
+					
+					&:after
+						margin-left: 0
+	
+					.description
+						opacity: 1
+						@include transform(translateY(0))
+		
+	.socialBar
+		position: absolute
+		bottom: 96px
+		left: 0
+		right: 0
+		text-align: center
+
+		.socialEntry
+			font-family: 'effra'
+			font-weight: bold
+			font-size: 16px
+			letter-spacing: 2px
+			line-height: 19px
+			@media screen and (max-width: 769px)
+				display: none
+
+			.socialEntryLink
+				color: #fff
+				opacity: .4
+				@include transition(opacity .4s ease)
+				
+				&:hover
+					opacity: 1
+		
+		.socialEntryMobile
+			display: none
+			@media screen and (max-width: 769px)
+				display: block
+			
+			.socialEntryLink
+				@extend .socialEntryLink
+
+		
+body.openedMenu
+	overflow: hidden
+
+	.logoContainer
+		.logo
+			svg
+				fill: #fff
+	
+	.languageBar
+		position: relative
+		z-index: 9
+
+		.languageEntry
+			color: #fff
+
+	.overlayMenu
+		left: 0
+		opacity: 1
+		visibility: visible
+		@include transition(opacity .4s ease, visibility 0s ease)
+		
+		.menuEntry
+			@include transform(translateX(0))
+		
+			&:nth-child(1)
+				@include transition(transform .4s ease .2s)
+
+			&:nth-child(2)
+				@include transition(transform .4s ease .3s)
+
+			&:nth-child(3)
+				@include transition(transform .4s ease .4s)
+
+			&:nth-child(4)
+				@include transition(transform .4s ease .5s)
+//Capire dove mettere questo stile.
+@import titleSubtitle
