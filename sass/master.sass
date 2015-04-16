@@ -20,8 +20,7 @@ body
 	position: fixed
 	background-color: $generalOrange
 	z-index: 12
-	-webkit-transition: background-color .5s ease
-	transition: background-color .5s ease
+	@include transition(background-color .5s ease)
     
 .borderGenericOrizzontal
 	@extend .borderGeneric
@@ -73,8 +72,7 @@ body
 			height: 26px
 			width: 41px
 			position: relative
-			-webkit-transform-origin: 50%
-			transform-origin: 50%
+			@include transform-origin(50%)
 			@include transition(transform .2s ease)
 
 			.menuItem
@@ -107,8 +105,8 @@ body
 				top: 0
 				left: 0
 				right: 0
-				border: 1px solid #F24E41
-				background: #F24E41
+				border: 1px solid $generalOrange
+				background: $generalOrange
 				@include transition(background-color .5s ease, border-color .5s ease, transform .2s ease)
 
 			&:hover:after
@@ -125,8 +123,6 @@ body
 					background-color: #fff
 					border-color: #fff
 
-	
-	
 	.logoContainer
 		float: left
 		margin: 0 0 0 55px
@@ -141,9 +137,8 @@ body
 			display: inline-block
 
 			svg
-				fill: #F24E41
-				-webkit-transition: fill .7s ease
-				transition: fill .7s ease
+				fill: $generalOrange
+				@include transition(fill .7s ease)
 	
 	.languageBar
 		float: right
@@ -225,7 +220,7 @@ body
 				.description
 					font-size: 20px
 					float: left
-					font-family: 'kepler std'
+					font-family: $fontKep
 					text-transform: none
 					font-weight: normal
 					opacity: 0
@@ -234,7 +229,6 @@ body
 					margin-top: 10px
 					letter-spacing: 0
 					@include transition(transform .5s ease .3s, opacity .5s ease .3s)
-					
 					@media screen and (max-width: 992px)
 						display: none
 	
