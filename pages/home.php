@@ -31,8 +31,7 @@
                     ?>
                 </p>
                 <p class="subtitle">
-                    <?=tr_("subtitleRow1")?><br/>
-                    <?=tr_("subtitleRow2")?>
+                    <?=tr_("subtitleRow1")?>
                 </p>
                 <div class="buttonRow">
 					<button class="homeButton">
@@ -43,11 +42,13 @@
 					</button>
                 </div>
             </div>
+<!--
             <div class="lowRow">
                 <div class="first"><?=tr_("lowRowString1", array(Date("H:i")))?></div>
                 <div class="center"><img src="img/Icona.svg"></div>
                 <div class="second"><?=tr_("lowRowString2")?></div>
             </div>
+-->
 		</div>
 		
 	<?php }

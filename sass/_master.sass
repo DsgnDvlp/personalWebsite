@@ -3,7 +3,22 @@ $fontKep: 'kepler std' serif
 $fontEffra: 'effra' sans-serif
 $generalOrange: #F24E41
 $borderDimension: 15px
+$marginTopFromBorder: 50px
+$lateralMarginFromBorder: 45px
 
+=titleLight
+	font-family: $fontEffra
+	font-weight: 300
+	font-size: 28px
+	letter-spacing: 1
+	line-height: 42px
+
+=titleBold
+	font-family: $fontEffra
+	font-weight: bold
+	font-size: 40px
+	letter-spacing: 10px
+	line-height: 48px
 
 /*----------- GENERAL STYLE -----------*/
 body
@@ -55,7 +70,7 @@ body
 /*----------- MENU ICON -----------*/
 
 .menuRow
-	margin-top: 50px
+	margin-top: $marginTopFromBorder
 	z-index: 999999
 	position: relative
 	
@@ -64,7 +79,7 @@ body
 		z-index: 9
 		position: relative
 		float: right
-		margin-right: 55px
+		margin-right: $lateralMarginFromBorder
 		@media screen and (max-width: 769px)
 			margin-right: 25px
 
@@ -125,7 +140,7 @@ body
 
 	.logoContainer
 		float: left
-		margin: 0 0 0 55px
+		margin: 0 0 0 $lateralMarginFromBorder
 		@media screen and (max-width: 769px)
 			margin-left: 25px
 
@@ -142,7 +157,7 @@ body
 	
 	.languageBar
 		float: right
-		margin-right: 50px
+		margin-right: 45px
 		line-height: 26px
 		width: 40px
 		max-height: 30px
