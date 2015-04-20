@@ -1,0 +1,97 @@
+@import meyer-reset
+@import bourbon/bourbon
+@import gridSetting
+@import neat/neat
+@import master
+	
+.container
+	position: absolute
+	right: 15px
+	left: 15px
+	top: 0
+	bottom: 0
+	+outer-container()
+	@include align-items(stretch)
+	@include display(flex)
+	@include flex-direction(row)
+	@include justify-content(flex-start)
+	@media screen and (max-width: 769px)
+		min-height: 800px
+
+	.homeContent
+		text-align: center
+		margin: auto
+		@include flex(1)
+
+		.buttonRow
+			margin-top: 50px
+			+row()
+
+			.homeButton
+				font-family: $fontEffra
+				font-weight: bold
+				font-size: 16px
+				letter-spacing: 2px
+				line-height: 52px
+				height: 55px
+				width: 100%
+				//max-width: 200px
+				border: 2px solid #000
+				background: transparent
+				text-transform: uppercase
+				margin-top: 20px
+				@include transition(color .5s ease, background-color .5s ease)
+				+span-columns(2)
+				@media screen and (max-width: 620px)
+					+span-columns(12)
+					display: block
+					float: none
+					margin: 30px auto !important
+					width: 100% !important
+	
+				&:first-child
+					+shift(4)
+				
+				&:last-child
+					+shift(1)
+	
+				&:hover, &:active, &:focus
+					color: #fff
+					background-color: $generalOrange
+					border-color: $generalOrange
+	
+	.lowRow
+		text-align: center
+		font-family: $fontEffra
+		font-weight: bold
+		font-size: 16px
+		letter-spacing: 2px
+		position: absolute
+		bottom: 30px
+		left: 0
+		right: 0
+		line-height: 76px
+		text-transform: uppercase
+		+row()
+
+		.first
+			text-align: right
+			display: inline-block
+			+span-columns(6)
+
+		.center
+			text-align: center
+			display: inline-block
+			height: 74px
+			vertical-align: middle
+			+span-columns(1)
+			@media screen and (max-width: 769px)
+				margin: 0 25px
+	
+		.second
+			text-align: left
+			display: inline-block
+			+span-columns(6)
+			@media screen and (max-width: 769px)
+				display: none
+

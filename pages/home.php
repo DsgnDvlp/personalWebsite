@@ -11,8 +11,8 @@
 	function content($path){ ?>
 		<!-- 		CONTENUTO DELLA PAGINA	 -->
 		
-		<div class="container valign-wrapper">
-            <div class="homeContent valign center-align">
+		<div class="container">
+            <div class="homeContent">
                 <p class="mainTitle">
                     <?php 
                         /* CALCOLO DELL'ORA PER IL CAMBIO DEL MESSAGGIO*/
@@ -34,20 +34,16 @@
                     <?=tr_("subtitleRow1")?><br/>
                     <?=tr_("subtitleRow2")?>
                 </p>
-                <div class="row buttonRow">
-                    <div class="col s10 offset-s1 m5 offset-m1">
-                        <button class="homeButton">
-                            <?=tr_("homeButtonDeath")?>
-                        </button>
-                    </div>
-                    <div class="col s10 offset-s1 m5">
-                        <button class="homeButton">
-                            <?=tr_("homeButtonStuff")?>
-                        </button>
-                    </div>
+                <div class="buttonRow">
+					<button class="homeButton">
+						<?=tr_("homeButtonDeath")?>
+					</button>
+					<button class="homeButton">
+						<?=tr_("homeButtonStuff")?>
+					</button>
                 </div>
             </div>
-            <div class="lowRow row">
+            <div class="lowRow">
                 <div class="first"><?=tr_("lowRowString1", array(Date("H:i")))?></div>
                 <div class="center"><img src="img/Icona.svg"></div>
                 <div class="second"><?=tr_("lowRowString2")?></div>

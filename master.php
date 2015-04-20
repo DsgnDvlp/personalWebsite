@@ -19,13 +19,9 @@
         <script>try{Typekit.load();}catch(e){}</script>
         
         <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/master.css"  media="screen,projection"/>
 
         <!--Let browser know website is optimized for mobile-->
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/master.js"></script>
         <script type="text/javascript">
             
@@ -37,7 +33,7 @@
     
 
     <body>
-       <div class="row menuRow">
+       <div class="menuRow">
             <div class="logoContainer">
                 <div class="logo">
                     <a href="index"><?php include __DIR__."/img/Logo.svg"; ?></a>
@@ -62,8 +58,8 @@
         
         <!--   MENU   -->
         <div class="overlayMenu">
-            <div class="valign-wrapper">
-                <ul class="valign">
+            <div class="overlayMenuContainer">
+                <ul class="menuContent">
                     <li class="menuEntry">
                         <a href="about">
                             <span class="description">Wanna know something about me?</span>
@@ -90,25 +86,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="socialBar row">
-                <div class="socialEntry col s2 offset-s1"><a class="socialEntryLink" href="#">facebook</a></div>
-                <div class="socialEntry col s2"><a class="socialEntryLink" href="#">twitter</a></div>
-                <div class="socialEntry col s2"><a class="socialEntryLink" href="#">behance</a></div>
-                <div class="socialEntry col s2"><a class="socialEntryLink" href="#">medium</a></div>
-                <div class="socialEntry col s2"><a class="socialEntryLink" href="#">linkedin</a></div>
-                <div class="socialEntryMobile col s2 offset-s1"><a class="socialEntryLink" href="#">
+            <div class="socialBar">
+                <div class="socialEntry"><a class="socialEntryLink" href="#">facebook</a></div>
+                <div class="socialEntry"><a class="socialEntryLink" href="#">twitter</a></div>
+                <div class="socialEntry"><a class="socialEntryLink" href="#">behance</a></div>
+                <div class="socialEntry"><a class="socialEntryLink" href="#">medium</a></div>
+                <div class="socialEntry"><a class="socialEntryLink" href="#">linkedin</a></div>
+                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
                     <img src="img/facebook.svg" alt=""/>
                 </a></div>
-                <div class="socialEntryMobile col s2"><a class="socialEntryLink" href="#">
+                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
                     <img src="img/twitter.svg" alt=""/>
                 </a></div>
-                <div class="socialEntryMobile col s2"><a class="socialEntryLink" href="#">
+                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
                     <img src="img/behance.svg" alt=""/>
                 </a></div>
-                <div class="socialEntryMobile col s2"><a class="socialEntryLink" href="#">
+                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
                     <img src="img/medium.svg" alt="">
                 </a></div>
-                <div class="socialEntryMobile col s2"><a class="socialEntryLink" href="#">
+                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
                     <img src="img/linkedin.svg" alt="">
                 </a></div>
             </div>
