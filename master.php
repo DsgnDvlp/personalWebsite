@@ -87,26 +87,36 @@
                 </ul>
             </div>
             <div class="socialBar">
-                <div class="socialEntry"><a class="socialEntryLink" href="#">facebook</a></div>
-                <div class="socialEntry"><a class="socialEntryLink" href="#">twitter</a></div>
-                <div class="socialEntry"><a class="socialEntryLink" href="#">behance</a></div>
-                <div class="socialEntry"><a class="socialEntryLink" href="#">medium</a></div>
-                <div class="socialEntry"><a class="socialEntryLink" href="#">linkedin</a></div>
-                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
-                    <img src="img/facebook.svg" alt=""/>
-                </a></div>
-                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
-                    <img src="img/twitter.svg" alt=""/>
-                </a></div>
-                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
-                    <img src="img/behance.svg" alt=""/>
-                </a></div>
-                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
-                    <img src="img/medium.svg" alt="">
-                </a></div>
-                <div class="socialEntryMobile"><a class="socialEntryLink" href="#">
-                    <img src="img/linkedin.svg" alt="">
-                </a></div>
+                <div class="socialEntry">
+                	<a class="socialEntryLink" href="#">
+                		<span class="socialDesktop">facebook</span>
+                		<img class="socialMobile" src="img/facebook.svg" alt=""/>
+                	</a>
+                </div>
+                <div class="socialEntry">
+                	<a class="socialEntryLink" href="#">
+                		<span class="socialDesktop">twitter</span>
+                		<img class="socialMobile" src="img/twitter.svg" alt=""/>
+                	</a>
+                </div>
+                <div class="socialEntry">
+                	<a class="socialEntryLink" href="#">
+                		<span class="socialDesktop">behance</span>
+                		<img class="socialMobile" src="img/behance.svg" alt=""/>
+                	</a>
+                </div>
+                <div class="socialEntry">
+                	<a class="socialEntryLink" href="#">
+                		<span class="socialDesktop">medium</span>
+                		<img class="socialMobile" src="img/medium.svg" alt="">
+                	</a>
+                </div>
+                <div class="socialEntry">
+					<a class="socialEntryLink" href="#">
+                		<span class="socialDesktop">linkedin</span>
+                		<img class="socialMobile" src="img/linkedin.svg" alt="">
+                	</a>
+                </div>
             </div>
         </div>
         

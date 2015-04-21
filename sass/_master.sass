@@ -219,7 +219,7 @@ body
 				margin: 42px 0
 				cursor: pointer
 				overflow: hidden
-				padding-right: 75px
+				padding-right: 60px
 				@include transform(translateX(400px))
 				@include transition(transform .4s ease)
 
@@ -281,45 +281,50 @@ body
 		text-align: center
 		+row()
 
-		.socialEntryLink
-			color: #fff
-			opacity: .4
-			@include transition(opacity .4s ease)
-
-			&:hover
-				opacity: 1
-
 		.socialEntry
 			font-family: 'effra'
 			font-weight: bold
 			font-size: 16px
 			letter-spacing: 2px
 			line-height: 19px
-			+span-columns(2, block-collapse)
-			@media screen and (max-width: 769px)
-				display: none
+			+span-columns(2)
 	
 			&:first-child
-				+shift(1)
+				+shift(1.5)
+				@media screen and (max-width: 769px)
+					+shift(1)
 		
-		.socialEntryMobile
-			+span-columns(2, block-collapse)
-			display: none
-			height: 50px
-			position: relative
-			@media screen and (max-width: 769px)
-				display: block
-			
-			&:nth-child(6)
-				+shift(1)
-
-			a
-				bottom: 0
-				position: absolute
-				left: 0
-				right: 0
-				img
+			.socialEntryLink
+				color: #fff
+				position: relative
+				display: inline-block
+				width: 100%
+	
+				.socialDesktop
+					opacity: .4
+					@include transition(opacity .4s ease, transform .4s ease)
+					@media screen and (max-width: 769px)
+						display: none
+		
+				.socialMobile
+					bottom: 0
+					position: absolute
+					left: 0
+					right: 0
+					margin: auto
+					opacity: 0
 					vertical-align: bottom !important
+					@include transition(opacity .4s ease)
+					@media screen and (max-width: 769px)
+						opacity: 1
+	
+				&:hover
+					.socialDesktop
+						opacity: 0
+						@include transform(scale(0, 0))
+				
+					.socialMobile
+						opacity: 1
 	
 body.openedMenu
 	overflow: hidden
