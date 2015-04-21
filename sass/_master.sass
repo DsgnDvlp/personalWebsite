@@ -1,6 +1,6 @@
 
-$fontKep: 'kepler std' serif
-$fontEffra: 'effra' sans-serif
+$fontKep: 'kepler std', serif
+$fontEffra: 'effra', sans-serif
 $generalOrange: #F24E41
 $borderDimension: 15px
 $marginTopFromBorder: 50px
@@ -282,7 +282,7 @@ body
 		+row()
 
 		.socialEntry
-			font-family: 'effra'
+			font-family: $fontEffra
 			font-weight: bold
 			font-size: 16px
 			letter-spacing: 2px
@@ -302,6 +302,7 @@ body
 	
 				.socialDesktop
 					opacity: .4
+					display: block
 					@include transition(opacity .4s ease, transform .4s ease)
 					@media screen and (max-width: 769px)
 						display: none
