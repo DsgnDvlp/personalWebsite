@@ -29,6 +29,8 @@
             
         <!-- SPECIFIC PAGE HEADER PLACEHOLDER -->
         <?php echo head($path); ?>
+        
+        <link type="text/css" rel="stylesheet" href="css/designerCheImparano.css"/>	
     </head>
     
 
