@@ -14,7 +14,7 @@
         "lowRowString1" => "Sono le %s. Bisogno di un caffè?",
         "lowRowString2" => "COME BACK FOR NEW GIFTS",
         //BUTTONS
-        "homeButtonDeath" => "I am death",
+        "homeButtonDeath" => "Who am I?",
         "homeButtonStuff" => " Good \$tuff"
     );
 

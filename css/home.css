@@ -76,7 +76,7 @@ body:before {
   width: 100%;
   z-index: -1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
   /* line 12, ../sass/neat/grid/_visual-grid.scss */
   body:before {
     background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 12.3076923077%, transparent 12.3076923077%, transparent 14.6153846154%, #eee 14.6153846154%, #eee 26.9230769231%, transparent 26.9230769231%, transparent 29.2307692308%, #eee 29.2307692308%, #eee 41.5384615385%, transparent 41.5384615385%, transparent 43.8461538462%, #eee 43.8461538462%, #eee 56.1538461538%, transparent 56.1538461538%, transparent 58.4615384615%, #eee 58.4615384615%, #eee 70.7692307692%, transparent 70.7692307692%, transparent 73.0769230769%, #eee 73.0769230769%, #eee 85.3846153846%, transparent 85.3846153846%, transparent 87.6923076923%, #eee 87.6923076923%, #eee 100%, transparent 100%);
@@ -514,9 +514,8 @@ body a {
   color: #fff;
   position: relative;
   display: inline-block;
-  width: 100%;
 }
-/* line 303, ../sass/_master.sass */
+/* line 302, ../sass/_master.sass */
 .overlayMenu .socialBar .socialEntry .socialEntryLink .socialDesktop {
   opacity: 0.4;
   display: block;
@@ -525,12 +524,12 @@ body a {
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 @media screen and (max-width: 769px) {
-  /* line 303, ../sass/_master.sass */
+  /* line 302, ../sass/_master.sass */
   .overlayMenu .socialBar .socialEntry .socialEntryLink .socialDesktop {
     display: none;
   }
 }
-/* line 310, ../sass/_master.sass */
+/* line 309, ../sass/_master.sass */
 .overlayMenu .socialBar .socialEntry .socialEntryLink .socialMobile {
   bottom: 0;
   position: absolute;
@@ -544,12 +543,12 @@ body a {
   transition: opacity 0.4s ease;
 }
 @media screen and (max-width: 769px) {
-  /* line 310, ../sass/_master.sass */
+  /* line 309, ../sass/_master.sass */
   .overlayMenu .socialBar .socialEntry .socialEntryLink .socialMobile {
     opacity: 1;
   }
 }
-/* line 323, ../sass/_master.sass */
+/* line 322, ../sass/_master.sass */
 .overlayMenu .socialBar .socialEntry .socialEntryLink:hover .socialDesktop {
   opacity: 0;
   -webkit-transform: scale(0, 0);
@@ -558,29 +557,29 @@ body a {
   -o-transform: scale(0, 0);
   transform: scale(0, 0);
 }
-/* line 327, ../sass/_master.sass */
+/* line 326, ../sass/_master.sass */
 .overlayMenu .socialBar .socialEntry .socialEntryLink:hover .socialMobile {
   opacity: 1;
 }
 
-/* line 330, ../sass/_master.sass */
+/* line 329, ../sass/_master.sass */
 body.openedMenu {
   overflow: hidden;
 }
-/* line 335, ../sass/_master.sass */
+/* line 334, ../sass/_master.sass */
 body.openedMenu .logoContainer .logo svg {
   fill: #fff;
 }
-/* line 338, ../sass/_master.sass */
+/* line 337, ../sass/_master.sass */
 body.openedMenu .languageBar {
   position: relative;
   z-index: 9;
 }
-/* line 342, ../sass/_master.sass */
+/* line 341, ../sass/_master.sass */
 body.openedMenu .languageBar .languageEntry {
   color: #fff;
 }
-/* line 345, ../sass/_master.sass */
+/* line 344, ../sass/_master.sass */
 body.openedMenu .overlayMenu {
   left: 0;
   opacity: 1;
@@ -589,7 +588,7 @@ body.openedMenu .overlayMenu {
   -moz-transition: opacity 0.4s ease, visibility 0s ease;
   transition: opacity 0.4s ease, visibility 0s ease;
 }
-/* line 354, ../sass/_master.sass */
+/* line 353, ../sass/_master.sass */
 body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -597,25 +596,25 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-/* line 357, ../sass/_master.sass */
+/* line 356, ../sass/_master.sass */
 body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-child(1) {
   -webkit-transition: -webkit-transform 0.4s ease 0.2s;
   -moz-transition: -moz-transform 0.4s ease 0.2s;
   transition: transform 0.4s ease 0.2s;
 }
-/* line 360, ../sass/_master.sass */
+/* line 359, ../sass/_master.sass */
 body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-child(2) {
   -webkit-transition: -webkit-transform 0.4s ease 0.3s;
   -moz-transition: -moz-transform 0.4s ease 0.3s;
   transition: transform 0.4s ease 0.3s;
 }
-/* line 363, ../sass/_master.sass */
+/* line 362, ../sass/_master.sass */
 body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-child(3) {
   -webkit-transition: -webkit-transform 0.4s ease 0.4s;
   -moz-transition: -moz-transform 0.4s ease 0.4s;
   transition: transform 0.4s ease 0.4s;
 }
-/* line 366, ../sass/_master.sass */
+/* line 365, ../sass/_master.sass */
 body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-child(4) {
   -webkit-transition: -webkit-transform 0.4s ease 0.5s;
   -moz-transition: -moz-transform 0.4s ease 0.5s;
@@ -731,7 +730,6 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
   line-height: 17px;
   line-height: 50px;
   height: 55px;
-  width: 100%;
   border: 2px solid #000;
   background: transparent;
   text-transform: uppercase;
@@ -748,30 +746,40 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
 .container .homeContent .buttonRow .homeButton:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 620px) {
-  /* line 39, ../sass/home.sass */
-  .container .homeContent .buttonRow .homeButton {
+/* line 52, ../sass/home.sass */
+.container .homeContent .buttonRow .homeButton:first-child {
+  margin-left: 31.1475409836%;
+}
+@media screen and (max-width: 880px) {
+  /* line 52, ../sass/home.sass */
+  .container .homeContent .buttonRow .homeButton:first-child {
     float: left;
     display: block;
-    margin-right: 1.2295081967%;
-    width: 92.2131147541%;
-    display: block;
-    float: none;
-    margin: 30px auto !important;
-    width: 100% !important;
+    margin-right: 2.3076923077%;
+    width: 41.5384615385%;
+    margin-left: 29.2307692308%;
   }
   /* line 89, ../sass/neat/grid/_span-columns.scss */
-  .container .homeContent .buttonRow .homeButton:last-child {
+  .container .homeContent .buttonRow .homeButton:first-child:last-child {
     margin-right: 0;
   }
 }
 /* line 58, ../sass/home.sass */
-.container .homeContent .buttonRow .homeButton:first-child {
-  margin-left: 31.1475409836%;
-}
-/* line 61, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:last-child {
+  float: left;
+  display: block;
+  width: 15.5737704918%;
   margin-left: 7.7868852459%;
+}
+/* line 81, ../sass/neat/grid/_span-columns.scss */
+.container .homeContent .buttonRow .homeButton:last-child:last-child {
+  width: 14.3442622951%;
+}
+@media screen and (max-width: 880px) {
+  /* line 58, ../sass/home.sass */
+  .container .homeContent .buttonRow .homeButton:last-child {
+    display: none;
+  }
 }
 /* line 64, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:hover, .container .homeContent .buttonRow .homeButton:active, .container .homeContent .buttonRow .homeButton:focus {

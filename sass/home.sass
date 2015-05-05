@@ -40,26 +40,26 @@
 				+subtitleBold
 				line-height: 50px
 				height: 55px
-				width: 100%
+				//width: 100%
 				//max-width: 200px
 				border: 2px solid #000
 				background: transparent
 				text-transform: uppercase
 				margin-top: 20px
 				@include transition(color .5s ease, background-color .5s ease)
-				+span-columns(2)
-				@media screen and (max-width: 620px)
-					+span-columns(12)
-					display: block
-					float: none
-					margin: 30px auto !important
-					width: 100% !important
+				+span-columns(2, block)
 	
 				&:first-child
 					+shift(4)
+					@include media($tablet)
+						+span-columns(3)
+						+shift(2)
 				
 				&:last-child
+					+span-columns(2, block-collapse)
 					+shift(1)
+					@include media($tablet)
+						display: none
 	
 				&:hover, &:active, &:focus
 					color: #fff
