@@ -25,9 +25,18 @@
 		<!-- 		CONTENUTO DELLA PAGINA	 -->
 		
 		<div id="fullpage">
-            <div class="section active">Section 1</div>
-            <div class="section">Section 2</div>
-            <div class="section">Section 3</div>
+            <div class="section first active">
+            	<div class="container">
+            		<div class="title">hola</div>
+            		<div class="subtitle">
+            			<p>I’m a 24 years old designer from Italy, born in Lima Perù, currently living in Milan.</p>
+						<br/>
+						<p>I work for a web agency and as a freelancer &amp; consultant for digital realities.</p>
+            		</div>
+            	</div>
+            </div>
+            <div class="section second">Section 2</div>
+            <div class="section third">Section 3</div>
             <div class="section">Section 4</div>
         </div>
 		

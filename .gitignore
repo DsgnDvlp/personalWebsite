@@ -1,2 +1,6 @@
 .ftpsync_settings
 sass/.sass-cache
+
+*.codekit
+
+config.codekit

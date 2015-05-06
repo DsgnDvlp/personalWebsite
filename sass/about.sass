@@ -1,0 +1,34 @@
+@import meyer-reset
+@import bourbon/bourbon
+@import gridSetting
+@import neat/neat
+@import master
+	
+body
+	padding: 15px
+
+
+	#fullpage
+		position: absolute !important
+		top: 0
+		left: $borderDimension
+		right: $borderDimension
+		
+		.section.first
+			background-image: url(../img/backgroundAbout.png)
+			background-position: 100% 100%
+			background-size: 50%
+			background-repeat: no-repeat
+
+			.container
+				+outer-container()
+				.title
+					+titleBold
+					text-transform: uppercase
+					+span-columns(12)
+					margin-bottom: 35px
+
+				.subtitle
+					+titleLight
+					max-width: 424px
+					+span-columns(12)
