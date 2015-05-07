@@ -57,11 +57,17 @@ body {
   height: 15px;
   left: 0;
   right: 0; }
+  @media screen and (max-width: 769px) {
+    .borderGenericOrizzontal, .borderNorth, .borderSouth {
+      height: 10px; } }
 
 .borderGenericVertical, .borderEast, .borderWest {
   width: 15px;
   top: 0;
   bottom: 0; }
+  @media screen and (max-width: 769px) {
+    .borderGenericVertical, .borderEast, .borderWest {
+      width: 10px; } }
 
 .borderNorth {
   top: 0; }
@@ -81,6 +87,9 @@ body {
   margin-top: 50px;
   z-index: 999999;
   position: relative; }
+  @media screen and (max-width: 769px) {
+    .menuRow {
+      margin-top: 15px; } }
   .menuRow .menu {
     cursor: pointer;
     z-index: 9;
@@ -275,6 +284,9 @@ body {
         -webkit-transition: -webkit-transform 0.4s ease;
         -moz-transition: -moz-transform 0.4s ease;
         transition: transform 0.4s ease; }
+        @media screen and (max-width: 769px) {
+          .overlayMenu .overlayMenuContainer .menuContent .menuEntry {
+            margin: 30px 0; } }
         .overlayMenu .overlayMenuContainer .menuContent .menuEntry a {
           color: #fff;
           font-family: "effra", sans-serif;
@@ -289,6 +301,12 @@ body {
           -webkit-transition: opacity 0.4s ease;
           -moz-transition: opacity 0.4s ease;
           transition: opacity 0.4s ease; }
+          @media screen and (max-width: 769px) {
+            .overlayMenu .overlayMenuContainer .menuContent .menuEntry a {
+              font-family: "effra", sans-serif;
+              font-weight: bold;
+              font-size: 25px;
+              letter-spacing: 5px; } }
           .overlayMenu .overlayMenuContainer .menuContent .menuEntry a:after {
             content: " ";
             height: 1px;
@@ -346,6 +364,9 @@ body {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (max-width: 769px) {
+      .overlayMenu .socialBar {
+        bottom: 55px; } }
     .overlayMenu .socialBar .socialEntry {
       font-family: "effra", sans-serif;
       font-weight: bold;

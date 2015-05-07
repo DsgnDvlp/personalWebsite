@@ -3,7 +3,10 @@ $fontKep: 'kepler std', serif
 $fontEffra: 'effra', sans-serif
 $generalOrange: #F24E41
 $borderDimension: 15px
+$borderDimensionMobile: 10px
 $marginTopFromBorder: 50px
+$marginTopFromBorderMobile: 15px
+$mobileMaxWidth: 769px
 $lateralMarginFromBorder: 45px
 
 //General styles
@@ -29,6 +32,18 @@ $lateralMarginFromBorder: 45px
 	letter-spacing: 2px
 	line-height: 17px
 
+=menuFont
+	font-family: $fontEffra
+	font-weight: bold
+	font-size: 32px
+	letter-spacing: 6px
+
+=menuFontMobile
+	font-family: $fontEffra
+	font-weight: bold
+	font-size: 25px
+	letter-spacing: 5px
+
 
 /*----------- GENERAL STYLE -----------*/
 body
@@ -52,12 +67,16 @@ body
 	height: $borderDimension
 	left: 0
 	right: 0
+	@media screen and (max-width: $mobileMaxWidth)
+		height: $borderDimensionMobile
 
 .borderGenericVertical
 	@extend .borderGeneric
 	width: $borderDimension
 	top: 0
 	bottom: 0
+	@media screen and (max-width: $mobileMaxWidth)
+		width: $borderDimensionMobile
 
 .borderNorth
 	@extend .borderGenericOrizzontal
@@ -83,14 +102,16 @@ body
 	margin-top: $marginTopFromBorder
 	z-index: 999999
 	position: relative
-	
+	@media screen and (max-width: $mobileMaxWidth)
+		margin-top: $marginTopFromBorderMobile
+
 	.menu
 		cursor: pointer
 		z-index: 9
 		position: relative
 		float: right
 		margin-right: $lateralMarginFromBorder
-		@media screen and (max-width: 769px)
+		@media screen and (max-width: $mobileMaxWidth)
 			margin-right: 25px
 
 		.menuContent
@@ -222,20 +243,21 @@ body
 				padding-right: 60px
 				@include transform(translateX(400px))
 				@include transition(transform .4s ease)
-
+				@media screen and (max-width: $mobileMaxWidth)
+					margin: 30px 0
+				
 				a
 					color: #fff
-					font-family: $fontEffra
-					font-weight: bold
-					font-size: 32px
-					letter-spacing: 6px
+					+menuFont
 					opacity: .3
 					overflow: hidden
 					display: inline-block
 					width: 100%
 					max-width: 900px
 					@include transition(opacity .4s ease)
-
+					@media screen and (max-width: $mobileMaxWidth)
+						+menuFontMobile
+				
 					&:after
 						content: " "
 						height: 1px
@@ -280,6 +302,8 @@ body
 		right: 0
 		text-align: center
 		+row()
+		@media screen and (max-width: 769px)
+			bottom: 55px
 
 		.socialEntry
 			font-family: $fontEffra
