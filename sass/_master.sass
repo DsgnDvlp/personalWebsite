@@ -1,3 +1,8 @@
+@import meyer-reset
+@import bourbon/bourbon
+@import gridSetting
+@import neat/neat
+@import typo
 
 $fontKep: 'kepler std', serif
 $fontEffra: 'effra', sans-serif
@@ -10,40 +15,6 @@ $mobileMaxWidth: 769px
 $lateralMarginFromBorder: 45px
 
 //General styles
-
-=titleBold
-	font-family: $fontEffra
-	font-weight: bold
-	font-size: 40px
-	letter-spacing: 10px
-	line-height: 48px
-
-=titleLight
-	font-family: $fontEffra
-	font-weight: 300
-	font-size: 28px
-	letter-spacing: 1
-	line-height: 42px
-
-=subtitleBold
-	font-family: $fontEffra
-	font-size: 	14px
-	font-weight: bold
-	letter-spacing: 2px
-	line-height: 17px
-
-=menuFont
-	font-family: $fontEffra
-	font-weight: bold
-	font-size: 32px
-	letter-spacing: 6px
-
-=menuFontMobile
-	font-family: $fontEffra
-	font-weight: bold
-	font-size: 25px
-	letter-spacing: 5px
-
 
 /*----------- GENERAL STYLE -----------*/
 body
@@ -203,8 +174,8 @@ body
 			text-transform: uppercase
 			color: $generalOrange
 			font-family: $fontEffra
-			font-weight: "bold"
-			font-size: 14x
+			font-weight: bold
+			font-size: 14px
 			letter-spacing: 2px
 			cursor: pointer
 			@include transition(color .5s ease)

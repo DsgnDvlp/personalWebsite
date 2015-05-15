@@ -34,6 +34,16 @@
 						<p>I work for a web agency and as a freelancer &amp; consultant for digital realities.</p>
             		</div>
             	</div>
+            	<div class="pageTitle">about</div>
+            	<div class="footer">
+            		<div class="goDown"><span class="text">go down</span><br/>
+            			<div class="lineDown"></div>
+            		</div>
+            		<div class="breadCrumbs">
+						<span>what i do</span>
+						<span>my cv</span>
+            		</div>
+            	</div>
             </div>
             <div class="section second">Section 2</div>
             <div class="section third">Section 3</div>

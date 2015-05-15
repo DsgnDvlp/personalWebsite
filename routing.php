@@ -11,7 +11,7 @@
 
 <?php
 	$url = explode("/", $_SERVER["REQUEST_URI"]);
-	switch ($url[2]) {
+	switch ($url[1]) {
 		case '':
 		case 'index':
 			include "pages/home.php";
