@@ -65,6 +65,8 @@ body
 
 					.text
 						cursor: pointer
+						background-color: #fff
+						padding: 10px 0
 
 					.lineDown
 						display: inline-block
@@ -84,3 +86,102 @@ body
 					
 						&:first-child
 							margin-right: 26px
+	
+			.topPanel
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				height: 77px
+				text-align: center
+			
+				.text
+					+subtitleBold
+					cursor: pointer
+					background-color: #fff
+					padding: 10px 0
+					line-height: 144px
+					color: $generalOrange
+					text-transform: uppercase
+					z-index: 9
+					position: relative
+	
+			.centerLine
+				position: absolute
+				border-left: 1px solid $generalOrange
+				width: 0
+				right: 0
+				left: 0
+				margin: auto
+				top: 0
+				bottom: 0
+			
+			.centerBlock
+				position: absolute
+				border: 3px solid $generalOrange	
+				width: 265px
+				height: 209px
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				margin: auto
+				background-color: #fff
+				+titleBold
+				text-transform: uppercase
+				color: $generalOrange
+				@include align-items(stretch)
+				@include display(flex)
+				@include flex-direction(row)
+				@include justify-content(flex-start)
+				text-align: center
+			
+				.text
+					@include flex(1)
+					margin: auto
+					max-width: 75%
+	
+			.contentBlockContainer
+				position: absolute
+				top: 0
+				bottom: 0
+				margin: auto
+				@include align-items(stretch)
+				@include display(flex)
+				@include flex-direction(column)
+				@include justify-content(space-around)
+	
+				.contentBlock
+					position: relative
+					//@include flex(1)
+					&:first-child
+						margin-bottom: 17vh
+				
+					img
+						opacity: .1
+						position: absolute
+						bottom: 0
+						top: 0
+						margin: auto
+						&.visual
+							opacity: 1
+
+					.title
+						+mediumFont
+						text-transform: uppercase
+						margin-bottom: 10px
+
+					.content
+						font-size: 16px
+						max-width: 232px
+
+				&.left
+					left: 45px
+					img
+						right: 0
+
+				&.right
+					right: 45px
+					text-align: right
+					img
+						left: 0

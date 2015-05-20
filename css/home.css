@@ -708,7 +708,15 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
   line-height: 48px;
   margin-top: 58px;
 }
-/* line 26, ../sass/home.sass */
+@media screen and (max-width: 769px) {
+  /* line 22, ../sass/home.sass */
+  .container .homeContent .mainTitle {
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 30px;
+  }
+}
+/* line 28, ../sass/home.sass */
 .container .homeContent .subtitle {
   font-family: "effra", sans-serif;
   font-weight: 300;
@@ -718,7 +726,16 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
   max-width: 520px;
   margin: 5px auto 0;
 }
-/* line 31, ../sass/home.sass */
+@media screen and (max-width: 769px) {
+  /* line 28, ../sass/home.sass */
+  .container .homeContent .subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    max-width: 350px;
+  }
+}
+/* line 36, ../sass/home.sass */
 .container .homeContent .buttonRow {
   margin-top: 40px;
   display: block;
@@ -729,7 +746,7 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
   content: "";
   display: table;
 }
-/* line 35, ../sass/home.sass */
+/* line 40, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -754,12 +771,12 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
 .container .homeContent .buttonRow .homeButton:last-child {
   margin-right: 0;
 }
-/* line 48, ../sass/home.sass */
+/* line 53, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:first-child {
   margin-left: 31.1475409836%;
 }
 @media screen and (max-width: 880px) {
-  /* line 48, ../sass/home.sass */
+  /* line 53, ../sass/home.sass */
   .container .homeContent .buttonRow .homeButton:first-child {
     float: left;
     display: block;
@@ -772,7 +789,7 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
     margin-right: 0;
   }
 }
-/* line 54, ../sass/home.sass */
+/* line 59, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:last-child {
   float: left;
   display: block;
@@ -784,12 +801,12 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
   width: 14.3442622951%;
 }
 @media screen and (max-width: 880px) {
-  /* line 54, ../sass/home.sass */
+  /* line 59, ../sass/home.sass */
   .container .homeContent .buttonRow .homeButton:last-child {
     display: none;
   }
 }
-/* line 60, ../sass/home.sass */
+/* line 65, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:hover, .container .homeContent .buttonRow .homeButton:active, .container .homeContent .buttonRow .homeButton:focus {
   color: #fff;
   background-color: #F24E41;

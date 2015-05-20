@@ -22,11 +22,16 @@
 		.mainTitle
 			+titleBold
 			margin-top: 58px
+			@media screen and (max-width: $mobileMaxWidth)
+				+titleBoldMobile
 
 		.subtitle
 			+titleLight
 			max-width: 520px
 			margin: 5px auto 0
+			@media screen and (max-width: $mobileMaxWidth)
+				+titleLightMobile
+				max-width: 350px
 		
 		.buttonRow
 			margin-top: 40px

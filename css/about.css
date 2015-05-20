@@ -800,15 +800,17 @@ body #fullpage .section .footer .goDown {
 /* line 66, ../sass/about.sass */
 body #fullpage .section .footer .goDown .text {
   cursor: pointer;
+  background-color: #fff;
+  padding: 10px 0;
 }
-/* line 69, ../sass/about.sass */
+/* line 71, ../sass/about.sass */
 body #fullpage .section .footer .goDown .lineDown {
   display: inline-block;
   border-left: 1px solid #F24E41;
   height: 50px;
   margin-top: 10px;
 }
-/* line 75, ../sass/about.sass */
+/* line 77, ../sass/about.sass */
 body #fullpage .section .footer .breadCrumbs {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -820,11 +822,209 @@ body #fullpage .section .footer .breadCrumbs {
   right: 45px;
   top: 0;
 }
-/* line 82, ../sass/about.sass */
+/* line 84, ../sass/about.sass */
 body #fullpage .section .footer .breadCrumbs span {
   cursor: pointer;
 }
-/* line 85, ../sass/about.sass */
+/* line 87, ../sass/about.sass */
 body #fullpage .section .footer .breadCrumbs span:first-child {
   margin-right: 26px;
+}
+/* line 90, ../sass/about.sass */
+body #fullpage .section .topPanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 77px;
+  text-align: center;
+}
+/* line 98, ../sass/about.sass */
+body #fullpage .section .topPanel .text {
+  font-family: "effra", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 17px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 10px 0;
+  line-height: 144px;
+  color: #F24E41;
+  text-transform: uppercase;
+  z-index: 9;
+  position: relative;
+}
+/* line 109, ../sass/about.sass */
+body #fullpage .section .centerLine {
+  position: absolute;
+  border-left: 1px solid #F24E41;
+  width: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+/* line 119, ../sass/about.sass */
+body #fullpage .section .centerBlock {
+  position: absolute;
+  border: 3px solid #F24E41;
+  width: 265px;
+  height: 209px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+  font-family: "effra", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 10px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #F24E41;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  text-align: center;
+}
+/* line 139, ../sass/about.sass */
+body #fullpage .section .centerBlock .text {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: auto;
+  max-width: 75%;
+}
+/* line 144, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+}
+/* line 154, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer .contentBlock {
+  position: relative;
+}
+/* line 157, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer .contentBlock:first-child {
+  margin-bottom: 17vh;
+}
+/* line 160, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer .contentBlock img {
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+/* line 166, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer .contentBlock img.visual {
+  opacity: 1;
+}
+/* line 169, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer .contentBlock .title {
+  font-family: "effra", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* line 174, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer .contentBlock .content {
+  font-size: 16px;
+  max-width: 232px;
+}
+/* line 178, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.left {
+  left: 45px;
+}
+/* line 180, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.left img {
+  right: 0;
+}
+/* line 183, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.right {
+  right: 45px;
+  text-align: right;
+}
+/* line 186, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.right img {
+  left: 0;
 }
