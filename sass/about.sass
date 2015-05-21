@@ -73,19 +73,6 @@ body
 						border-left: 1px solid $generalOrange
 						height: 50px
 						margin-top: 10px
-				
-				.breadCrumbs
-					+subtitleBold
-					text-transform: uppercase
-					position: absolute
-					right: 45px
-					top: 0
-					
-					span
-						cursor: pointer
-					
-						&:first-child
-							margin-right: 26px
 	
 			.topPanel
 				position: absolute
@@ -177,11 +164,50 @@ body
 
 				&.left
 					left: 45px
-					img
-						right: 0
+					.contentBlock
+						left: -300px
+						position: relative
+						&:first-child
+							@include transition(left .3s ease)
+						&:last-child
+							@include transition(left .3s ease .2s)
+						
+						img
+							right: 0
 
 				&.right
 					right: 45px
 					text-align: right
-					img
-						left: 0
+					
+					.contentBlock
+						left: 300px
+						position: relative
+						&:first-child
+							@include transition(left .3s ease .4s)
+						&:last-child
+							@include transition(left .3s ease .6s)
+							
+						img
+							left: 0
+		
+			&.second.loaded
+				.contentBlock
+					left: 0
+
+	.breadCrumbs
+		+subtitleBold
+		text-transform: uppercase
+		position: absolute
+		right: 60px
+		bottom: 60px
+
+		span 
+			a
+				cursor: pointer
+				color: #000
+				@include transition(color .3s ease)
+
+			&:first-child
+				margin-right: 26px
+			&.active a
+				color: $generalOrange

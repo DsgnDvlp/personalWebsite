@@ -811,26 +811,6 @@ body #fullpage .section .footer .goDown .lineDown {
   margin-top: 10px;
 }
 /* line 77, ../sass/about.sass */
-body #fullpage .section .footer .breadCrumbs {
-  font-family: "effra", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  line-height: 17px;
-  text-transform: uppercase;
-  position: absolute;
-  right: 45px;
-  top: 0;
-}
-/* line 84, ../sass/about.sass */
-body #fullpage .section .footer .breadCrumbs span {
-  cursor: pointer;
-}
-/* line 87, ../sass/about.sass */
-body #fullpage .section .footer .breadCrumbs span:first-child {
-  margin-right: 26px;
-}
-/* line 90, ../sass/about.sass */
 body #fullpage .section .topPanel {
   position: absolute;
   top: 0;
@@ -839,7 +819,7 @@ body #fullpage .section .topPanel {
   height: 77px;
   text-align: center;
 }
-/* line 98, ../sass/about.sass */
+/* line 85, ../sass/about.sass */
 body #fullpage .section .topPanel .text {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -855,7 +835,7 @@ body #fullpage .section .topPanel .text {
   z-index: 9;
   position: relative;
 }
-/* line 109, ../sass/about.sass */
+/* line 96, ../sass/about.sass */
 body #fullpage .section .centerLine {
   position: absolute;
   border-left: 1px solid #F24E41;
@@ -866,7 +846,7 @@ body #fullpage .section .centerLine {
   top: 0;
   bottom: 0;
 }
-/* line 119, ../sass/about.sass */
+/* line 106, ../sass/about.sass */
 body #fullpage .section .centerBlock {
   position: absolute;
   border: 3px solid #F24E41;
@@ -922,7 +902,7 @@ body #fullpage .section .centerBlock {
   -ms-flex-pack: start;
   text-align: center;
 }
-/* line 139, ../sass/about.sass */
+/* line 126, ../sass/about.sass */
 body #fullpage .section .centerBlock .text {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -934,7 +914,7 @@ body #fullpage .section .centerBlock .text {
   margin: auto;
   max-width: 75%;
 }
-/* line 144, ../sass/about.sass */
+/* line 131, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer {
   position: absolute;
   top: 0;
@@ -976,15 +956,15 @@ body #fullpage .section .contentBlockContainer {
   justify-content: space-around;
   -ms-flex-pack: distribute;
 }
-/* line 154, ../sass/about.sass */
+/* line 141, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock {
   position: relative;
 }
-/* line 157, ../sass/about.sass */
+/* line 144, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock:first-child {
   margin-bottom: 17vh;
 }
-/* line 160, ../sass/about.sass */
+/* line 147, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock img {
   opacity: 0.1;
   position: absolute;
@@ -992,11 +972,11 @@ body #fullpage .section .contentBlockContainer .contentBlock img {
   top: 0;
   margin: auto;
 }
-/* line 166, ../sass/about.sass */
+/* line 153, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock img.visual {
   opacity: 1;
 }
-/* line 169, ../sass/about.sass */
+/* line 156, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock .title {
   font-family: "effra", sans-serif;
   font-weight: bold;
@@ -1006,25 +986,91 @@ body #fullpage .section .contentBlockContainer .contentBlock .title {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-/* line 174, ../sass/about.sass */
+/* line 161, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock .content {
   font-size: 16px;
   max-width: 232px;
 }
-/* line 178, ../sass/about.sass */
+/* line 165, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left {
   left: 45px;
 }
-/* line 180, ../sass/about.sass */
-body #fullpage .section .contentBlockContainer.left img {
+/* line 167, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.left .contentBlock {
+  left: -300px;
+  position: relative;
+}
+/* line 170, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.left .contentBlock:first-child {
+  -webkit-transition: left 0.3s ease;
+  -moz-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+/* line 172, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.left .contentBlock:last-child {
+  -webkit-transition: left 0.3s ease 0.2s;
+  -moz-transition: left 0.3s ease 0.2s;
+  transition: left 0.3s ease 0.2s;
+}
+/* line 175, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.left .contentBlock img {
   right: 0;
 }
-/* line 183, ../sass/about.sass */
+/* line 178, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right {
   right: 45px;
   text-align: right;
 }
-/* line 186, ../sass/about.sass */
-body #fullpage .section .contentBlockContainer.right img {
+/* line 182, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.right .contentBlock {
+  left: 300px;
+  position: relative;
+}
+/* line 185, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.right .contentBlock:first-child {
+  -webkit-transition: left 0.3s ease 0.4s;
+  -moz-transition: left 0.3s ease 0.4s;
+  transition: left 0.3s ease 0.4s;
+}
+/* line 187, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.right .contentBlock:last-child {
+  -webkit-transition: left 0.3s ease 0.6s;
+  -moz-transition: left 0.3s ease 0.6s;
+  transition: left 0.3s ease 0.6s;
+}
+/* line 190, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.right .contentBlock img {
   left: 0;
+}
+/* line 194, ../sass/about.sass */
+body #fullpage .section.second.loaded .contentBlock {
+  left: 0;
+}
+/* line 197, ../sass/about.sass */
+body .breadCrumbs {
+  font-family: "effra", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 17px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+}
+/* line 205, ../sass/about.sass */
+body .breadCrumbs span a {
+  cursor: pointer;
+  color: #000;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+/* line 210, ../sass/about.sass */
+body .breadCrumbs span:first-child {
+  margin-right: 26px;
+}
+/* line 212, ../sass/about.sass */
+body .breadCrumbs span.active a {
+  color: #F24E41;
 }

@@ -36,17 +36,13 @@
             	</div>
             	<div class="pageTitle">about</div>
             	<div class="footer">
-            		<div class="goDown"><span class="text">go down</span><br/>
+            		<div class="goDown"><a href="#whatido"><span class="text">go down</span></a><br/>
             			<div class="lineDown"></div>
-            		</div>
-            		<div class="breadCrumbs">
-						<span>what i do</span>
-						<span>my cv</span>
             		</div>
             	</div>
             </div>
             <div class="section second">
-            	<div class="topPanel"><span class="text">back</span></div>
+				<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
             	<div class="centerLine"></div>
             	<div class="centerBlock"><span class="text">what i do</span></div>
             	
@@ -82,16 +78,15 @@
             		</div>
             	</div>
             	<div class="footer">
-            		<div class="goDown"><span class="text">keep going down</span><br/>
-            		</div>
-            		<div class="breadCrumbs">
-						<span>what i do</span>
-						<span>my cv</span>
+					<div class="goDown"><a href="#mycv"><span class="text">keep going down</span></a><br/>
             		</div>
             	</div>
             </div>
-            <div class="section third">Section 3</div>
-            <div class="section">Section 4</div>
+            <div class="section third">CV DOWNLOAD</div>
+        </div>
+        <div class="breadCrumbs">
+			<span class="whatido"><a href="#whatido">what i do</a></span>
+			<span class="mycv"><a href="#mycv">my cv</a></span>
         </div>
 		
 	<?php }
