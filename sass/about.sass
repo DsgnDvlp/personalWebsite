@@ -3,17 +3,34 @@
 @import gridSetting
 @import neat/neat
 @import master
-	
+
++keyframes(centerLineConstruction)
+	0%
+		bottom: 100%
+	10%
+		@include calc(bottom, "100% - 60px")
+	20%
+		@include calc(bottom, "100% - 60px")
+	40%
+		@include calc(bottom, "50% + 105px")
+	65%
+		@include calc(bottom, "50% + 105px")
+	85%
+		bottom: 80px
+	95%
+		bottom: 80px
+	100%
+		bottom: 0
+
 body
 	padding: 15px
-
 
 	#fullpage
 		position: absolute !important
 		top: 0
 		left: $borderDimension
 		right: $borderDimension
-		
+
 		.section
 			&.first
 				background-image: url(../img/backgroundAbout.png)
@@ -33,8 +50,8 @@ body
 					+titleLight
 					max-width: 424px
 					+span-columns(12)
-	
-	
+
+
 			.pageTitle
 				position: absolute
 				right: 45px
@@ -48,15 +65,15 @@ body
 				text-transform: uppercase
 				@include transform-origin(100% 100%)
 				@include transform(rotate(-90deg))
-	
-	
+
+
 			.footer
 				position: absolute
 				bottom: 0
 				left: 0
 				right: 0
 				height: 77px
-	
+
 				.goDown
 					+subtitleBold
 					color: $generalOrange
@@ -67,13 +84,15 @@ body
 						cursor: pointer
 						background-color: #fff
 						padding: 10px 0
+						opacity: 0
+						@include transition(opacity .5s ease 8.5s)
 
 					.lineDown
 						display: inline-block
 						border-left: 1px solid $generalOrange
 						height: 50px
 						margin-top: 10px
-	
+
 			.topPanel
 				position: absolute
 				top: 0
@@ -81,7 +100,7 @@ body
 				right: 0
 				height: 77px
 				text-align: center
-			
+
 				.text
 					+subtitleBold
 					cursor: pointer
@@ -92,7 +111,9 @@ body
 					text-transform: uppercase
 					z-index: 9
 					position: relative
-	
+					opacity: 0
+					@include transition(opacity 1s ease 1s)
+
 			.centerLine
 				position: absolute
 				border-left: 1px solid $generalOrange
@@ -102,10 +123,11 @@ body
 				margin: auto
 				top: 0
 				bottom: 0
-			
+				bottom: 100%
+
 			.centerBlock
 				position: absolute
-				border: 3px solid $generalOrange	
+				border: 3px solid $generalOrange
 				width: 265px
 				height: 209px
 				left: 0
@@ -122,12 +144,14 @@ body
 				@include flex-direction(row)
 				@include justify-content(flex-start)
 				text-align: center
-			
+				opacity: 0
+				@include transition(opacity .5s ease)
+
 				.text
 					@include flex(1)
 					margin: auto
 					max-width: 75%
-	
+
 			.contentBlockContainer
 				position: absolute
 				top: 0
@@ -137,13 +161,13 @@ body
 				@include display(flex)
 				@include flex-direction(column)
 				@include justify-content(space-around)
-	
+
 				.contentBlock
 					position: relative
 					//@include flex(1)
 					&:first-child
 						margin-bottom: 17vh
-				
+
 					img
 						opacity: .1
 						position: absolute
@@ -168,31 +192,43 @@ body
 						left: -300px
 						position: relative
 						&:first-child
-							@include transition(left .3s ease)
+							@include transition(left .3s ease 10s)
 						&:last-child
-							@include transition(left .3s ease .2s)
-						
+							@include transition(left .3s ease 10.2s)
+
 						img
 							right: 0
 
 				&.right
 					right: 45px
 					text-align: right
-					
+
 					.contentBlock
 						left: 300px
 						position: relative
 						&:first-child
-							@include transition(left .3s ease .4s)
+							@include transition(left .3s ease 10.4s)
 						&:last-child
-							@include transition(left .3s ease .6s)
-							
+							@include transition(left .3s ease 10.6s)
+
 						img
 							left: 0
-		
+
 			&.second.loaded
 				.contentBlock
 					left: 0
+
+				.centerLine
+					@include animation(centerLineConstruction 10s ease)
+					bottom: 0
+
+				.topPanel
+					.text
+						opacity: 1
+				.footer
+					.goDown
+						.text
+							opacity: 1
 
 	.breadCrumbs
 		+subtitleBold
@@ -201,7 +237,7 @@ body
 		right: 60px
 		bottom: 60px
 
-		span 
+		span
 			a
 				cursor: pointer
 				color: #000

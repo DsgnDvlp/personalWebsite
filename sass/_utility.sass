@@ -1,0 +1,19 @@
+// keyframes mixin
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+ 
+// use of keyframes mixin
++keyframes(bgcolor)
+  0%
+    background-color: #ffccf2
+  50%
+    background-color: #ccffcc
+  100%
+    background-color: #ccffff

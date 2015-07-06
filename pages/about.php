@@ -1,10 +1,10 @@
 
 <?php
-	$path = "";	
+	$path = "";
 
 	//USER CONTROLLER PER L'HEAD
-	function head($path){ ?>		
-       
+	function head($path){ ?>
+
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/about.css"/>
 
@@ -16,14 +16,14 @@
         <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 
         <script type="text/javascript" src="js/about.js"></script>
-        
-        
+
+
 	<?php }
-	
+
 	//user controll per il content..
 	function content($path){ ?>
 		<!-- 		CONTENUTO DELLA PAGINA	 -->
-		
+
 		<div id="fullpage">
             <div class="section first active">
             	<div class="container">
@@ -42,21 +42,21 @@
             	</div>
             </div>
             <div class="section second">
-				<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
+							<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
             	<div class="centerLine"></div>
             	<div class="centerBlock"><span class="text">what i do</span></div>
-            	
+
             	<div class="contentBlockContainer left">
             		<div class="contentBlockContent">
             			<div class="contentBlock">
-            				<img src="../img/uxUi.svg"/>
+            				<img src="./img/uxUi.svg"/>
             				<p class="title">UX / UI</p>
-            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in 
+            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in
             			memories lost.</p>
             			</div>
             			<div class="contentBlock">
             				<p class="title">web</p>
-            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in 
+            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in
             			memories lost.</p>
             			</div>
             		</div>
@@ -64,15 +64,15 @@
             	<div class="contentBlockContainer right">
             		<div class="contentBlockContent">
             			<div class="contentBlock">
-            				<img class="visual" src="../img/visual.svg" />
+            				<img class="visual" src="./img/visual.svg" />
             				<p class="title">visual</p>
-            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in 
+            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in
             			memories lost.</p>
             			</div>
             			<div class="contentBlock">
-            				<img src="../img/graphic.svg" />
+            				<img src="./img/graphic.svg" />
             				<p class="title">graphic</p>
-            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in 
+            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in
             			memories lost.</p>
             			</div>
             		</div>
@@ -88,7 +88,7 @@
 			<span class="whatido"><a href="#whatido">what i do</a></span>
 			<span class="mycv"><a href="#mycv">my cv</a></span>
         </div>
-		
+
 	<?php }
 
 	//chiamata alla masterPage

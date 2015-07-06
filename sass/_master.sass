@@ -3,6 +3,7 @@
 @import gridSetting
 @import neat/neat
 @import typo
+@import utility
 
 $fontKep: 'kepler std', serif
 $fontEffra: 'effra', sans-serif
@@ -20,6 +21,17 @@ $lateralMarginFromBorder: 45px
 body
 	font-family: $fontKep
 	padding: $borderDimension
+	opacity: 0
+	@include transition(opacity .5s ease .2s)
+
+	.generalContainer
+		opacity: 0
+		@include transition(opacity .5s ease .8s)
+
+	&.loaded
+		opacity: 1
+		.generalContainer
+			opacity: 1
 
 	a
 		color: $generalOrange
@@ -32,7 +44,7 @@ body
 	background-color: $generalOrange
 	z-index: 12
 	@include transition(background-color .5s ease)
-    
+
 .borderGenericOrizzontal
 	@extend .borderGeneric
 	height: $borderDimension
@@ -103,7 +115,7 @@ body
 				margin: auto
 				background: $generalOrange
 				@include transition(background-color .5s ease, border-color .5s ease)
-		
+
 			&:after
 				content: " "
 				height: 3px
@@ -114,7 +126,7 @@ body
 				border: 1px solid $generalOrange
 				background: $generalOrange
 				@include transition(background-color .5s ease, border-color .5s ease, transform .2s ease)
-			
+
 			&:before
 				content: " "
 				height: 3px
@@ -128,14 +140,14 @@ body
 
 			&:hover:after
 				@include transform(translateY(2px))
-			
+
 			&:hover:before
 				@include transform(translateY(-2px))
-  
+
 		&.opened
 			.menuContent
 				@include transform(rotate(90deg))
-				
+
 				&:before, &:after, & .menuItem
 					background-color: #fff
 					border-color: #fff
@@ -156,7 +168,7 @@ body
 			svg
 				fill: $generalOrange
 				@include transition(fill .7s ease)
-	
+
 	.languageBar
 		float: right
 		margin-right: 45px
@@ -191,8 +203,8 @@ body
 	opacity: 0
 	visibility: hidden
 	@include transition(opacity .5s ease, visibility 0s ease .5s)
-	
-		
+
+
 	.overlayMenuContainer
 		height: 100%
 		@include align-items(stretch)
@@ -216,7 +228,7 @@ body
 				@include transition(transform .4s ease)
 				@media screen and (max-width: $mobileMaxWidth)
 					margin: 30px 0
-				
+
 				a
 					color: #fff
 					+menuFont
@@ -228,7 +240,7 @@ body
 					@include transition(opacity .4s ease)
 					@media screen and (max-width: $mobileMaxWidth)
 						+menuFontMobile
-				
+
 					&:after
 						content: " "
 						height: 1px
@@ -265,7 +277,7 @@ body
 						.description
 							opacity: 1
 							@include transform(translateY(0))
-		
+
 	.socialBar
 		position: absolute
 		bottom: 96px
@@ -283,24 +295,24 @@ body
 			letter-spacing: 2px
 			line-height: 19px
 			+span-columns(2)
-	
+
 			&:first-child
 				+shift(1.5)
 				@media screen and (max-width: 769px)
 					+shift(1)
-		
+
 			.socialEntryLink
 				color: #fff
 				position: relative
 				display: inline-block
-	
+
 				.socialDesktop
 					opacity: .4
 					display: block
 					@include transition(opacity .4s ease, transform .4s ease)
 					@media screen and (max-width: 769px)
 						display: none
-		
+
 				.socialMobile
 					bottom: 0
 					position: absolute
@@ -312,15 +324,15 @@ body
 					@include transition(opacity .4s ease)
 					@media screen and (max-width: 769px)
 						opacity: 1
-	
+
 				&:hover
 					.socialDesktop
 						opacity: 0
 						@include transform(scale(0, 0))
-				
+
 					.socialMobile
 						opacity: 1
-	
+
 body.openedMenu
 	overflow: hidden
 
@@ -328,7 +340,7 @@ body.openedMenu
 		.logo
 			svg
 				fill: #fff
-	
+
 	.languageBar
 		position: relative
 		z-index: 9
@@ -341,10 +353,10 @@ body.openedMenu
 		opacity: 1
 		visibility: visible
 		@include transition(opacity .4s ease, visibility 0s ease)
-		
+
 		.overlayMenuContainer
 			.menuContent
-	
+
 				.menuEntry
 					@include transform(translateX(0))
 
@@ -359,3 +371,10 @@ body.openedMenu
 
 					&:nth-child(4)
 						@include transition(transform .4s ease .5s)
+
+.svgElement
+	border: 0 !important
+	fill: transparent
+	opacity: 1 !important
+	background-color: transparent
+	z-index: -1

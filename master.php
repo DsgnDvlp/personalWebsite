@@ -56,8 +56,9 @@
             </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
-        <?php echo content($path); ?>
-        
+        <div class="generalContainer">
+        	<?php echo content($path); ?>
+        </div>
         <!--   MENU   -->
         <div class="overlayMenu">
             <div class="overlayMenuContainer">
