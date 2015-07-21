@@ -45,6 +45,9 @@
 							<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
             	<div class="centerLine"></div>
             	<div class="centerBlock"><span class="text">what i do</span></div>
+							<div class="secondCenteredBlock">
+								Credo che sostanzialmente si possa fare tutto se si segue un metodo preciso e si rispettano
+							</div>
 
             	<div class="contentBlockContainer left">
             		<div class="contentBlockContent">
@@ -82,8 +85,16 @@
             		</div>
             	</div>
             </div>
-            <div class="section third">CV DOWNLOAD</div>
-        </div>
+            <div class="section third">
+				<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
+            	<div class="centerLine"></div>
+				<div class="centerBlock"><span class="text">MY<br/>CV</span></div>
+				<div class="footer">
+            		<div class="goDown"><a href="#"><span class="downloadButton">Download cv</span></a><br/>
+            		</div>
+            	</div>
+        	</div>
+		</div>
         <div class="breadCrumbs">
 			<span class="whatido"><a href="#whatido">what i do</a></span>
 			<span class="mycv"><a href="#mycv">my cv</a></span>

@@ -25,16 +25,45 @@ function switchLanguage(language){
     });
 }
 
+function animateBorderDivThird(selector, duration, delay){
+	var $element = $(selector);
+	var width = $element.width();
+	var height = $element.height();
+	var borderWidth = parseInt($element.css("border-top-width"));
+
+	$element.parent().append('<svg id="t" xmlns="http://www.w3.org/2000/svg"/>');
+	var svg = $("#t");
+	svg.attr("class", $element[0].className+ " svgElement");
+	svg.css("stroke", $element.css("border-top-color"));
+	svg.css("stroke-width", borderWidth + "px");
+	svg.css("width", (width + (borderWidth * 2))+"px");
+	svg.css("height", (height + (borderWidth * 2))+"px");
+	var start = (borderWidth/2);
+
+	var path = makeSVG('path', {d:
+		"M"+((width+borderWidth + start)/2) +" "+start+
+		" L"+((width+borderWidth + start)/2) +" "+start+
+		" L"+ start+" "+start+
+		" L"+ start +" "+(height + borderWidth + start) +
+		" L"+((width+borderWidth + start)) + " " + (height + borderWidth + start)+
+		" L"+((width+borderWidth + start)) + " " + start +
+		" L"+((width+borderWidth + start)/2) + " " + start
+	});
+	svg.append(path);
+
+	animateSvg("#t", duration, delay);
+}
+
 function animateBorderDiv(selector, duration, delay){
 	var $element = $(selector);
 	var width = $element.width();
 	var height = $element.height();
-	var borderWidth = parseInt($element.css("border-width"));
+	var borderWidth = parseInt($element.css("border-top-width"));
 
 	$element.parent().append('<svg id="s" xmlns="http://www.w3.org/2000/svg"/>');
 	var svg = $("#s");
 	svg.attr("class", $element[0].className+ " svgElement");
-	svg.css("stroke", $element.css("border-color"));
+	svg.css("stroke", $element.css("border-top-color"));
 	svg.css("stroke-width", borderWidth + "px");
 	svg.css("width", (width + (borderWidth * 2))+"px");
 	svg.css("height", (height + (borderWidth * 2))+"px");

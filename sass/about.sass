@@ -22,6 +22,18 @@
 	100%
 		bottom: 0
 
++keyframes(centerLineConstructionThird)
+	0%
+		bottom: 100%
+	10%
+		@include calc(bottom, "100% - 60px")
+	20%
+		@include calc(bottom, "100% - 60px")
+	40%
+		@include calc(bottom, "50% + 105px")
+	100%
+		@include calc(bottom, "50% + 105px")
+
 body
 	padding: 15px
 
@@ -37,6 +49,10 @@ body
 				background-position: 100% 100%
 				background-size: 50%
 				background-repeat: no-repeat
+				.footer
+					.goDown
+						.text
+							opacity: 1
 
 			.container
 				+outer-container()
@@ -92,6 +108,15 @@ body
 						border-left: 1px solid $generalOrange
 						height: 50px
 						margin-top: 10px
+
+					.downloadButton
+						color: #000
+						border: 2px solid #000
+						padding: 18px 30px
+						opacity: 0
+						position: relative
+						bottom: 20px
+						@include transition(opacity .5s ease 6.5s)
 
 			.topPanel
 				position: absolute
@@ -151,6 +176,28 @@ body
 					@include flex(1)
 					margin: auto
 					max-width: 75%
+
+			.secondCenteredBlock
+				position: absolute
+				width: 265px
+				height: 110px
+				padding: 40px 10px 20px
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				margin: auto
+				@include calc(top, "50% - 220px")
+				background-color: #fff
+				+italicNormalFont
+				color: $generalOrange
+				@include align-items(stretch)
+				@include display(flex)
+				@include flex-direction(row)
+				@include justify-content(flex-start)
+				text-align: center
+				opacity: 0
+				@include transition(opacity .5s ease)
 
 			.contentBlockContainer
 				position: absolute
@@ -230,6 +277,19 @@ body
 						.text
 							opacity: 1
 
+			&.third.loaded
+				.centerLine
+					@include animation(centerLineConstructionThird 10s ease)
+					bottom: 50%
+
+				.topPanel
+					.text
+						opacity: 1
+
+				.footer
+					.goDown
+						.downloadButton
+							opacity: 1
 	.breadCrumbs
 		+subtitleBold
 		text-transform: uppercase
