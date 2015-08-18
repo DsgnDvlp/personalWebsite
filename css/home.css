@@ -810,9 +810,13 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
 /* line 36, ../sass/home.sass */
 .container .homeContent .subtitle .flipCont {
   position: relative;
-  display: block;
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  vertical-align: top;
+  font-style: italic;
 }
-/* line 39, ../sass/home.sass */
+/* line 43, ../sass/home.sass */
 .container .homeContent .subtitle .flipCont span.foo {
   opacity: 0;
   position: absolute;
@@ -822,7 +826,7 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
   display: inline-block;
   white-space: nowrap;
 }
-/* line 48, ../sass/home.sass */
+/* line 52, ../sass/home.sass */
 .container .homeContent .buttonRow {
   margin-top: 40px;
   display: block;
@@ -833,7 +837,7 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
   content: "";
   display: table;
 }
-/* line 52, ../sass/home.sass */
+/* line 56, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -858,12 +862,12 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
 .container .homeContent .buttonRow .homeButton:last-child {
   margin-right: 0;
 }
-/* line 65, ../sass/home.sass */
+/* line 69, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:first-child {
   margin-left: 31.1475409836%;
 }
 @media screen and (max-width: 880px) {
-  /* line 65, ../sass/home.sass */
+  /* line 69, ../sass/home.sass */
   .container .homeContent .buttonRow .homeButton:first-child {
     float: left;
     display: block;
@@ -876,7 +880,7 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
     margin-right: 0;
   }
 }
-/* line 71, ../sass/home.sass */
+/* line 75, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:last-child {
   float: left;
   display: block;
@@ -888,12 +892,12 @@ body.openedMenu .overlayMenu .overlayMenuContainer .menuContent .menuEntry:nth-c
   width: 14.3442622951%;
 }
 @media screen and (max-width: 880px) {
-  /* line 71, ../sass/home.sass */
+  /* line 75, ../sass/home.sass */
   .container .homeContent .buttonRow .homeButton:last-child {
     display: none;
   }
 }
-/* line 77, ../sass/home.sass */
+/* line 81, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:hover, .container .homeContent .buttonRow .homeButton:active, .container .homeContent .buttonRow .homeButton:focus {
   color: #fff;
   background-color: #F24E41;

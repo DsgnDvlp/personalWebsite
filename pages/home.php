@@ -33,12 +33,15 @@
                 </p>
                 <p class="subtitle">
                     <?=tr_("subtitleRow1")?><br/>
+					<?=tr_("subtitleRow2")?>
 					<span class= "flipCont">
-						<span class="foo"><?=tr_("subtitleRow2")?></span>
-						<span class="foo"><?=tr_("subtitleRow2")?></span>
-						<span class="foo"><?=tr_("subtitleRow2")?></span>
-						<span class="foo"><?=tr_("subtitleRow2")?></span>
-						<span class="foo"><?=tr_("subtitleRow2")?></span>
+						<span class="foo"><?=tr_("subtitleRowFlip1")?></span>
+						<span class="foo"><?=tr_("subtitleRowFlip2")?></span>
+						<span class="foo"><?=tr_("subtitleRowFlip3")?></span>
+						<span class="foo"><?=tr_("subtitleRowFlip4")?></span>
+						<span class="foo"><?=tr_("subtitleRowFlip5")?></span>
+						<span class="foo"><?=tr_("subtitleRowFlip6")?></span>
+						<span class="foo"><?=tr_("subtitleRowFlip7")?></span>
 					</span>
                 </p>
                 <div class="buttonRow">
