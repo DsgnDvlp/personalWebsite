@@ -1,0 +1,45 @@
+@import master
+
+/* capire come centrare verricalmente il tutto*/
+body
+	padding: 15px
+
+	.divContainer
+		@include align-items(stretch)
+		@include display(flex)
+		@include flex-direction(row)
+		@include justify-content(flex-start)
+		.section
+			@include flex(1)
+			background-image: url(../img/backgroundAbout.png)
+			background-position: 100% 100%
+			background-size: 50%
+			background-repeat: no-repeat
+
+			.innerContainer
+				+outer-container()
+				.title
+					+titleBold
+					text-transform: uppercase
+					+span-columns(12)
+					margin-bottom: 35px
+
+				.subtitle
+					+titleLight
+					max-width: 424px
+					+span-columns(12)
+
+
+			.pageTitle
+				position: absolute
+				right: 45px
+				width: 400px
+				height: 45px
+				text-align: right
+				bottom: 512px
+				border-bottom: 1px solid $generalOrange
+				+menuFont
+				color: $generalOrange
+				text-transform: uppercase
+				@include transform-origin(100% 100%)
+				@include transform(rotate(-90deg))

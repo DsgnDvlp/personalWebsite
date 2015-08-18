@@ -1,20 +1,21 @@
 
 <?php
-	$path = "";	
+	$path = "";
 
 	//USER CONTROLLER PER L'HEAD
-	function head($path){ ?>		
+	function head($path){ ?>
         <link rel="stylesheet" type="text/css" href="css/home.css"/>
+		<script type = "text/javascript" src="js/home.js"></script>
 	<?php }
-	
+
 	//user controll per il content..
 	function content($path){ ?>
 		<!-- 		CONTENUTO DELLA PAGINA	 -->
-		
+
 		<div class="container">
             <div class="homeContent">
                 <p class="mainTitle">
-                    <?php 
+                    <?php
                         /* CALCOLO DELL'ORA PER IL CAMBIO DEL MESSAGGIO*/
                         $hour = intVal(Date("G"));
                         if($hour >= 6 && $hour < 12){ ?>
@@ -27,11 +28,18 @@
                             <?=tr_("eveningTitle")?>
                         <?php } else{ ?>
                             <?=tr_("nightTitle")?>
-                        <?php } 
+                        <?php }
                     ?>
                 </p>
                 <p class="subtitle">
-                    <?=tr_("subtitleRow1")?>
+                    <?=tr_("subtitleRow1")?><br/>
+					<span class= "flipCont">
+						<span class="foo"><?=tr_("subtitleRow2")?></span>
+						<span class="foo"><?=tr_("subtitleRow2")?></span>
+						<span class="foo"><?=tr_("subtitleRow2")?></span>
+						<span class="foo"><?=tr_("subtitleRow2")?></span>
+						<span class="foo"><?=tr_("subtitleRow2")?></span>
+					</span>
                 </p>
                 <div class="buttonRow">
 					<button class="homeButton">
@@ -50,7 +58,7 @@
             </div>
 -->
 		</div>
-		
+
 	<?php }
 
 	//chiamata alla masterPage
