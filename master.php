@@ -3,7 +3,7 @@
    <?php include_once "lang.php" ?>
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <title>Paul Romero</title>
@@ -11,28 +11,28 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="author" content="DsgnDvlp" />
-        
+
         <!-- CSS RESET -->
         <link type="text/css" rel="stylesheet" href="css/reset.css"  media="screen,projection"/>
-        
+
         <script src="//use.typekit.net/cqp8ytj.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
-        
+
         <!--Import materialize.css-->
 
         <!--Let browser know website is optimized for mobile-->
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/master.js"></script>
         <script type="text/javascript">
-            
+
         </script>
-            
+
         <!-- SPECIFIC PAGE HEADER PLACEHOLDER -->
         <?php echo head($path); ?>
-        
-        <link type="text/css" rel="stylesheet" href="css/designerCheImparano.css"/>	
+
+        <link type="text/css" rel="stylesheet" href="css/designerCheImparano.css"/>
     </head>
-    
+
 
     <body>
        <div class="menuRow">
@@ -122,7 +122,17 @@
                 </div>
             </div>
         </div>
-        
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>
+                <?php
+                    $frasi = array(tr_("footerContent1"), tr_("footerContent2"), tr_("footerContent3"), tr_("footerContent4"), tr_("footerContent1"));
+                    echo $frasi[array_rand($frasi, 1)];
+                ?>
+            </p>
+        </div>
+
         <div class="borderNorth"></div>
 		<div class="borderSouth"></div>
 		<div class="borderEast"></div>

@@ -192,7 +192,13 @@ body
 			cursor: pointer
 			@include transition(color .5s ease)
 
-
+//---------- FOOTER --------------//
+.footer
+	position: absolute
+	bottom: 60px
+	left: 65px
+	+footerFont
+	@include transition(opacity .7s ease)
 /*----------- MENU BODY -----------*/
 .overlayMenu
 	background-color: $generalOrange
@@ -371,6 +377,9 @@ body.openedMenu
 
 					&:nth-child(4)
 						@include transition(transform .4s ease .5s)
+
+	.footer
+		opacity: 0
 
 .svgElement
 	border: 0 !important

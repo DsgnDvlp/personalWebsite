@@ -52,3 +52,5 @@ function rotateText(selector, duration, pause){
     cssAnimation.appendChild(rules2);
     document.getElementsByTagName("head")[0].appendChild(cssAnimation);
     }
+
+

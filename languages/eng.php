@@ -3,10 +3,10 @@
     $resource = array(
         //============================= HOME PAGE =============================//
         //HOUR LANGUAGE
-        "morningTitle" => "GOOD MORNING",
-        "noonTitle" => "TIME TO EAT SOMETHING",
-        "afternoonTitle" => "GOOD AFTERNOON",
-        "eveningTitle" => "PARTY TIME",
+        "morningTitle" => "Good morning",
+        "noonTitle" => "Time to eat something",
+        "afternoonTitle" => "Good afternoon",
+        "eveningTitle" => "Party time",
         "nightTitle" => "Zzzz",
         //SUBTITLE
         "subtitleRow1" => "My name is Paul Jesus Benites Romero &amp;",
@@ -23,7 +23,12 @@
         "lowRowString2" => "COME BACK FOR NEW GIFTS",
         //BUTTONS
         "homeButtonDeath" => "Who am I?",
-        "homeButtonStuff" => " Good \$tuff"
+        "homeButtonStuff" => " Good \$tuff",
+        //FOOTER
+        "footerContent1" => "Contenuto variabile1",
+        "footerContent2" => "Contenuto variabile2",
+        "footerContent3" => "Contenuto variabile3",
+        "footerContent4" => "Contenuto variabile4"
     );
 
 ?>

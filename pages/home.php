@@ -32,7 +32,9 @@
                     ?>
                 </p>
                 <p class="subtitle">
-                    <?=tr_("subtitleRow1")?><br/>
+                    <?=tr_("subtitleRow1")?>
+				</p>
+				<p class="subtitle">
 					<?=tr_("subtitleRow2")?>
 					<span class= "flipCont">
 						<span class="foo"><?=tr_("subtitleRowFlip1")?></span>

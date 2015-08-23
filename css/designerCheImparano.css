@@ -1,17 +1,11 @@
 /* line 22, ../sass/home.sass */
-.container .homeContent .mainTitle {
-  font-family: "effra", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  letter-spacing: 1px;
-  line-height: 48px;
-  margin-top: 58px;
-  
+
   /* line 57, ../sass/about.sass */
 body #fullpage .section .container {
   max-width: 85em;
   margin-left: 2.813em;
-  
+  }
+
   /* line 65, ../sass/about.sass */
 body #fullpage .section .container .subtitle {
   font-family: "effra", sans-serif;
@@ -24,5 +18,5 @@ body #fullpage .section .container .subtitle {
   display: block;
   margin-right: 1.2295081967%;
   width: 92.2131147541%;
-  
-  
+
+  }
