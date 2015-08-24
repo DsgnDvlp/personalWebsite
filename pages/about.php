@@ -29,9 +29,13 @@
             	<div class="container">
             		<div class="title">hola</div>
             		<div class="subtitle">
-            			<p>I’m a 24 years old designer from Italy, born in Lima Perù, currently living in Milan.</p>
+						<p>sono un giovane progettista nato nel 1990 a Lima, Perù.</p>
 						<br/>
-						<p>I work for a web agency and as a freelancer &amp; consultant for digital realities.</p>
+						<p>Attualmente vivo a Milano e lavoro per un’agenzia di comunicazione.</p>
+						</br>
+						<p>Nel mio tempo libero mi piace trovare lavori o progetti nuovi che possano aiutarmi a crescere professionalmente.</p>
+						<br/>
+						<p>E di tanto in tanto scrivo nel mio blog.</p>
             		</div>
             	</div>
             	<div class="pageTitle">about</div>
@@ -85,6 +89,7 @@
             		</div>
             	</div>
             </div>
+			<!-- TODO inserire una sezione identica alla senconda con la parte software skill -->
             <div class="section third">
 				<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
             	<div class="centerLine"></div>

@@ -10,12 +10,12 @@ $(document).ready(function() {
             if(index == 2){
 				if(!$(".section.second").hasClass("loaded")){
                     $(".section.second").addClass("loaded");
-                    animateBorderDiv(".section.second .centerBlock", "2s", "4s");
+                    animateBorderDiv(".section.second .centerBlock", "1s", "2s");
                 }
             }
             if(index == 3){
                 $(".section.third").addClass("loaded");
-                animateBorderDivThird(".section.third .centerBlock", "2s", "4s");
+                animateBorderDivThird(".section.third .centerBlock", "1s", "2s");
             }
 			$(".breadCrumbs span").removeClass("active");
 			$(".breadCrumbs span." + anchorLink).addClass("active");

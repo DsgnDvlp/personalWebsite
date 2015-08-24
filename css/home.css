@@ -798,7 +798,7 @@ body.openedMenu .footer {
   letter-spacing: 1px;
   line-height: 48px;
   margin-top: 58px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 769px) {
   /* line 22, ../sass/home.sass */
@@ -813,9 +813,8 @@ body.openedMenu .footer {
   font-family: "effra", sans-serif;
   font-weight: 300;
   font-size: 28px;
-  letter-spacing: 1;
+  letter-spacing: 1px;
   line-height: 1.3;
-  max-width: 520px;
   margin: 0 auto;
 }
 @media screen and (max-width: 769px) {
@@ -827,7 +826,7 @@ body.openedMenu .footer {
     max-width: 350px;
   }
 }
-/* line 37, ../sass/home.sass */
+/* line 36, ../sass/home.sass */
 .container .homeContent .subtitle .flipCont {
   position: relative;
   display: inline-block;
@@ -840,7 +839,7 @@ body.openedMenu .footer {
   -moz-transition: min-width 0.4s ease, max-width 0.4s ease;
   transition: min-width 0.4s ease, max-width 0.4s ease;
 }
-/* line 47, ../sass/home.sass */
+/* line 46, ../sass/home.sass */
 .container .homeContent .subtitle .flipCont span.foo {
   opacity: 0;
   position: absolute;
@@ -849,7 +848,7 @@ body.openedMenu .footer {
   display: inline-block;
   white-space: nowrap;
 }
-/* line 55, ../sass/home.sass */
+/* line 54, ../sass/home.sass */
 .container .homeContent .buttonRow {
   margin-top: 50px;
   display: block;
@@ -860,7 +859,7 @@ body.openedMenu .footer {
   content: "";
   display: table;
 }
-/* line 59, ../sass/home.sass */
+/* line 58, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -884,12 +883,12 @@ body.openedMenu .footer {
 .container .homeContent .buttonRow .homeButton:last-child {
   margin-right: 0;
 }
-/* line 71, ../sass/home.sass */
+/* line 70, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:first-child {
   margin-left: 31.1475409836%;
 }
 @media screen and (max-width: 880px) {
-  /* line 71, ../sass/home.sass */
+  /* line 70, ../sass/home.sass */
   .container .homeContent .buttonRow .homeButton:first-child {
     float: left;
     display: block;
@@ -902,7 +901,7 @@ body.openedMenu .footer {
     margin-right: 0;
   }
 }
-/* line 77, ../sass/home.sass */
+/* line 76, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:last-child {
   float: left;
   display: block;
@@ -914,12 +913,12 @@ body.openedMenu .footer {
   width: 14.3442622951%;
 }
 @media screen and (max-width: 880px) {
-  /* line 77, ../sass/home.sass */
+  /* line 76, ../sass/home.sass */
   .container .homeContent .buttonRow .homeButton:last-child {
     display: none;
   }
 }
-/* line 83, ../sass/home.sass */
+/* line 82, ../sass/home.sass */
 .container .homeContent .buttonRow .homeButton:hover, .container .homeContent .buttonRow .homeButton:active, .container .homeContent .buttonRow .homeButton:focus {
   color: #fff;
   background-color: #F24E41;

@@ -52,6 +52,8 @@ body
 
 			.container
 				+outer-container()
+				max-width: 85em
+				margin-left: 2.813em
 				.title
 					+titleBold
 					text-transform: uppercase
@@ -60,7 +62,7 @@ body
 
 				.subtitle
 					+titleLight
-					max-width: 424px
+					max-width: 20em
 					+span-columns(12)
 
 
@@ -97,7 +99,7 @@ body
 						background-color: #fff
 						padding: 10px 0
 						opacity: 0
-						@include transition(opacity .5s ease 8.5s)
+						@include transition(opacity .5s ease 4.25s)
 
 					.lineDown
 						display: inline-block
@@ -112,7 +114,7 @@ body
 						opacity: 0
 						position: relative
 						bottom: 20px
-						@include transition(opacity .5s ease 6.5s)
+						@include transition(opacity .5s ease 3.25s)
 
 			.topPanel
 				position: absolute
@@ -133,7 +135,7 @@ body
 					z-index: 9
 					position: relative
 					opacity: 0
-					@include transition(opacity 1s ease 1s)
+					@include transition(opacity 1s ease 0.5s)
 
 			.centerLine
 				position: absolute
@@ -235,9 +237,9 @@ body
 						left: -300px
 						position: relative
 						&:first-child
-							@include transition(left .3s ease 10s)
+							@include transition(left .3s ease 5s)
 						&:last-child
-							@include transition(left .3s ease 10.2s)
+							@include transition(left .3s ease 5.2s)
 
 						img
 							right: 0
@@ -250,9 +252,9 @@ body
 						left: 300px
 						position: relative
 						&:first-child
-							@include transition(left .3s ease 10.4s)
+							@include transition(left .3s ease 5.4s)
 						&:last-child
-							@include transition(left .3s ease 10.6s)
+							@include transition(left .3s ease 5.6s)
 
 						img
 							left: 0
@@ -262,7 +264,7 @@ body
 					left: 0
 
 				.centerLine
-					@include animation(centerLineConstruction 10s ease)
+					@include animation(centerLineConstruction 5s ease)
 					bottom: 0
 
 				.topPanel
@@ -275,7 +277,7 @@ body
 
 			&.third.loaded
 				.centerLine
-					@include animation(centerLineConstructionThird 10s ease)
+					@include animation(centerLineConstructionThird 5s ease)
 					bottom: 50%
 
 				.topPanel

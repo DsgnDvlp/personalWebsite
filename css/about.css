@@ -951,6 +951,8 @@ body #fullpage .section .container {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
+  max-width: 85em;
+  margin-left: 2.813em;
 }
 /* line 20, ../sass/bourbon/addons/_clearfix.scss */
 body #fullpage .section .container::after {
@@ -958,7 +960,7 @@ body #fullpage .section .container::after {
   content: "";
   display: table;
 }
-/* line 55, ../sass/about.sass */
+/* line 57, ../sass/about.sass */
 body #fullpage .section .container .title {
   font-family: "effra", sans-serif;
   font-weight: bold;
@@ -976,14 +978,14 @@ body #fullpage .section .container .title {
 body #fullpage .section .container .title:last-child {
   margin-right: 0;
 }
-/* line 61, ../sass/about.sass */
+/* line 63, ../sass/about.sass */
 body #fullpage .section .container .subtitle {
   font-family: "effra", sans-serif;
   font-weight: 300;
   font-size: 28px;
-  letter-spacing: 1;
+  letter-spacing: 1px;
   line-height: 1.3;
-  max-width: 424px;
+  max-width: 20em;
   float: left;
   display: block;
   margin-right: 1.2295081967%;
@@ -993,7 +995,7 @@ body #fullpage .section .container .subtitle {
 body #fullpage .section .container .subtitle:last-child {
   margin-right: 0;
 }
-/* line 67, ../sass/about.sass */
+/* line 69, ../sass/about.sass */
 body #fullpage .section .pageTitle {
   position: absolute;
   right: 45px;
@@ -1019,7 +1021,7 @@ body #fullpage .section .pageTitle {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 82, ../sass/about.sass */
+/* line 84, ../sass/about.sass */
 body #fullpage .section .footer {
   position: absolute;
   bottom: 0;
@@ -1027,7 +1029,7 @@ body #fullpage .section .footer {
   right: 0;
   height: 77px;
 }
-/* line 89, ../sass/about.sass */
+/* line 91, ../sass/about.sass */
 body #fullpage .section .footer .goDown {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -1038,24 +1040,24 @@ body #fullpage .section .footer .goDown {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 95, ../sass/about.sass */
+/* line 97, ../sass/about.sass */
 body #fullpage .section .footer .goDown .text {
   cursor: pointer;
   background-color: #fff;
   padding: 10px 0;
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease 8.5s;
-  -moz-transition: opacity 0.5s ease 8.5s;
-  transition: opacity 0.5s ease 8.5s;
+  -webkit-transition: opacity 0.5s ease 4.25s;
+  -moz-transition: opacity 0.5s ease 4.25s;
+  transition: opacity 0.5s ease 4.25s;
 }
-/* line 102, ../sass/about.sass */
+/* line 104, ../sass/about.sass */
 body #fullpage .section .footer .goDown .lineDown {
   display: inline-block;
   border-left: 1px solid #F24E41;
   height: 50px;
   margin-top: 10px;
 }
-/* line 108, ../sass/about.sass */
+/* line 110, ../sass/about.sass */
 body #fullpage .section .footer .goDown .downloadButton {
   color: #000;
   border: 2px solid #000;
@@ -1063,11 +1065,11 @@ body #fullpage .section .footer .goDown .downloadButton {
   opacity: 0;
   position: relative;
   bottom: 20px;
-  -webkit-transition: opacity 0.5s ease 6.5s;
-  -moz-transition: opacity 0.5s ease 6.5s;
-  transition: opacity 0.5s ease 6.5s;
+  -webkit-transition: opacity 0.5s ease 3.25s;
+  -moz-transition: opacity 0.5s ease 3.25s;
+  transition: opacity 0.5s ease 3.25s;
 }
-/* line 117, ../sass/about.sass */
+/* line 119, ../sass/about.sass */
 body #fullpage .section .topPanel {
   position: absolute;
   top: 0;
@@ -1076,7 +1078,7 @@ body #fullpage .section .topPanel {
   height: 77px;
   text-align: center;
 }
-/* line 125, ../sass/about.sass */
+/* line 127, ../sass/about.sass */
 body #fullpage .section .topPanel .text {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -1092,11 +1094,11 @@ body #fullpage .section .topPanel .text {
   z-index: 9;
   position: relative;
   opacity: 0;
-  -webkit-transition: opacity 1s ease 1s;
-  -moz-transition: opacity 1s ease 1s;
-  transition: opacity 1s ease 1s;
+  -webkit-transition: opacity 1s ease 0.5s;
+  -moz-transition: opacity 1s ease 0.5s;
+  transition: opacity 1s ease 0.5s;
 }
-/* line 138, ../sass/about.sass */
+/* line 140, ../sass/about.sass */
 body #fullpage .section .centerLine {
   position: absolute;
   border-left: 1px solid #F24E41;
@@ -1108,7 +1110,7 @@ body #fullpage .section .centerLine {
   bottom: 0;
   bottom: 100%;
 }
-/* line 149, ../sass/about.sass */
+/* line 151, ../sass/about.sass */
 body #fullpage .section .centerBlock {
   position: absolute;
   border: 3px solid #F24E41;
@@ -1168,7 +1170,7 @@ body #fullpage .section .centerBlock {
   -moz-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
-/* line 171, ../sass/about.sass */
+/* line 173, ../sass/about.sass */
 body #fullpage .section .centerBlock .text {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -1180,7 +1182,7 @@ body #fullpage .section .centerBlock .text {
   margin: auto;
   max-width: 75%;
 }
-/* line 176, ../sass/about.sass */
+/* line 178, ../sass/about.sass */
 body #fullpage .section .secondCenteredBlock {
   position: absolute;
   width: 265px;
@@ -1240,7 +1242,7 @@ body #fullpage .section .secondCenteredBlock {
   -moz-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
-/* line 198, ../sass/about.sass */
+/* line 200, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer {
   position: absolute;
   top: 0;
@@ -1282,15 +1284,15 @@ body #fullpage .section .contentBlockContainer {
   justify-content: space-around;
   -ms-flex-pack: distribute;
 }
-/* line 208, ../sass/about.sass */
+/* line 210, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock {
   position: relative;
 }
-/* line 211, ../sass/about.sass */
+/* line 213, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock:first-child {
   margin-bottom: 17vh;
 }
-/* line 214, ../sass/about.sass */
+/* line 216, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock img {
   opacity: 0.1;
   position: absolute;
@@ -1298,11 +1300,11 @@ body #fullpage .section .contentBlockContainer .contentBlock img {
   top: 0;
   margin: auto;
 }
-/* line 220, ../sass/about.sass */
+/* line 222, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock img.visual {
   opacity: 1;
 }
-/* line 223, ../sass/about.sass */
+/* line 225, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock .title {
   font-family: "effra", sans-serif;
   font-weight: bold;
@@ -1312,97 +1314,97 @@ body #fullpage .section .contentBlockContainer .contentBlock .title {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-/* line 228, ../sass/about.sass */
+/* line 230, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock .content {
   font-size: 16px;
   max-width: 232px;
 }
-/* line 232, ../sass/about.sass */
+/* line 234, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left {
   left: 45px;
 }
-/* line 234, ../sass/about.sass */
+/* line 236, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left .contentBlock {
   left: -300px;
   position: relative;
 }
-/* line 237, ../sass/about.sass */
-body #fullpage .section .contentBlockContainer.left .contentBlock:first-child {
-  -webkit-transition: left 0.3s ease 10s;
-  -moz-transition: left 0.3s ease 10s;
-  transition: left 0.3s ease 10s;
-}
 /* line 239, ../sass/about.sass */
-body #fullpage .section .contentBlockContainer.left .contentBlock:last-child {
-  -webkit-transition: left 0.3s ease 10.2s;
-  -moz-transition: left 0.3s ease 10.2s;
-  transition: left 0.3s ease 10.2s;
+body #fullpage .section .contentBlockContainer.left .contentBlock:first-child {
+  -webkit-transition: left 0.3s ease 5s;
+  -moz-transition: left 0.3s ease 5s;
+  transition: left 0.3s ease 5s;
 }
-/* line 242, ../sass/about.sass */
+/* line 241, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.left .contentBlock:last-child {
+  -webkit-transition: left 0.3s ease 5.2s;
+  -moz-transition: left 0.3s ease 5.2s;
+  transition: left 0.3s ease 5.2s;
+}
+/* line 244, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left .contentBlock img {
   right: 0;
 }
-/* line 245, ../sass/about.sass */
+/* line 247, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right {
   right: 45px;
   text-align: right;
 }
-/* line 249, ../sass/about.sass */
+/* line 251, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right .contentBlock {
   left: 300px;
   position: relative;
 }
-/* line 252, ../sass/about.sass */
-body #fullpage .section .contentBlockContainer.right .contentBlock:first-child {
-  -webkit-transition: left 0.3s ease 10.4s;
-  -moz-transition: left 0.3s ease 10.4s;
-  transition: left 0.3s ease 10.4s;
-}
 /* line 254, ../sass/about.sass */
-body #fullpage .section .contentBlockContainer.right .contentBlock:last-child {
-  -webkit-transition: left 0.3s ease 10.6s;
-  -moz-transition: left 0.3s ease 10.6s;
-  transition: left 0.3s ease 10.6s;
+body #fullpage .section .contentBlockContainer.right .contentBlock:first-child {
+  -webkit-transition: left 0.3s ease 5.4s;
+  -moz-transition: left 0.3s ease 5.4s;
+  transition: left 0.3s ease 5.4s;
 }
-/* line 257, ../sass/about.sass */
+/* line 256, ../sass/about.sass */
+body #fullpage .section .contentBlockContainer.right .contentBlock:last-child {
+  -webkit-transition: left 0.3s ease 5.6s;
+  -moz-transition: left 0.3s ease 5.6s;
+  transition: left 0.3s ease 5.6s;
+}
+/* line 259, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right .contentBlock img {
   left: 0;
 }
-/* line 261, ../sass/about.sass */
+/* line 263, ../sass/about.sass */
 body #fullpage .section.second.loaded .contentBlock {
   left: 0;
 }
-/* line 264, ../sass/about.sass */
+/* line 266, ../sass/about.sass */
 body #fullpage .section.second.loaded .centerLine {
-  -webkit-animation: centerLineConstruction 10s ease;
-  -moz-animation: centerLineConstruction 10s ease;
-  animation: centerLineConstruction 10s ease;
+  -webkit-animation: centerLineConstruction 5s ease;
+  -moz-animation: centerLineConstruction 5s ease;
+  animation: centerLineConstruction 5s ease;
   bottom: 0;
 }
-/* line 269, ../sass/about.sass */
+/* line 271, ../sass/about.sass */
 body #fullpage .section.second.loaded .topPanel .text {
   opacity: 1;
 }
-/* line 273, ../sass/about.sass */
+/* line 275, ../sass/about.sass */
 body #fullpage .section.second.loaded .footer .goDown .text {
   opacity: 1;
 }
-/* line 277, ../sass/about.sass */
+/* line 279, ../sass/about.sass */
 body #fullpage .section.third.loaded .centerLine {
-  -webkit-animation: centerLineConstructionThird 10s ease;
-  -moz-animation: centerLineConstructionThird 10s ease;
-  animation: centerLineConstructionThird 10s ease;
+  -webkit-animation: centerLineConstructionThird 5s ease;
+  -moz-animation: centerLineConstructionThird 5s ease;
+  animation: centerLineConstructionThird 5s ease;
   bottom: 50%;
 }
-/* line 282, ../sass/about.sass */
+/* line 284, ../sass/about.sass */
 body #fullpage .section.third.loaded .topPanel .text {
   opacity: 1;
 }
-/* line 287, ../sass/about.sass */
+/* line 289, ../sass/about.sass */
 body #fullpage .section.third.loaded .footer .goDown .downloadButton {
   opacity: 1;
 }
-/* line 289, ../sass/about.sass */
+/* line 291, ../sass/about.sass */
 body .breadCrumbs {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -1414,7 +1416,7 @@ body .breadCrumbs {
   right: 60px;
   bottom: 60px;
 }
-/* line 297, ../sass/about.sass */
+/* line 299, ../sass/about.sass */
 body .breadCrumbs span a {
   cursor: pointer;
   color: #000;
@@ -1422,11 +1424,11 @@ body .breadCrumbs span a {
   -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-/* line 302, ../sass/about.sass */
+/* line 304, ../sass/about.sass */
 body .breadCrumbs span:first-child {
   margin-right: 26px;
 }
-/* line 304, ../sass/about.sass */
+/* line 306, ../sass/about.sass */
 body .breadCrumbs span.active a {
   color: #F24E41;
 }

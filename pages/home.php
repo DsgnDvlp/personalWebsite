@@ -18,7 +18,8 @@
                     <?php
                         /* CALCOLO DELL'ORA PER IL CAMBIO DEL MESSAGGIO*/
                         $hour = intVal(Date("G"));
-                        if($hour >= 6 && $hour < 12){ ?>
+                        if($hour >= 6 && $hour < 12){
+							//inserire qui dentro il background per il body?>
                             <?=tr_("morningTitle")?>
                         <?php } else if($hour >= 12 && $hour<14 ){ ?>
                             <?=tr_("noonTitle")?>
