@@ -1,22 +1,25 @@
-<svg width="169px" height="168px" viewBox="0 0 169 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="119px" height="119px" viewBox="0 0 119 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs></defs>
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-123.000000, -254.000000)" fill="#F34E40">
-            <g transform="translate(122.000000, 253.000000)">
-                <g transform="translate(85.500000, 68.000000) rotate(-0.000000) translate(-85.500000, -68.000000) translate(1.000000, 1.000000)">
-                    <path d="M0.899525,133.2331 L0.899525,0.7669 L168.09905,0.7669 L168.09905,133.2331 L0.899525,133.2331 L0.899525,133.2331 Z M11.350475,122.843823 L157.65095,122.843823 L157.65095,11.1561769 L11.350475,11.1561769 L11.350475,122.843823 L11.350475,122.843823 Z"></path>
-                </g>
-                <g transform="translate(84.500000, 114.000000) rotate(0.000000) translate(-84.500000, -114.000000) translate(79.000000, 108.000000)">
-                    <circle cx="5.75" cy="6.0229" r="5.25"></circle>
-                </g>
-                <g transform="translate(80.000000, 133.000000)">
-                    <rect x="0" y="0" width="10" height="26"></rect>
-                </g>
-                <g transform="translate(85.000000, 164.000000) rotate(270.000000) translate(-85.000000, -164.000000) translate(80.000000, 125.000000)">
-                    <rect x="0" y="0" width="10" height="78"></rect>
-                </g>
-                <g transform="translate(87.000000, 98.500000) rotate(270.000000) translate(-87.000000, -98.500000) translate(82.000000, 23.000000)">
-                    <rect x="0" y="0" width="10" height="151"></rect>
+        <g transform="translate(-179.000000, -280.000000)" fill="#F34E40">
+            <g transform="translate(60.000000, 279.000000)">
+                <g transform="translate(118.000000, 0.000000)">
+                    <g transform="translate(60.205882, 48.210059) rotate(-0.000000) translate(-60.205882, -48.210059) translate(0.705882, 0.710059)">
+                        <path d="M0.634958824,94.6033846 L0.634958824,0.544544379 L118.658153,0.544544379 L118.658153,94.6033846 L0.634958824,94.6033846 L0.634958824,94.6033846 Z M8.0121,87.2263832 L111.283024,87.2263832 L111.283024,7.92154574 L8.0121,7.92154574 L8.0121,87.2263832 L8.0121,87.2263832 Z"></path>
+                    </g>
+                    <g transform="translate(59.647059, 80.946746) rotate(0.000000) translate(-59.647059, -80.946746) translate(55.764706, 76.686391)">
+                        <ellipse cx="4.05882353" cy="4.27661538" rx="3.70588235" ry="3.72781065"></ellipse>
+                    </g>
+                    <g transform="translate(56.470588, 94.437870)">
+                        <rect x="0" y="0" width="7.05882353" height="18.4615385"></rect>
+                    </g>
+                    <g transform="translate(60.000000, 116.449704) rotate(270.000000) translate(-60.000000, -116.449704) translate(56.470588, 88.757396)">
+                        <rect x="0" y="0" width="7.05882353" height="55.3846154"></rect>
+                    </g>
+                    <g transform="translate(61.802297, 69.470240) rotate(270.000000) translate(-61.802297, -69.470240) translate(57.802297, 15.470240)">
+                        <rect x="0" y="0" width="7.05882353" height="107.218935"></rect>
+                    </g>
                 </g>
             </g>
         </g>

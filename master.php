@@ -12,9 +12,6 @@
         <meta name="keywords" content="" />
         <meta name="author" content="DsgnDvlp" />
 
-        <!-- CSS RESET -->
-        <link type="text/css" rel="stylesheet" href="css/reset.css"  media="screen,projection"/>
-
         <script src="//use.typekit.net/cqp8ytj.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
 

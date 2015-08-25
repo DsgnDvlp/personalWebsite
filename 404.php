@@ -1,26 +1,14 @@
 
 <?php
-	$path = "";	
+	$path = "";
 
 	//USER CONTROLLER PER L'HEAD
-	function head($path){ ?>		
-        <style>
-            
-            .container{
-                position: absolute;
-                right: 0;
-                left: 0;
-                top: 0;
-                bottom: 0;
-            }
-            
-            .pageContainer{
-                margin: auto;
-                text-align: center;
-            }
-        </style>
+	function head($path){ ?>
+
+		<link rel="stylesheet" type="text/css" href="css/404.css"/>
+
 	<?php }
-	
+
 	//user controll per il content..
 	function content($path){ ?>
 		<!-- 		CONTENUTO DELLA PAGINA	 -->

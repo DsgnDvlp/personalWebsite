@@ -54,14 +54,14 @@ function animateBorderDivThird(selector, duration, delay){
 	animateSvg("#t", duration, delay);
 }
 
-function animateBorderDiv(selector, duration, delay){
+function animateBorderDiv(selector, duration, delay, id){
 	var $element = $(selector);
 	var width = $element.width();
 	var height = $element.height();
 	var borderWidth = parseInt($element.css("border-top-width"));
 
-	$element.parent().append('<svg id="s" xmlns="http://www.w3.org/2000/svg"/>');
-	var svg = $("#s");
+	$element.parent().append('<svg id="'+id+'" xmlns="http://www.w3.org/2000/svg"/>');
+	var svg = $("#"+id);
 	svg.attr("class", $element[0].className+ " svgElement");
 	svg.css("stroke", $element.css("border-top-color"));
 	svg.css("stroke-width", borderWidth + "px");
@@ -75,7 +75,7 @@ function animateBorderDiv(selector, duration, delay){
 	var path = makeSVG('path', {d: "M"+((width+borderWidth + start)/2) +" "+start+" L"+((width+borderWidth + start)/2) +" "+start+" L"+ start+" "+start+" L"+ start +" "+(height + borderWidth + start) + " L"+((width+borderWidth + start)/2) + " " + (height + borderWidth + start)});
 	svg.append(path);
 
-	animateSvg("#s", duration, delay);
+	animateSvg("#"+id, duration, delay);
 }
 
 // ANIMATION SVG UTILITY

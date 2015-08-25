@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         scrollOverflow: true,
-		anchors: ['about', 'whatido', 'mycv'],
+		anchors: ['about', 'whatido', 'software', 'mycv'],
 		afterLoad: function(anchorLink, index, slideAnchor, slideIndex){
 			if(index == 1){
                 $(".section.first").addClass("loaded");
@@ -10,12 +10,20 @@ $(document).ready(function() {
             if(index == 2){
 				if(!$(".section.second").hasClass("loaded")){
                     $(".section.second").addClass("loaded");
-                    animateBorderDiv(".section.second .centerBlock", "1s", "2s");
+                    animateBorderDiv(".section.second .centerBlock", "1s", "2s", "s");
                 }
             }
             if(index == 3){
-                $(".section.third").addClass("loaded");
-                animateBorderDivThird(".section.third .centerBlock", "1s", "2s");
+                if(!$(".section.third").hasClass("loaded")){
+                    $(".section.third").addClass("loaded");
+                    animateBorderDiv(".section.third .centerBlock", "1s", "2s", "n");
+                }
+            }
+            if(index == 4){
+                if(!$(".section.fourth").hasClass("loaded")){
+                    $(".section.fourth").addClass("loaded");
+                    animateBorderDivThird(".section.fourth .centerBlock", "1s", "2s");
+                }
             }
 			$(".breadCrumbs span").removeClass("active");
 			$(".breadCrumbs span." + anchorLink).addClass("active");
@@ -32,11 +40,25 @@ $(document).on("animationFinished", function(){
     }
 
     if($(".section.third").hasClass("loaded")){
-        $(".section.third .centerBlock").css("opacity", 1);
+        $(".section.third .centerBlock, .section.third .secondCenteredBlock").css("opacity", 1);
         setTimeout(function(){
             $(".section.third .svgElement").hide();
         }, 1000);
     }
+
+    if($(".section.fourth").hasClass("loaded")){
+        $(".section.fourth .centerBlock, .section.fourth .secondCenteredBlock").css("opacity", 1);
+        setTimeout(function(){
+            $(".section.fourth .svgElement").hide();
+        }, 1000);
+    }
+
+    // if($(".section.fourth").hasClass("loaded")){
+    //     $(".section.fourth .centerBlock").css("opacity", 1);
+    //     setTimeout(function(){
+    //         $(".section.fourth .svgElement").hide();
+    //     }, 1000);
+    // }
 });
 
 

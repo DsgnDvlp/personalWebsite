@@ -8,9 +8,9 @@
 	20%
 		@include calc(bottom, "100% - 60px")
 	40%
-		@include calc(bottom, "50% + 105px")
+		@include calc(bottom, "50% + 100px")
 	65%
-		@include calc(bottom, "50% + 105px")
+		@include calc(bottom, "50% + 100px")
 	85%
 		bottom: 80px
 	95%
@@ -26,9 +26,9 @@
 	20%
 		@include calc(bottom, "100% - 60px")
 	40%
-		@include calc(bottom, "50% + 105px")
+		@include calc(bottom, "50% + 100px")
 	100%
-		@include calc(bottom, "50% + 105px")
+		@include calc(bottom, "50% + 100px")
 
 body
 	padding: 15px
@@ -56,14 +56,15 @@ body
 				margin-left: 2.813em
 				.title
 					+titleBold
-					text-transform: uppercase
 					+span-columns(12)
-					margin-bottom: 35px
+					margin-bottom: 10px
 
 				.subtitle
 					+titleLight
 					max-width: 20em
 					+span-columns(12)
+					p
+						margin-bottom: 25px
 
 
 			.pageTitle
@@ -151,15 +152,16 @@ body
 			.centerBlock
 				position: absolute
 				border: 3px solid $generalOrange
-				width: 265px
-				height: 209px
+				width: 200px
+				height: 200px
 				left: 0
 				right: 0
 				top: 0
 				bottom: 0
 				margin: auto
 				background-color: #fff
-				+titleBold
+				+menuFont
+				line-height: 38px
 				text-transform: uppercase
 				color: $generalOrange
 				@include align-items(stretch)
@@ -173,7 +175,7 @@ body
 				.text
 					@include flex(1)
 					margin: auto
-					max-width: 75%
+					max-width: 70%
 
 			.secondCenteredBlock
 				position: absolute
@@ -211,16 +213,27 @@ body
 					position: relative
 					//@include flex(1)
 					&:first-child
-						margin-bottom: 17vh
+						margin-bottom: 116px
 
 					img
-						opacity: .1
+						opacity: .3
 						position: absolute
-						bottom: 0
-						top: 0
+						top: -50%
+						width: 120px
 						margin: auto
-						&.visual
-							opacity: 1
+						&.secondRow
+							top: 0
+
+					.number
+						font-size: 100px
+						font-style: italic
+						color: #F24E41
+						opacity: .3
+						text-align: right
+						width: 100%
+						display: inline-block
+						position: absolute
+						top: -40px
 
 					.title
 						+mediumFont
@@ -229,12 +242,16 @@ body
 
 					.content
 						font-size: 16px
-						max-width: 232px
+						max-width: 330px
+						.contentTitle
+							+smallEffra
+							color: $generalOrange
+							margin-top: 16px
 
 				&.left
 					left: 45px
 					.contentBlock
-						left: -300px
+						left: -430px
 						position: relative
 						&:first-child
 							@include transition(left .3s ease 5s)
@@ -242,22 +259,27 @@ body
 							@include transition(left .3s ease 5.2s)
 
 						img
-							right: 0
+							right: 25%
 
 				&.right
 					right: 45px
 					text-align: right
 
 					.contentBlock
-						left: 300px
+						left: 430px
 						position: relative
 						&:first-child
 							@include transition(left .3s ease 5.4s)
 						&:last-child
 							@include transition(left .3s ease 5.6s)
 
+						.number
+							text-align: left
+							left: -30px
 						img
-							left: 0
+							left: 30%
+							&.visual
+								left: 30%
 
 			&.second.loaded
 				.contentBlock
@@ -276,6 +298,38 @@ body
 							opacity: 1
 
 			&.third.loaded
+				.contentBlock
+					left: 0
+
+				.centerLine
+					@include animation(centerLineConstruction 5s ease)
+					bottom: 0
+
+				.topPanel
+					.text
+						opacity: 1
+				.footer
+					.goDown
+						.text
+							opacity: 1
+
+			&.fourth.loaded
+				.contentBlockContainer
+					&.left
+						.contentBlock
+							left: 0
+							&:first-child
+								@include transition(left .3s ease 3.5s)
+							&:last-child
+								@include transition(left .3s ease 3.7s)
+					&.right
+						.contentBlock
+							left: 0
+							margin-bottom: 0
+							&:last-child
+								@include transition(left .3s ease 3.9s)
+
+
 				.centerLine
 					@include animation(centerLineConstructionThird 5s ease)
 					bottom: 50%
@@ -296,12 +350,13 @@ body
 		bottom: 60px
 
 		span
+			margin-right: 26px
 			a
 				cursor: pointer
 				color: #000
 				@include transition(color .3s ease)
 
-			&:first-child
-				margin-right: 26px
+			&:last-child
+				margin-right: 0px
 			&.active a
 				color: $generalOrange
