@@ -46,10 +46,9 @@
                 </div>
            </div>
            <div class="languageBar">
-                <p class="languageEntry"><?= $_SESSION["lang"] ?></p>
                 <?= $_SESSION["lang"] != "ita" ? "<p class='languageEntry' onclick='switchLanguage(\"ita\")'>ITA</p>" : "" ?>
                 <?= $_SESSION["lang"] != "eng" ? "<p class='languageEntry' onclick='switchLanguage(\"eng\")'>ENG</p>" : "" ?>
-                <?= $_SESSION["lang"] != "esp" ? "<p class='languageEntry' onclick='switchLanguage(\"esp\")'>ESP</p>" : "" ?>
+                <p class="languageEntry active"><?= $_SESSION["lang"] ?></p>
             </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->

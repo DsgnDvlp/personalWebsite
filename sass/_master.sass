@@ -174,14 +174,17 @@ body
 		float: right
 		margin-right: 45px
 		line-height: 26px
-		width: 40px
-		max-height: 30px
+		width: 100px
+		//max-width: 40px
+		height: 30px
 		overflow: hidden
-		@include transition(max-height .2s ease)
+		text-align: right
+		//@include transition(max-width .2s ease)
 
 
 		&:hover
-			max-height: 80px
+			.languageEntry:not(.active)
+				max-width: 40px
 
 		.languageEntry
 			text-transform: uppercase
@@ -191,7 +194,14 @@ body
 			font-size: 14px
 			letter-spacing: 2px
 			cursor: pointer
+			display: inline-block
+			overflow: hidden
+			margin-left: 10px
 			@include transition(color .5s ease)
+
+			&:not(.active)
+				max-width: 0
+				@include transition(max-width .5s ease)
 
 //---------- FOOTER --------------//
 .footer
