@@ -34,10 +34,16 @@ function animateBorderDivThird(selector, duration, delay){
 	$element.parent().append('<svg id="t" xmlns="http://www.w3.org/2000/svg"/>');
 	var svg = $("#t");
 	svg.attr("class", $element[0].className+ " svgElement");
+	svg.attr("class", $element[0].className+ " svgElement");
 	svg.css("stroke", $element.css("border-top-color"));
 	svg.css("stroke-width", borderWidth + "px");
 	svg.css("width", (width + (borderWidth * 2))+"px");
 	svg.css("height", (height + (borderWidth * 2))+"px");
+	svg.css("position", "absolute");
+	svg.css("top", 0);
+	svg.css("right", 0);
+	svg.css("left", 0);
+	svg.css("z-index", 9);
 	var start = (borderWidth/2);
 
 	var path = makeSVG('path', {d:
@@ -67,6 +73,11 @@ function animateBorderDiv(selector, duration, delay, id){
 	svg.css("stroke-width", borderWidth + "px");
 	svg.css("width", (width + (borderWidth * 2))+"px");
 	svg.css("height", (height + (borderWidth * 2))+"px");
+	svg.css("position", "absolute");
+	svg.css("top", 0);
+	svg.css("right", 0);
+	svg.css("left", 0);
+	svg.css("z-index", 9);
 	var start = (borderWidth/2);
 
 	var path = makeSVG('path', {d: "M"+((width+borderWidth + start)/2) +" "+start+" L"+((width+borderWidth + start)/2) +" "+start+" L"+(width+borderWidth + start)+" "+start+" L"+(width + borderWidth + start)+" "+(height + borderWidth + start) + " L"+((width+borderWidth + start)/2) + " " + (height + borderWidth + start)});

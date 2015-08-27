@@ -45,12 +45,13 @@
             <div class="section second">
 				<div class="topPanel"><a href="#about"><span class="text"><?=tr_("aboutSecondBack")?></span></a></div>
             	<div class="centerLine"></div>
-            	<div class="centerBlock"><span class="text"><?=tr_("aboutSecondTitle")?></span></div>
-							<div class="secondCenteredBlock">
-								<?=tr_("aboutSecondSubtitle")?><br/>
-								<i><?=tr_("aboutSecondSubtitleAuthor")?></i>
-							</div>
-
+            	<div class="centerBlocksContainer">
+					<div class="centerBlock"><span class="text"><?=tr_("aboutSecondTitle")?></span></div>
+					<div class="secondCenteredBlock">
+						<?=tr_("aboutSecondSubtitle")?><br/>
+						<i><?=tr_("aboutSecondSubtitleAuthor")?></i>
+					</div>
+				</div>
             	<div class="contentBlockContainer left">
             		<div class="contentBlockContent">
             			<div class="contentBlock">
@@ -86,10 +87,12 @@
 			<div class="section third">
 				<div class="topPanel"><a href="#software"><span class="text"><?=tr_("aboutThirdBack")?></span></a></div>
             	<div class="centerLine"></div>
-            	<div class="centerBlock"><span class="text"><?=tr_("aboutThirdTitle")?></span></div>
-				<div class="secondCenteredBlock">
-					<?=tr_("aboutThirdSubtitle")?><br/>
-					<i><?=tr_("aboutThirdSubtitleAuthor")?></i>
+            	<div class="centerBlocksContainer">
+					<div class="centerBlock"><span class="text"><?=tr_("aboutThirdTitle")?></span></div>
+					<div class="secondCenteredBlock">
+						<?=tr_("aboutThirdSubtitle")?><br/>
+						<i><?=tr_("aboutThirdSubtitleAuthor")?></i>
+					</div>
 				</div>
 
             	<div class="contentBlockContainer left">
@@ -128,10 +131,12 @@
             <div class="section fourth">
 				<div class="topPanel"><a href="#software"><span class="text"><?=tr_("aboutFourthBack")?></span></a></div>
             	<div class="centerLine"></div>
-				<div class="centerBlock"><span class="text"><?=tr_("aboutFourthTitle")?></span></div>
-				<div class="secondCenteredBlock">
-					<?=tr_("aboutFourthSubtitle")?></br>
-					<i><?=tr_("aboutFourthSubtitleAuthor")?></i>
+				<div class="centerBlocksContainer">
+					<div class="centerBlock"><span class="text"><?=tr_("aboutFourthTitle")?></span></div>
+					<div class="secondCenteredBlock">
+						<?=tr_("aboutFourthSubtitle")?></br>
+						<i><?=tr_("aboutFourthSubtitleAuthor")?></i>
+					</div>
 				</div>
 
             	<div class="contentBlockContainer left">

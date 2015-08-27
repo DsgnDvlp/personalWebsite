@@ -149,57 +149,56 @@ body
 				bottom: 0
 				bottom: 100%
 
-			.centerBlock
+			.centerBlocksContainer
 				position: absolute
-				border: 3px solid $generalOrange
-				width: 200px
-				height: 200px
+				top: 0
 				left: 0
 				right: 0
-				top: 0
 				bottom: 0
 				margin: auto
-				background-color: #fff
-				+menuFont
-				line-height: 38px
-				text-transform: uppercase
-				color: $generalOrange
-				@include align-items(stretch)
-				@include display(flex)
-				@include flex-direction(row)
-				@include justify-content(flex-start)
-				text-align: center
-				opacity: 0
-				@include transition(opacity .5s ease)
-
-				.text
-					@include flex(1)
-					margin: auto
-					max-width: 70%
-
-			.secondCenteredBlock
-				position: absolute
+				height: 321px
 				width: 265px
-				height: 121px
-				padding: 20px 10px
-				left: 0
-				right: 0
-				top: 0
-				bottom: 0
-				margin: auto
-				line-height: 18px
-				@include calc(top, "50% - 220px")
 				background-color: #fff
-				color: $generalOrange
-				@include align-items(stretch)
-				@include display(flex)
-				@include flex-direction(column)
-				@include justify-content(flex-start)
-				text-align: center
-				opacity: 0
-				@include transition(opacity .5s ease)
-				i
-					+italicNormalFont
+
+				.centerBlock
+					border: 3px solid $generalOrange
+					width: 200px
+					height: 200px
+					margin: auto
+					+menuFont
+					line-height: 38px
+					text-transform: uppercase
+					color: $generalOrange
+					@include align-items(stretch)
+					@include display(flex)
+					@include flex-direction(row)
+					@include justify-content(flex-start)
+					text-align: center
+					opacity: 0
+					@include transition(opacity .5s ease)
+
+					.text
+						@include flex(1)
+						margin: auto
+						max-width: 70%
+
+				.secondCenteredBlock
+					width: 265px
+					height: 121px
+					padding: 20px 10px
+					margin: auto
+					line-height: 18px
+					@include calc(top, "50% - 220px")
+					color: $generalOrange
+					@include align-items(stretch)
+					@include display(flex)
+					@include flex-direction(column)
+					@include justify-content(flex-start)
+					text-align: center
+					opacity: 0
+					@include transition(opacity .5s ease)
+					i
+						+italicNormalFont
 
 			.contentBlockContainer
 				position: absolute
