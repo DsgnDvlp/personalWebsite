@@ -124,7 +124,7 @@
         <div class="footer">
             <p>
                 <?php
-                    $frasi = array(tr_("footerContent1"), tr_("footerContent2"), tr_("footerContent3"), tr_("footerContent4"), tr_("footerContent1"));
+                    $frasi = array(tr_("footerContent1"), tr_("footerContent2"), tr_("footerContent3"), tr_("footerContent4"), tr_("footerContent5"));
                     echo $frasi[array_rand($frasi, 1)];
                 ?>
             </p>

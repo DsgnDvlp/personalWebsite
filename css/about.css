@@ -1190,20 +1190,17 @@ body #fullpage .section .centerBlock .text {
 body #fullpage .section .secondCenteredBlock {
   position: absolute;
   width: 265px;
-  height: 110px;
-  padding: 40px 10px 20px;
+  height: 121px;
+  padding: 20px 10px;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
+  line-height: 18px;
   top: -webkit-calc(50% - 220px);
   top: calc(50% - 220px);
   background-color: #fff;
-  font-family: "kepler std", serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 16px;
   color: #F24E41;
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
@@ -1221,16 +1218,16 @@ body #fullpage .section .secondCenteredBlock {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
   -webkit-box-direction: normal;
   -moz-box-direction: normal;
   box-direction: normal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-direction: row;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
   -webkit-box-pack: start;
   -moz-box-pack: start;
   box-pack: start;
@@ -1246,7 +1243,14 @@ body #fullpage .section .secondCenteredBlock {
   -moz-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
-/* line 202, ../sass/about.sass */
+/* line 201, ../sass/about.sass */
+body #fullpage .section .secondCenteredBlock i {
+  font-family: "kepler std", serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 16px;
+}
+/* line 204, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer {
   position: absolute;
   top: 0;
@@ -1288,27 +1292,28 @@ body #fullpage .section .contentBlockContainer {
   justify-content: space-around;
   -ms-flex-pack: distribute;
 }
-/* line 212, ../sass/about.sass */
+/* line 214, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock {
   position: relative;
 }
-/* line 215, ../sass/about.sass */
+/* line 217, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock:first-child {
   margin-bottom: 116px;
 }
-/* line 218, ../sass/about.sass */
+/* line 220, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock img {
   opacity: 0.3;
   position: absolute;
   top: -50%;
   width: 120px;
   margin: auto;
+  z-index: -1;
 }
-/* line 224, ../sass/about.sass */
+/* line 227, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock img.secondRow {
   top: 0;
 }
-/* line 227, ../sass/about.sass */
+/* line 230, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock .number {
   font-size: 100px;
   font-style: italic;
@@ -1319,8 +1324,9 @@ body #fullpage .section .contentBlockContainer .contentBlock .number {
   display: inline-block;
   position: absolute;
   top: -40px;
+  z-index: -1;
 }
-/* line 238, ../sass/about.sass */
+/* line 242, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock .title {
   font-family: "effra", sans-serif;
   font-weight: bold;
@@ -1330,12 +1336,12 @@ body #fullpage .section .contentBlockContainer .contentBlock .title {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-/* line 243, ../sass/about.sass */
+/* line 247, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock .content {
   font-size: 16px;
   max-width: 330px;
 }
-/* line 246, ../sass/about.sass */
+/* line 250, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer .contentBlock .content .contentTitle {
   font-family: "effra", sans-serif;
   font-weight: bold;
@@ -1344,147 +1350,147 @@ body #fullpage .section .contentBlockContainer .contentBlock .content .contentTi
   color: #F24E41;
   margin-top: 16px;
 }
-/* line 251, ../sass/about.sass */
+/* line 255, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left {
   left: 45px;
 }
-/* line 253, ../sass/about.sass */
+/* line 257, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left .contentBlock {
   left: -430px;
   position: relative;
 }
-/* line 256, ../sass/about.sass */
+/* line 260, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left .contentBlock:first-child {
   -webkit-transition: left 0.3s ease 5s;
   -moz-transition: left 0.3s ease 5s;
   transition: left 0.3s ease 5s;
 }
-/* line 258, ../sass/about.sass */
+/* line 262, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left .contentBlock:last-child {
   -webkit-transition: left 0.3s ease 5.2s;
   -moz-transition: left 0.3s ease 5.2s;
   transition: left 0.3s ease 5.2s;
 }
-/* line 261, ../sass/about.sass */
+/* line 265, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.left .contentBlock img {
   right: 25%;
 }
-/* line 264, ../sass/about.sass */
+/* line 268, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right {
   right: 45px;
   text-align: right;
 }
-/* line 268, ../sass/about.sass */
+/* line 272, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right .contentBlock {
   left: 430px;
   position: relative;
 }
-/* line 271, ../sass/about.sass */
+/* line 275, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right .contentBlock:first-child {
   -webkit-transition: left 0.3s ease 5.4s;
   -moz-transition: left 0.3s ease 5.4s;
   transition: left 0.3s ease 5.4s;
 }
-/* line 273, ../sass/about.sass */
+/* line 277, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right .contentBlock:last-child {
   -webkit-transition: left 0.3s ease 5.6s;
   -moz-transition: left 0.3s ease 5.6s;
   transition: left 0.3s ease 5.6s;
 }
-/* line 276, ../sass/about.sass */
+/* line 280, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right .contentBlock .number {
   text-align: left;
   left: -30px;
 }
-/* line 279, ../sass/about.sass */
+/* line 283, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right .contentBlock img {
   left: 30%;
 }
-/* line 281, ../sass/about.sass */
+/* line 285, ../sass/about.sass */
 body #fullpage .section .contentBlockContainer.right .contentBlock img.visual {
   left: 30%;
 }
-/* line 285, ../sass/about.sass */
+/* line 289, ../sass/about.sass */
 body #fullpage .section.second.loaded .contentBlock {
   left: 0;
 }
-/* line 288, ../sass/about.sass */
+/* line 292, ../sass/about.sass */
 body #fullpage .section.second.loaded .centerLine {
   -webkit-animation: centerLineConstruction 5s ease;
   -moz-animation: centerLineConstruction 5s ease;
   animation: centerLineConstruction 5s ease;
   bottom: 0;
 }
-/* line 293, ../sass/about.sass */
+/* line 297, ../sass/about.sass */
 body #fullpage .section.second.loaded .topPanel .text {
   opacity: 1;
 }
-/* line 297, ../sass/about.sass */
+/* line 301, ../sass/about.sass */
 body #fullpage .section.second.loaded .footer .goDown .text {
   opacity: 1;
 }
-/* line 301, ../sass/about.sass */
+/* line 305, ../sass/about.sass */
 body #fullpage .section.third.loaded .contentBlock {
   left: 0;
 }
-/* line 304, ../sass/about.sass */
+/* line 308, ../sass/about.sass */
 body #fullpage .section.third.loaded .centerLine {
   -webkit-animation: centerLineConstruction 5s ease;
   -moz-animation: centerLineConstruction 5s ease;
   animation: centerLineConstruction 5s ease;
   bottom: 0;
 }
-/* line 309, ../sass/about.sass */
+/* line 313, ../sass/about.sass */
 body #fullpage .section.third.loaded .topPanel .text {
   opacity: 1;
 }
-/* line 313, ../sass/about.sass */
+/* line 317, ../sass/about.sass */
 body #fullpage .section.third.loaded .footer .goDown .text {
   opacity: 1;
 }
-/* line 319, ../sass/about.sass */
+/* line 323, ../sass/about.sass */
 body #fullpage .section.fourth.loaded .contentBlockContainer.left .contentBlock {
   left: 0;
 }
-/* line 321, ../sass/about.sass */
+/* line 325, ../sass/about.sass */
 body #fullpage .section.fourth.loaded .contentBlockContainer.left .contentBlock:first-child {
   -webkit-transition: left 0.3s ease 3.5s;
   -moz-transition: left 0.3s ease 3.5s;
   transition: left 0.3s ease 3.5s;
 }
-/* line 323, ../sass/about.sass */
+/* line 327, ../sass/about.sass */
 body #fullpage .section.fourth.loaded .contentBlockContainer.left .contentBlock:last-child {
   -webkit-transition: left 0.3s ease 3.7s;
   -moz-transition: left 0.3s ease 3.7s;
   transition: left 0.3s ease 3.7s;
 }
-/* line 326, ../sass/about.sass */
+/* line 330, ../sass/about.sass */
 body #fullpage .section.fourth.loaded .contentBlockContainer.right .contentBlock {
   left: 0;
   margin-bottom: 0;
 }
-/* line 329, ../sass/about.sass */
+/* line 333, ../sass/about.sass */
 body #fullpage .section.fourth.loaded .contentBlockContainer.right .contentBlock:last-child {
   -webkit-transition: left 0.3s ease 3.9s;
   -moz-transition: left 0.3s ease 3.9s;
   transition: left 0.3s ease 3.9s;
 }
-/* line 333, ../sass/about.sass */
+/* line 337, ../sass/about.sass */
 body #fullpage .section.fourth.loaded .centerLine {
   -webkit-animation: centerLineConstructionThird 5s ease;
   -moz-animation: centerLineConstructionThird 5s ease;
   animation: centerLineConstructionThird 5s ease;
   bottom: 50%;
 }
-/* line 338, ../sass/about.sass */
+/* line 342, ../sass/about.sass */
 body #fullpage .section.fourth.loaded .topPanel .text {
   opacity: 1;
 }
-/* line 343, ../sass/about.sass */
+/* line 347, ../sass/about.sass */
 body #fullpage .section.fourth.loaded .footer .goDown .downloadButton {
   opacity: 1;
 }
-/* line 345, ../sass/about.sass */
+/* line 349, ../sass/about.sass */
 body .breadCrumbs {
   font-family: "effra", sans-serif;
   font-size: 14px;
@@ -1496,11 +1502,11 @@ body .breadCrumbs {
   right: 60px;
   bottom: 60px;
 }
-/* line 352, ../sass/about.sass */
+/* line 356, ../sass/about.sass */
 body .breadCrumbs span {
   margin-right: 26px;
 }
-/* line 354, ../sass/about.sass */
+/* line 358, ../sass/about.sass */
 body .breadCrumbs span a {
   cursor: pointer;
   color: #000;
@@ -1508,11 +1514,11 @@ body .breadCrumbs span a {
   -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-/* line 359, ../sass/about.sass */
+/* line 363, ../sass/about.sass */
 body .breadCrumbs span:last-child {
   margin-right: 0px;
 }
-/* line 361, ../sass/about.sass */
+/* line 365, ../sass/about.sass */
 body .breadCrumbs span.active a {
   color: #F24E41;
 }

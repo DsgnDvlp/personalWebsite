@@ -6,7 +6,42 @@
     left: 0
     top: 0
     bottom: 0
+    background-image: url("../img/dino.png")
+    background-repeat: no-repeat
+    background-position: 100% calc(100% - 25px)
+    background-size: 555px
+    @include align-items(stretch)
+    @include display(flex)
+    @include flex-direction(row)
+    @include justify-content(flex-start)
 
 .pageContainer
     margin: auto
     text-align: center
+    @include flex(1)
+
+    .mainTitle
+        +titleBold
+        margin-bottom: 30px
+    .subtitle
+        +titleLight
+
+    .buttonRow
+        margin-top: 50px
+        text-align: center
+
+        .homeButton
+            +subtitleBold
+            line-height: 50px
+            height: 55px
+            min-width: 170px
+            border: 1px solid #000
+            background: transparent
+            text-transform: uppercase
+            @include transition(color .5s ease, background-color .5s ease)
+            margin: auto
+
+            &:hover, &:active, &:focus
+                color: #fff
+                background-color: $generalOrange
+                border-color: $generalOrange

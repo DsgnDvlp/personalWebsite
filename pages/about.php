@@ -27,42 +27,41 @@
 		<div id="fullpage">
             <div class="section first active">
             	<div class="container">
-            		<div class="title">Ehilà,</div>
+            		<div class="title"><?=tr_("aboutMainTitle")?></div>
             		<div class="subtitle">
-						<p>sono un giovane progettista nato nel 1990 a Lima, Perù.</p>
-						<p>Attualmente vivo a Milano e lavoro per un’agenzia di comunicazione.</p>
-						<p>Nel mio tempo libero mi piace trovare lavori o progetti nuovi che possano aiutarmi a crescere professionalmente.</p>
-						<p>E di tanto in tanto scrivo nel mio blog.</p>
+						<p><?=tr_("aboutSubtitleRow1")?></p>
+						<p><?=tr_("aboutSubtitleRow2")?></p>
+						<p><?=tr_("aboutSubtitleRow3")?></p>
+						<p><?=tr_("aboutSubtitleRow4")?></p>
             		</div>
             	</div>
             	<div class="pageTitle">about</div>
             	<div class="footer">
-            		<div class="goDown"><a href="#whatido"><span class="text">go down</span></a><br/>
+            		<div class="goDown"><a href="#whatido"><span class="text"><?=tr_("aboutFirstNext")?></span></a><br/>
             			<div class="lineDown"></div>
             		</div>
             	</div>
             </div>
             <div class="section second">
-							<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
+				<div class="topPanel"><a href="#about"><span class="text"><?=tr_("aboutSecondBack")?></span></a></div>
             	<div class="centerLine"></div>
-            	<div class="centerBlock"><span class="text">what i do</span></div>
+            	<div class="centerBlock"><span class="text"><?=tr_("aboutSecondTitle")?></span></div>
 							<div class="secondCenteredBlock">
-								Credo che sostanzialmente si possa fare tutto se si segue un metodo preciso e si rispettano
+								<?=tr_("aboutSecondSubtitle")?><br/>
+								<i><?=tr_("aboutSecondSubtitleAuthor")?></i>
 							</div>
 
             	<div class="contentBlockContainer left">
             		<div class="contentBlockContent">
             			<div class="contentBlock">
             				<img src="./img/uxUi.svg"/>
-            				<p class="title">UI / UX DESIGN</p>
-            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in
-            			memories lost.</p>
+            				<p class="title"><?=tr_("aboutSecondAbility1Title")?></p>
+            				<p class="content"><?=tr_("aboutSecondAbility1Text")?></p>
             			</div>
             			<div class="contentBlock">
 							<img class="secondRow" src="./img/graphic.svg" />
-            				<p class="title">Graphic design</p>
-            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in
-            			memories lost.</p>
+            				<p class="title"><?=tr_("aboutSecondAbility2Title")?></p>
+            				<p class="content"><?=tr_("aboutSecondAbility2Text")?></p>
             			</div>
             		</div>
             	</div>
@@ -70,28 +69,27 @@
             		<div class="contentBlockContent">
             			<div class="contentBlock">
             				<img class="visual" src="./img/visual.svg" />
-            				<p class="title">digital ad</p>
-            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in
-            			memories lost.</p>
+            				<p class="title"><?=tr_("aboutSecondAbility3Title")?></p>
+            				<p class="content"><?=tr_("aboutSecondAbility3Text")?></p>
             			</div>
             			<div class="contentBlock">
-            				<p class="title">developement</p>
-            				<p class="content">I work as a UX &amp; UI designer, trying to search every aspect of design in
-            			memories lost.</p>
+            				<p class="title"><?=tr_("aboutSecondAbility4Title")?></p>
+            				<p class="content"><?=tr_("aboutSecondAbility4Text")?></p>
             			</div>
             		</div>
             	</div>
             	<div class="footer">
-					<div class="goDown"><a href="#mycv"><span class="text">keep going down</span></a><br/>
+					<div class="goDown"><a href="#software"><span class="text"><?=tr_("aboutSecondNext")?></span></a><br/>
             		</div>
             	</div>
             </div>
 			<div class="section third">
-				<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
+				<div class="topPanel"><a href="#software"><span class="text"><?=tr_("aboutThirdBack")?></span></a></div>
             	<div class="centerLine"></div>
-            	<div class="centerBlock"><span class="text">soft ware skills</span></div>
+            	<div class="centerBlock"><span class="text"><?=tr_("aboutThirdTitle")?></span></div>
 				<div class="secondCenteredBlock">
-					Credo che sostanzialmente si possa fare tutto se si segue un metodo preciso e si rispettano
+					<?=tr_("aboutThirdSubtitle")?><br/>
+					<i><?=tr_("aboutThirdSubtitleAuthor")?></i>
 				</div>
 
             	<div class="contentBlockContainer left">
@@ -99,14 +97,12 @@
             			<div class="contentBlock">
             				<span class="number">90%</span>
             				<p class="title">ADOBE CC</p>
-            				<p class="content">Conosco bene i programmi di grafica tradizionali quali: InDesign CC, Illustrator CC, Photoshop CC.
-Sto attualmente studiando anche After Effects per creare animazioni semplici.</p>
+            				<p class="content"><?=tr_("aboutThirdSkill1Text")?></p>
             			</div>
             			<div class="contentBlock">
 							<span class="number">100%</span>
             				<p class="title">SKETCH &amp; AD</p>
-            				<p class="content">Conosco bene i programmi di grafica tradizionali quali: InDesign CC, Illustrator CC, Photoshop CC.
-Sto attualmente studiando anche After Effects per creare animazioni semplici.</p>
+            				<p class="content"><?=tr_("aboutThirdSkill2Text")?></p>
             			</div>
             		</div>
             	</div>
@@ -115,49 +111,45 @@ Sto attualmente studiando anche After Effects per creare animazioni semplici.</p
             			<div class="contentBlock">
             				<span class="number">95%</span>
             				<p class="title">PROTOTYPING</p>
-            				<p class="content">Conosco bene i programmi di grafica tradizionali quali: InDesign CC, Illustrator CC, Photoshop CC.
-Sto attualmente studiando anche After Effects per creare animazioni semplici.</p>
+            				<p class="content"><?=tr_("aboutThirdSkill3Text")?></p>
             			</div>
             			<div class="contentBlock">
             				<span class="number">85%</span>
             				<p class="title">HTML &amp; CSS</p>
-            				<p class="content">Conosco bene i programmi di grafica tradizionali quali: InDesign CC, Illustrator CC, Photoshop CC.
-Sto attualmente studiando anche After Effects per creare animazioni semplici.</p>
+            				<p class="content"><?=tr_("aboutThirdSkill4Text")?></p>
             			</div>
             		</div>
             	</div>
             	<div class="footer">
-					<div class="goDown"><a href="#mycv"><span class="text">keep going down</span></a><br/>
+					<div class="goDown"><a href="#mycv"><span class="text"><?=tr_("aboutThirdNext")?></span></a><br/>
             		</div>
             	</div>
             </div>
             <div class="section fourth">
-				<div class="topPanel"><a href="#about"><span class="text">back</span></a></div>
+				<div class="topPanel"><a href="#software"><span class="text"><?=tr_("aboutFourthBack")?></span></a></div>
             	<div class="centerLine"></div>
-				<div class="centerBlock"><span class="text">MY<br/>CV</span></div>
+				<div class="centerBlock"><span class="text"><?=tr_("aboutFourthTitle")?></span></div>
 				<div class="secondCenteredBlock">
-					Credo che sostanzialmente si possa fare tutto se si segue un metodo preciso e si rispettano
+					<?=tr_("aboutFourthSubtitle")?></br>
+					<i><?=tr_("aboutFourthSubtitleAuthor")?></i>
 				</div>
 
             	<div class="contentBlockContainer left">
             		<div class="contentBlockContent">
             			<div class="contentBlock">
-            				<p class="title">Studi Superiori</p>
+            				<p class="title"><?=tr_("aboutFourthBlock1Title")?></p>
             				<div class="content">
-								<p class="contentTitle">anno 2009</p>
-									I.T.S.O.S. Albe Steiner
-									Diploma di Perito Grafico Aziendale
-								<p class="contentTitle">anno 2013</p>
-									Diploma di Graphic Designer conseguito presso
-									Fondazione Accademia di Comunicazione
+								<p class="contentTitle"><?=tr_("aboutFourthBlock1Subtitle1")?></p>
+									<?=tr_("aboutFourthBlock1Text1")?>
+								<p class="contentTitle"><?=tr_("aboutFourthBlock1Subtitle2")?></p>
+									<?=tr_("aboutFourthBlock1Text2")?>
 							</div>
             			</div>
             			<div class="contentBlock">
-            				<p class="title">Premi</p>
+            				<p class="title"><?=tr_("aboutFourthBlock2Title")?></p>
             				<div class="content">
-								<p class="contentTitle">anno 2013</p>
-								D&amp;AD Student of the Year<br/>
-								Product Design con il prodotto “Hermes”
+								<p class="contentTitle"><?=tr_("aboutFourthBlock2Subtitle1")?></p>
+								<?=tr_("aboutFourthBlock2Text1")?>
 							</div>
             			</div>
             		</div>
@@ -165,37 +157,32 @@ Sto attualmente studiando anche After Effects per creare animazioni semplici.</p
             	<div class="contentBlockContainer right">
             		<div class="contentBlockContent">
             			<div class="contentBlock">
-            				<p class="title">Esperienza</p>
+            				<p class="title"><?=tr_("aboutFourthBlock3Title")?></p>
             				<div class="content">
-								<p class="contentTitle">anno 2009</p>
-								Stage presso Mediastars<br/>
-								“Il premio tecnico della pubblicità italiana”
-								<p class="contentTitle">anno 2011</p>
-								Freelancer come designer di brand identity,<br/>
-								supporti cartacei e web
-								<p class="contentTitle">anno 2009</p>
-								Junior Designer presso<br/>
-								Pvolpedesign (Design in Town)
-								<p class="contentTitle">anno 2013</p>
-								Graphic &amp; Art Director presso<br/>
-								Comunicazione Gradizeroseitre S.r.l
-								<p class="contentTitle">anno 2014</p>
-								UI/UX &amp; Web Designer<br/>
-								presso iGenius S.r.l
+								<p class="contentTitle"><?=tr_("aboutFourthBlock3Subtitle1")?></p>
+								<?=tr_("aboutFourthBlock3Text1")?>
+								<p class="contentTitle"><?=tr_("aboutFourthBlock3Subtitle2")?></p>
+								<?=tr_("aboutFourthBlock3Text2")?>
+								<p class="contentTitle"><?=tr_("aboutFourthBlock3Subtitle3")?></p>
+								<?=tr_("aboutFourthBlock3Text3")?>
+								<p class="contentTitle"><?=tr_("aboutFourthBlock3Subtitle4")?></p>
+								<?=tr_("aboutFourthBlock3Text4")?>
+								<p class="contentTitle"><?=tr_("aboutFourthBlock3Subtitle5")?></p>
+								<?=tr_("aboutFourthBlock3Text5")?>
 							</div>
             			</div>
             		</div>
             	</div>
 				<div class="footer">
-            		<div class="goDown"><a href="#"><span class="downloadButton">Download cv</span></a><br/>
+            		<div class="goDown"><a href="#"><span class="downloadButton"><?=tr_("aboutFourthDownloadButton")?></span></a><br/>
             		</div>
             	</div>
         	</div>
 		</div>
         <div class="breadCrumbs">
-			<span class="whatido"><a href="#whatido">what i do</a></span>
-			<span class="software"><a href="#software">software</a></span>
-			<span class="mycv"><a href="#mycv">my cv</a></span>
+			<span class="whatido"><a href="#whatido"><?=tr_("aboutFourthBreadCrumbs1")?></a></span>
+			<span class="software"><a href="#software"><?=tr_("aboutFourthBreadCrumbs2")?></a></span>
+			<span class="mycv"><a href="#mycv"><?=tr_("aboutFourthBreadCrumbs3")?></a></span>
         </div>
 
 	<?php }

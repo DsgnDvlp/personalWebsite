@@ -1,7 +1,7 @@
 <?php
 
     if(!isset($_SESSION["lang"])){
-        $_SESSION["lang"]="eng";
+        $_SESSION["lang"]="ita";
     }
 
     include_once "languages/".$_SESSION["lang"].".php";
