@@ -93,7 +93,36 @@
         "aboutFourthBreadCrumbs2" => "softwares",
         "aboutFourthBreadCrumbs3" => "il mio cv",
 
+        //============================= PORTFOLIO PAGE =============================//
+        "portfolioTitle" => "Questo è il mio portfolio,",
+        "portfolioSubtitle" => "ho selezionato alcuni dei miei lavori realizzati nell’ultimo anno, se volete vederli cliccate qui sotto.",
+        "portfolioButtonText" => "I PROGETTI",
+        "portfolioBreadCrumbs1" => "UI/UX DESIGN",
+        "portfolioBreadCrumbs2" => "BRANDING",
+        "portfolioBreadCrumbs3" => "DIGITAL AD",
 
+        //============================= PORTFOLIO LIST PAGE =============================//
+        "progettiPageTitle" => "progetti",
+
+        //============================= DETTAGLIO PORTFOLIO PAGE =============================//
+
+        //============================= FREESTUFF PAGE =============================//
+        "freestuffPageTitle" => "co\$e fighe",
+        "freestuffTitle" => "Namaste!",
+        "freestuffText1" => "amico designer, sto preparando per te una serie di icone da scaricare gratuitamente,",
+        "freestuffText2" => "Vuoi vedere a che punto sono con il progetto?</br>Tieni d’occhio la mia pagina di Behance e segui la pagina Medium dove caricherò nuovi articoli!",
+
+        //============================= CONTACT PAGE =============================//
+        "contactPageTitle" => "contattami",
+        "contactTitle" => "Interessato a lavorare insieme?",
+        "contactSubtitle" => "scrivimi a <a href='mailTo:info@paulromerodesign.com'>info@paulromerodesign.com</a><br/>o semplicemente compila il form qui sotto.",
+        "contactFormNameTitle" => "Nome",
+        "contactFormNamePlaceHolder" => "MARIO ROSSI",
+        "contactFormMailTitle" => "MAIL",
+        "contactFormMailPlaceHolder" => "INDIRIZZO EMAIL",
+        "contactFormMessageTitle" => "MESSAGGIO",
+        "contactFormMessagePlaceHolder" => "DIMMI CIAO!",
+        "contactButtonText" => "invia",
 
         //============================= 404 PAGE =============================//
         "404MainTitle" => "404 Pagina non trovata!",

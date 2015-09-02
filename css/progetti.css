@@ -737,17 +737,21 @@ body.openedMenu .footer {
   z-index: -1;
 }
 
-/* line 3, ../sass/404.sass */
-.container {
+/* line 4, ../sass/progetti.sass */
+body {
+  padding: 15px;
+}
+/* line 7, ../sass/progetti.sass */
+body #fullpage {
   position: absolute;
-  right: 0;
-  left: 0;
   top: 0;
+  left: 15px;
+  right: 15px;
   bottom: 0;
-  background-image: url("../img/dino.png");
+  overflow: scroll;
+  background-position: 100% 100%;
+  background-size: 50%;
   background-repeat: no-repeat;
-  background-position: 100% calc(100% - 25px);
-  background-size: 555px;
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
   box-align: stretch;
@@ -784,11 +788,94 @@ body.openedMenu .footer {
   justify-content: flex-start;
   -ms-flex-pack: start;
 }
-
-/* line 18, ../sass/404.sass */
-.pageContainer {
+@media screen and (max-width: 769px) {
+  /* line 7, ../sass/progetti.sass */
+  body #fullpage {
+    min-height: 800px;
+  }
+}
+/* line 24, ../sass/progetti.sass */
+body #fullpage .grid {
+  max-width: 1311px;
   margin: auto;
+  margin-top: 200px;
+  width: 100%;
+}
+/* line 30, ../sass/progetti.sass */
+body #fullpage .grid .gridItem {
+  width: 370px;
+  height: 445px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 50px;
   text-align: center;
+}
+/* line 38, ../sass/progetti.sass */
+body #fullpage .grid .gridItem .itemCover {
+  width: 360px;
+  margin-left: 10px;
+  position: relative;
+}
+/* line 43, ../sass/progetti.sass */
+body #fullpage .grid .gridItem .itemCover img {
+  width: 360px;
+}
+/* line 46, ../sass/progetti.sass */
+body #fullpage .grid .gridItem .itemCover .itemTitle {
+  font-family: "effra", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 48px;
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #F24E41;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+/* line 62, ../sass/progetti.sass */
+body #fullpage .grid .gridItem .itemCover .itemTitle .itemTitleText {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
@@ -796,50 +883,105 @@ body.openedMenu .footer {
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  margin: auto;
 }
-/* line 23, ../sass/404.sass */
-.pageContainer .mainTitle {
-  font-family: "effra", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  letter-spacing: 1px;
-  line-height: 48px;
-  margin-bottom: 30px;
-}
-/* line 26, ../sass/404.sass */
-.pageContainer .subtitle {
-  font-family: "effra", sans-serif;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-  line-height: 1.3;
-}
-/* line 29, ../sass/404.sass */
-.pageContainer .buttonRow {
-  margin-top: 50px;
-  text-align: center;
-}
-/* line 33, ../sass/404.sass */
-.pageContainer .buttonRow .homeButton {
+/* line 66, ../sass/progetti.sass */
+body #fullpage .grid .gridItem .itemCategory {
   font-family: "effra", sans-serif;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 17px;
-  line-height: 50px;
-  height: 55px;
-  min-width: 170px;
-  border: 1px solid #000;
-  background: transparent;
   text-transform: uppercase;
+  text-transform: uppercase;
+  position: absolute;
+  height: 50px;
+  width: 180px;
+  line-height: 50px;
+  background-color: #383838;
+  color: #fff;
+  margin-top: -40px;
+}
+/* line 78, ../sass/progetti.sass */
+body #fullpage .grid .gridItem .itemButton {
+  font-family: "effra", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 17px;
+  display: block;
+  color: #383838;
+  text-transform: uppercase;
+  height: 55px;
+  width: 173px;
+  line-height: 55px;
+  margin: 30px auto 0;
+  border: 2px solid #383838;
   -webkit-transition: color 0.5s ease, background-color 0.5s ease;
   -moz-transition: color 0.5s ease, background-color 0.5s ease;
   transition: color 0.5s ease, background-color 0.5s ease;
-  margin: auto;
 }
-/* line 44, ../sass/404.sass */
-.pageContainer .buttonRow .homeButton:hover, .pageContainer .buttonRow .homeButton:active, .pageContainer .buttonRow .homeButton:focus {
+/* line 89, ../sass/progetti.sass */
+body #fullpage .grid .gridItem .itemButton:hover, body #fullpage .grid .gridItem .itemButton:active, body #fullpage .grid .gridItem .itemButton:focus {
   color: #fff;
   background-color: #F24E41;
   border-color: #F24E41;
+}
+/* line 95, ../sass/progetti.sass */
+body #fullpage .grid .gridItem:hover .itemTitle {
+  opacity: 1;
+}
+/* line 98, ../sass/progetti.sass */
+body .pageTitle {
+  position: absolute;
+  right: 45px;
+  width: 400px;
+  height: 45px;
+  text-align: right;
+  bottom: 512px;
+  border-bottom: 1px solid #F24E41;
+  font-family: "effra", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 6px;
+  color: #F24E41;
+  text-transform: uppercase;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/* line 112, ../sass/progetti.sass */
+body .breadCrumbs {
+  font-family: "effra", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 17px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+}
+/* line 119, ../sass/progetti.sass */
+body .breadCrumbs span {
+  margin-right: 26px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+/* line 124, ../sass/progetti.sass */
+body .breadCrumbs span:last-child {
+  margin-right: 0px;
+}
+/* line 126, ../sass/progetti.sass */
+body .breadCrumbs span.active, body .breadCrumbs span:hover {
+  color: #F24E41;
 }

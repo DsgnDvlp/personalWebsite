@@ -29,7 +29,6 @@ body
 				+outer-container()
 				max-width: 85em
 				margin-left: 2.813em
-				margin-bottom: -17vh
 				.title
 					+titleBold
 					+span-columns(12)
@@ -39,60 +38,8 @@ body
 					+titleLight
 					max-width: 20em
 					+span-columns(12)
-					a
-						color: #383838
 					p
 						margin-bottom: 25px
-
-				.formContainer
-					clear: both
-					margin-top: 40px
-					max-width: 600px
-
-					.formRow
-						width: 100%
-						display: inline-block
-						margin-bottom: 20px
-
-						.formField
-							.fieldName
-								+subtitleBold
-								text-transform: uppercase
-								display: block
-
-							.field
-								+subtitleBold
-								border: none
-								border-bottom: 1px solid #383838
-								padding: 15px 0
-								width: 100%
-								color: #383838
-								resize: none
-
-							&.left
-								float: left
-								width: calc(50% - 25px)
-							&.right
-								float: right
-								width: calc(50% - 25px)
-
-				.mainButton
-					margin-top: 30px
-					+subtitleBold
-					line-height: 50px
-					height: 55px
-					border: 1px solid #000
-					background: transparent
-					text-transform: uppercase
-					width: 173px
-					clear: both
-					display: block
-					@include transition(color .5s ease, background-color .5s ease)
-
-					&:hover, &:active, &:focus
-						color: #fff
-						background-color: $generalOrange
-						border-color: $generalOrange
 
 			.pageTitle
 				position: absolute

@@ -25,6 +25,14 @@
 			include "pages/portfolio.php";
 			break;
 
+        case 'progetti':
+            include "pages/progetti.php";
+            break;
+
+        case 'projectDetails':
+            include "pages/dettaglio.php";
+            break;
+
         case 'contact':
 			include "pages/contact.php";
 			break;
@@ -34,7 +42,12 @@
 			break;
 
 		default:
-			include "404.php";
+            //TODO fix this problem!
+            if(strpos($url[1], "projectDetails") !== false){
+                include "pages/dettaglio.php";
+            }else{
+			    include "404.php";
+            }
 			break;
 	}
 ?>

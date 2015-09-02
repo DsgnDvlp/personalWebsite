@@ -1,1 +1,93 @@
 @import master
+
+
+body
+	padding: 15px
+
+	#fullpage
+		position: absolute
+		top: 0
+		left: $borderDimension
+		right: $borderDimension
+		bottom: 0
+		background-image: url(../img/backgroundAbout.png)
+		background-position: 100% 100%
+		background-size: 50%
+		background-repeat: no-repeat
+		@include align-items(stretch)
+		@include display(flex)
+		@include flex-direction(row)
+		@include justify-content(flex-start)
+		@media screen and (max-width: 769px)
+			min-height: 800px
+
+		.section
+			margin: auto
+			@include flex(1)
+
+			.container
+				+outer-container()
+				max-width: 85em
+				margin-left: 2.813em
+				.title
+					+titleBold
+					+span-columns(12)
+					margin-bottom: 10px
+
+				.subtitle
+					+titleLight
+					max-width: 20em
+					+span-columns(12)
+					p
+						margin-bottom: 25px
+
+				.mainButton
+					margin-top: 40px
+					+subtitleBold
+					line-height: 50px
+					height: 55px
+					border: 1px solid #000
+					background: transparent
+					text-transform: uppercase
+					width: 173px
+					clear: both
+					display: block
+					@include transition(color .5s ease, background-color .5s ease)
+
+					&:hover, &:active, &:focus
+						color: #fff
+						background-color: $generalOrange
+						border-color: $generalOrange
+
+			.pageTitle
+				position: absolute
+				right: 45px
+				width: 400px
+				height: 45px
+				text-align: right
+				bottom: 512px
+				border-bottom: 1px solid $generalOrange
+				+menuFont
+				color: $generalOrange
+				text-transform: uppercase
+				@include transform-origin(100% 100%)
+				@include transform(rotate(-90deg))
+
+	.breadCrumbs
+		+subtitleBold
+		text-transform: uppercase
+		position: absolute
+		right: 60px
+		bottom: 60px
+
+		span
+			margin-right: 26px
+			a
+				cursor: pointer
+				color: #000
+				@include transition(color .3s ease)
+
+			&:last-child
+				margin-right: 0px
+			&.active a
+				color: $generalOrange

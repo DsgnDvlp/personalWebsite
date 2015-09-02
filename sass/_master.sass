@@ -185,6 +185,7 @@ body
 		&:hover
 			.languageEntry:not(.active)
 				max-width: 40px
+				opacity: 1
 
 		.languageEntry
 			text-transform: uppercase
@@ -201,7 +202,8 @@ body
 
 			&:not(.active)
 				max-width: 0
-				@include transition(max-width .5s ease)
+				opacity: 0
+				@include transition(max-width .5s ease, opacity .5s ease)
 
 //---------- FOOTER --------------//
 .footer

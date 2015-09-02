@@ -737,109 +737,248 @@ body.openedMenu .footer {
   z-index: -1;
 }
 
-/* line 3, ../sass/404.sass */
-.container {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background-image: url("../img/dino.png");
-  background-repeat: no-repeat;
-  background-position: 100% calc(100% - 25px);
-  background-size: 555px;
-  -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  box-align: stretch;
-  -webkit-align-items: stretch;
-  -moz-align-items: stretch;
-  -ms-align-items: stretch;
-  -o-align-items: stretch;
-  align-items: stretch;
-  -ms-flex-align: stretch;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-direction: row;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  box-pack: start;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  -o-justify-content: flex-start;
-  justify-content: flex-start;
-  -ms-flex-pack: start;
+/* line 4, ../sass/dettaglio.sass */
+body {
+  padding: 15px;
 }
-
-/* line 18, ../sass/404.sass */
-.pageContainer {
+/* line 7, ../sass/dettaglio.sass */
+body .generalContainer {
+  padding: 0 120px;
+}
+/* line 10, ../sass/dettaglio.sass */
+body #fullpage {
+  background-position: 100% 100%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  box-flex: 1;
-  -webkit-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
 }
-/* line 23, ../sass/404.sass */
-.pageContainer .mainTitle {
+@media screen and (max-width: 769px) {
+  /* line 10, ../sass/dettaglio.sass */
+  body #fullpage {
+    min-height: 800px;
+  }
+}
+/* line 22, ../sass/dettaglio.sass */
+body #fullpage .royalSlider {
+  width: 100%;
+  height: 360px;
+  margin-top: 210px;
+  background-color: #f0f0f0;
+}
+/* line 28, ../sass/dettaglio.sass */
+body #fullpage .royalSlider img.rsImg {
+  margin: auto !important;
+}
+/* line 31, ../sass/dettaglio.sass */
+body #fullpage .royalSlider .rsNav.rsBullets {
+  float: right;
+  margin-right: 20px;
+}
+/* line 34, ../sass/dettaglio.sass */
+body #fullpage .royalSlider .rsNav.rsBullets .rsNavItem.rsBullet {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid #F24E41;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+/* line 43, ../sass/dettaglio.sass */
+body #fullpage .royalSlider .rsNav.rsBullets .rsNavItem.rsBullet:first-child {
+  margin-top: -80px;
+}
+/* line 46, ../sass/dettaglio.sass */
+body #fullpage .royalSlider .rsNav.rsBullets .rsNavItem.rsBullet.rsNavSelected {
+  background-color: #F24E41;
+}
+/* line 49, ../sass/dettaglio.sass */
+body #fullpage .category {
+  font-family: "effra", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  position: absolute;
+  height: 50px;
+  width: 180px;
+  line-height: 50px;
+  background-color: #383838;
+  color: #fff;
+  margin-top: -40px;
+  margin-left: -10px;
+}
+/* line 62, ../sass/dettaglio.sass */
+body #fullpage .title {
   font-family: "effra", sans-serif;
   font-weight: bold;
   font-size: 40px;
   letter-spacing: 1px;
   line-height: 48px;
-  margin-bottom: 30px;
+  margin-top: 50px;
 }
-/* line 26, ../sass/404.sass */
-.pageContainer .subtitle {
+/* line 67, ../sass/dettaglio.sass */
+body #fullpage .subtitle {
+  max-width: 600px;
+  margin: 30px auto;
   font-family: "effra", sans-serif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
   line-height: 1.3;
 }
-/* line 29, ../sass/404.sass */
-.pageContainer .buttonRow {
+/* line 72, ../sass/dettaglio.sass */
+body #fullpage .detailsRow {
   margin-top: 50px;
-  text-align: center;
 }
-/* line 33, ../sass/404.sass */
-.pageContainer .buttonRow .homeButton {
+/* line 74, ../sass/dettaglio.sass */
+body #fullpage .detailsRow .detailsItem {
+  width: 29.8%;
+  margin: auto;
+  height: 200px;
+}
+/* line 79, ../sass/dettaglio.sass */
+body #fullpage .detailsRow .detailsItem:first-child {
+  float: left;
+}
+/* line 81, ../sass/dettaglio.sass */
+body #fullpage .detailsRow .detailsItem:nth-child(2) {
+  float: right;
+}
+/* line 84, ../sass/dettaglio.sass */
+body #fullpage .detailsRow .detailsItem .detailTitle {
+  font-family: "effra", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #F24E41;
+  text-align: left;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #F24E41;
+}
+/* line 92, ../sass/dettaglio.sass */
+body #fullpage .detailsRow .detailsItem .detailContent {
+  text-align: left;
+  margin-top: 30px;
+}
+/* line 96, ../sass/dettaglio.sass */
+body #fullpage .imageContainer {
+  margin-top: 60px;
+}
+/* line 99, ../sass/dettaglio.sass */
+body #fullpage .imageContainer img.fullWidth {
+  display: block;
+  width: 100%;
+  margin: 15px auto;
+  height: auto;
+}
+/* line 105, ../sass/dettaglio.sass */
+body #fullpage .imageContainer img.middleWidth {
+  width: calc(50%-8px);
+  display: inline-block;
+}
+/* line 108, ../sass/dettaglio.sass */
+body #fullpage .imageContainer img.middleWidth.left {
+  float: left;
+}
+/* line 110, ../sass/dettaglio.sass */
+body #fullpage .imageContainer img.middleWidth.right {
+  float: right;
+}
+/* line 113, ../sass/dettaglio.sass */
+body #fullpage .prevNextContainer {
+  margin-top: 30px;
+  display: inline-block;
+}
+/* line 117, ../sass/dettaglio.sass */
+body #fullpage .prevNextContainer .previous, body #fullpage .prevNextContainer .next {
+  width: calc(50% - 15px);
+}
+/* line 119, ../sass/dettaglio.sass */
+body #fullpage .prevNextContainer .previous img, body #fullpage .prevNextContainer .next img {
+  width: 100%;
+}
+/* line 122, ../sass/dettaglio.sass */
+body #fullpage .prevNextContainer .previous .prevNextText, body #fullpage .prevNextContainer .next .prevNextText {
   font-family: "effra", sans-serif;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 17px;
-  line-height: 50px;
-  height: 55px;
-  min-width: 170px;
-  border: 1px solid #000;
-  background: transparent;
   text-transform: uppercase;
-  -webkit-transition: color 0.5s ease, background-color 0.5s ease;
-  -moz-transition: color 0.5s ease, background-color 0.5s ease;
-  transition: color 0.5s ease, background-color 0.5s ease;
+  text-transform: uppercase;
+  position: relative;
+  height: 50px;
+  width: 180px;
+  line-height: 50px;
+  background-color: #383838;
+  color: #fff;
+  margin-top: -40px;
+}
+/* line 134, ../sass/dettaglio.sass */
+body #fullpage .prevNextContainer .previous {
+  float: left;
+}
+/* line 136, ../sass/dettaglio.sass */
+body #fullpage .prevNextContainer .previous .prevNextText {
+  margin-left: -10px;
+}
+/* line 139, ../sass/dettaglio.sass */
+body #fullpage .prevNextContainer .next {
+  float: right;
+}
+/* line 141, ../sass/dettaglio.sass */
+body #fullpage .prevNextContainer .next .prevNextText {
+  float: right;
+  margin-right: -10px;
+}
+/* line 145, ../sass/dettaglio.sass */
+body #fullpage .bottomRow {
+  margin-top: 70px;
+  clear: both;
+  text-align: center;
+}
+/* line 150, ../sass/dettaglio.sass */
+body #fullpage .bottomRow .bottomRowText {
+  font-family: "effra", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  max-width: 600px;
   margin: auto;
 }
-/* line 44, ../sass/404.sass */
-.pageContainer .buttonRow .homeButton:hover, .pageContainer .buttonRow .homeButton:active, .pageContainer .buttonRow .homeButton:focus {
+/* line 155, ../sass/dettaglio.sass */
+body #fullpage .bottomRow .bottomRowButton {
+  margin: 40px auto 90px;
+  font-family: "effra", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 17px;
+  height: 55px;
+  width: 173px;
+  line-height: 55px;
+  border: 1px solid #383838;
+  display: block;
+  color: #383838;
+  -webkit-transition: color 0.4s ease, background-color 0.4s ease;
+  -moz-transition: color 0.4s ease, background-color 0.4s ease;
+  transition: color 0.4s ease, background-color 0.4s ease;
+}
+/* line 166, ../sass/dettaglio.sass */
+body #fullpage .bottomRow .bottomRowButton:hover {
   color: #fff;
   background-color: #F24E41;
   border-color: #F24E41;
+}
+/* line 171, ../sass/dettaglio.sass */
+body .footer {
+  display: none;
 }

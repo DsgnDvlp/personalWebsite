@@ -1,0 +1,172 @@
+@import master
+
+
+body
+	padding: 15px
+
+	.generalContainer
+		padding: 0 120px
+
+	#fullpage
+		background-position: 100% 100%
+		background-size: 50%
+		background-repeat: no-repeat
+		max-width: 1200px
+		margin: auto
+		text-align: center
+		@media screen and (max-width: 769px)
+			min-height: 800px
+			//sistemare il css per la visualizzazione identica allo sketch!
+
+
+		.royalSlider
+			width: 100%
+			height: 360px
+			margin-top: 210px
+			background-color: #f0f0f0
+
+			img.rsImg
+				margin: auto !important
+
+			.rsNav.rsBullets
+				float: right
+				margin-right: 20px
+				.rsNavItem.rsBullet
+					width: 10px
+					height: 10px
+					cursor: pointer
+					border: 1px solid $generalOrange
+					background-color: transparent
+					border-radius: 10px
+					margin-top: 15px
+
+					&:first-child
+						margin-top: -80px
+
+					&.rsNavSelected
+						background-color: $generalOrange
+
+		.category
+			+subtitleBold
+			text-transform: uppercase
+			text-transform: uppercase
+			position: absolute
+			height: 50px
+			width: 180px
+			line-height: 50px
+			background-color: #383838
+			color: #fff
+			margin-top: -40px
+			margin-left: -10px
+
+		.title
+			+titleBold
+			margin-top: 50px
+
+
+		.subtitle
+			max-width: 600px
+			margin: 30px auto
+			+titleLight
+
+		.detailsRow
+			margin-top: 50px
+			.detailsItem
+				width: 29.8%
+				margin: auto
+				height: 200px
+
+				&:first-child
+					float: left
+				&:nth-child(2)
+					float: right
+
+				.detailTitle
+					+detailsTitle
+					text-transform: uppercase
+					color: $generalOrange
+					text-align: left
+					padding-bottom: 15px
+					border-bottom: 1px solid $generalOrange
+
+				.detailContent
+					text-align: left
+					margin-top: 30px
+
+		.imageContainer
+			margin-top: 60px
+
+			img.fullWidth
+				display: block
+				width: 100%
+				margin: 15px auto
+				height: auto
+
+			img.middleWidth
+				width: calc(50%-8px)
+				display: inline-block
+				&.left
+					float: left
+				&.right
+					float: right
+
+		.prevNextContainer
+			margin-top: 30px
+			display: inline-block
+
+			.previous, .next
+				width: calc(50% - 15px)
+				img
+					width: 100%
+
+				.prevNextText
+					+subtitleBold
+					text-transform: uppercase
+					text-transform: uppercase
+					position: relative
+					height: 50px
+					width: 180px
+					line-height: 50px
+					background-color: #383838
+					color: #fff
+					margin-top: -40px
+
+			.previous
+				float: left
+				.prevNextText
+					margin-left: -10px
+
+			.next
+				float: right
+				.prevNextText
+					float: right
+					margin-right: -10px
+
+		.bottomRow
+			margin-top: 70px
+			clear: both
+			text-align: center
+
+			.bottomRowText
+				+titleLight
+				max-width: 600px
+				margin: auto
+
+			.bottomRowButton
+				margin: 40px auto 90px
+				+subtitleBold
+				height: 55px
+				width: 173px
+				line-height: 55px
+				border: 1px solid #383838
+				display: block
+				color: #383838
+				@include transition(color .4s ease, background-color .4s ease)
+
+				&:hover
+					color: #fff
+					background-color: $generalOrange
+					border-color: $generalOrange
+
+	.footer
+		display: none

@@ -1,0 +1,127 @@
+@import master
+
+
+body
+	padding: 15px
+
+	#fullpage
+		position: absolute
+		top: 0
+		left: $borderDimension
+		right: $borderDimension
+		bottom: 0
+		overflow: scroll
+		background-position: 100% 100%
+		background-size: 50%
+		background-repeat: no-repeat
+		@include align-items(stretch)
+		@include display(flex)
+		@include flex-direction(row)
+		@include justify-content(flex-start)
+		@media screen and (max-width: 769px)
+			min-height: 800px
+			//sistemare il css per la visualizzazione identica allo sketch!
+		.grid
+			max-width: 1311px
+			margin: auto
+			margin-top: 200px
+			width: 100%
+
+			.gridItem
+				width: 370px
+				height: 445px
+				display: inline-block
+				margin-left: 50px
+				margin-bottom: 50px
+				text-align: center
+
+				.itemCover
+					width: 360px
+					margin-left: 10px
+					position: relative
+
+					img
+						width: 360px
+
+					.itemTitle
+						+titleBold
+						color: #fff
+						opacity: 0
+						position: absolute
+						top: 0
+						bottom: 0
+						right: 0
+						left: 0
+						background-color: #F24E41
+						@include align-items(stretch)
+						@include display(flex)
+						@include flex-direction(row)
+						@include justify-content(flex-start)
+						@include transition(opacity .5s ease)
+
+						.itemTitleText
+							@include flex(1)
+							margin: auto
+
+				.itemCategory
+					+subtitleBold
+					text-transform: uppercase
+					text-transform: uppercase
+					position: absolute
+					height: 50px
+					width: 180px
+					line-height: 50px
+					background-color: #383838
+					color: #fff
+					margin-top: -40px
+
+				.itemButton
+					+subtitleBold
+					display: block
+					color: #383838
+					text-transform: uppercase
+					height: 55px
+					width: 173px
+					line-height: 55px
+					margin: 30px auto 0
+					border: 2px solid #383838
+					@include transition(color .5s ease, background-color .5s ease)
+					&:hover, &:active, &:focus
+						color: #fff
+						background-color: $generalOrange
+						border-color: $generalOrange
+
+				&:hover
+					.itemTitle
+						opacity: 1
+
+	.pageTitle
+		position: absolute
+		right: 45px
+		width: 400px
+		height: 45px
+		text-align: right
+		bottom: 512px
+		border-bottom: 1px solid $generalOrange
+		+menuFont
+		color: $generalOrange
+		text-transform: uppercase
+		@include transform-origin(100% 100%)
+		@include transform(rotate(-90deg))
+
+	.breadCrumbs
+		+subtitleBold
+		text-transform: uppercase
+		position: absolute
+		right: 60px
+		bottom: 60px
+
+		span
+			margin-right: 26px
+			cursor: pointer
+			@include transition(color .3s ease)
+
+			&:last-child
+				margin-right: 0px
+			&.active, &:hover
+				color: $generalOrange
