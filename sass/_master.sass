@@ -18,18 +18,22 @@ $lateralMarginFromBorder: 45px
 //General styles
 
 /*----------- GENERAL STYLE -----------*/
+
+html, body
+	height: 100%
+
 body
 	font-family: $fontKep
 	color: #383838
 	padding: $borderDimension
-	opacity: 0
-	@include transition(opacity .5s ease .2s)
+	//opacity: 1
+	//@include transition(opacity .5s ease .2s)
 
-	.generalContainer
+	//.generalContainer
 		opacity: 0
 		@include transition(opacity .5s ease .8s)
 
-	&.loaded
+	//&.loaded
 		opacity: 1
 		.generalContainer
 			opacity: 1
@@ -37,6 +41,9 @@ body
 	a
 		color: $generalOrange
 		text-decoration: none
+
+.animsition-loading
+	background-color: $generalOrange
 
 /*----------- BORDER FIXED SECTION -----------*/
 
@@ -311,8 +318,9 @@ body
 			font-family: $fontEffra
 			font-weight: bold
 			font-size: 16px
-			letter-spacing: 2px
+			letter-spacing: 1px
 			line-height: 19px
+			text-transform: capitalize
 			+span-columns(2)
 
 			&:first-child
@@ -326,7 +334,7 @@ body
 				display: inline-block
 
 				.socialDesktop
-					opacity: .4
+					opacity: .3
 					display: block
 					@include transition(opacity .4s ease, transform .4s ease)
 					@media screen and (max-width: 769px)

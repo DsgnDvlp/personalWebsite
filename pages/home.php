@@ -1,6 +1,34 @@
 
 <?php
+	include_once "lang.php";
 	$path = "";
+
+	/* CALCOLO DELL'ORA PER IL CAMBIO DEL MESSAGGIO*/
+	$hour = intVal(Date("G"));
+	$minutes = intval(Date("i"));
+	if($hour >= 6 && ($hour < 9 || $hour == 9 && $minutes <= 30)){
+		$backgroundImage = "img/01.png";
+		$title = tr_("morningTitle");
+	} else if( $hour >= 9 && ($hour<12 || $hour == 12 && $minutes <= 30 )){
+		$backgroundImage = "img/01.png";
+		$title = tr_("workTitle");
+	} else if($hour >= 12 && $hour < 14){
+		$backgroundImage = "img/01.png";
+		$title = tr_("noonTitle");
+	} else if($hour >= 14 && $hour < 19){
+		$backgroundImage = "img/01.png";
+		$title = tr_("afternoonTitle");
+	} else if($hour >=19 && ($hour < 21 || $hour == 21 && $minutes <= 30)){
+		$backgroundImage = "img/01.png";
+		$title = tr_("eveningTitle");
+	} else if($hour >=21 && ($hour < 23 || $hour == 23 && $minutes <= 30)){
+		$backgroundImage = "img/01.png";
+		$title = tr_("partyTitle");
+	} else{
+		$backgroundImage = "img/01.png";
+		$title = tr_("nightTitle");
+	}
+
 
 	//USER CONTROLLER PER L'HEAD
 	function head($path){ ?>
@@ -9,28 +37,14 @@
 	<?php }
 
 	//user controll per il content..
-	function content($path){ ?>
+	function content($path){
+		global $title; ?>
 		<!-- 		CONTENUTO DELLA PAGINA	 -->
 
 		<div class="container">
             <div class="homeContent">
                 <p class="mainTitle">
-                    <?php
-                        /* CALCOLO DELL'ORA PER IL CAMBIO DEL MESSAGGIO*/
-                        $hour = intVal(Date("G"));
-                        if($hour >= 6 && $hour < 12){
-							//inserire qui dentro il background per il body?>
-                            <?=tr_("morningTitle")?>
-                        <?php } else if($hour >= 12 && $hour<14 ){ ?>
-                            <?=tr_("noonTitle")?>
-                        <?php } else if($hour >= 14 && $hour < 18){ ?>
-                            <?=tr_("afternoonTitle")?>
-                        <?php } else if($hour >=18 || $hour < 22){ ?>
-                            <?=tr_("eveningTitle")?>
-                        <?php } else{ ?>
-                            <?=tr_("nightTitle")?>
-                        <?php }
-                    ?>
+                    <?=$title?>
                 </p>
                 <p class="subtitle">
                     <?=tr_("subtitleRow1")?>
@@ -48,21 +62,14 @@
 					</span>
                 </p>
                 <div class="buttonRow">
-					<button class="homeButton">
-						<?=tr_("homeButtonDeath")?>
-					</button>
-					<button class="homeButton">
-						<?=tr_("homeButtonStuff")?>
-					</button>
+					<a href="about" class="homeButton">
+						<?=tr_("homeButtonAbout")?>
+					</a>
+					<a href = "portfolio" class="homeButton">
+						<?=tr_("homeButtonPortfolio")?>
+					</a>
                 </div>
             </div>
-<!--
-            <div class="lowRow">
-                <div class="first"><?=tr_("lowRowString1", array(Date("H:i")))?></div>
-                <div class="center"><img src="img/Icona.svg"></div>
-                <div class="second"><?=tr_("lowRowString2")?></div>
-            </div>
--->
 		</div>
 
 	<?php }

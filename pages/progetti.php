@@ -9,7 +9,7 @@
 	function head($path){ ?>
 
         <link rel="stylesheet" type="text/css" href="css/progetti.css"/>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
         <script type="text/javascript" src="js/progetti.js"></script>
 	<?php }
 

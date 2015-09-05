@@ -10,8 +10,6 @@ cp .htaccess ./deploy/.htaccess;
 
 cp 404.php ./deploy/404.php;
 
-cp -r ./font ./deploy/font;
-
 cp -r ./img ./deploy/img;
 
 cp -r ./js ./deploy/js;
@@ -35,3 +33,5 @@ cp switchLanguage.php ./deploy/switchLanguage.php;
 cp lang.php ./deploy/lang.php;
 
 cp sendMail.php ./deploy/sendMail.php
+
+cp -r ./file ./deploy/file

@@ -179,7 +179,7 @@
             		</div>
             	</div>
 				<div class="footer">
-            		<div class="goDown"><a href="#"><span class="downloadButton"><?=tr_("aboutFourthDownloadButton")?></span></a><br/>
+            		<div class="goDown"><a href="file/CurriculumVitae_2015_Paul_Romero.pdf" target="_blank"><span class="downloadButton"><?=tr_("aboutFourthDownloadButton")?></span></a><br/>
             		</div>
             	</div>
         	</div>

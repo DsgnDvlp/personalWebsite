@@ -26,10 +26,10 @@
 		<!-- 		CONTENUTO DELLA PAGINA	 -->
 		<?php
 			global $connection;
-			$result = $connection -> query("select * from progetti p join categorie c on p.category = c.id where p.id = '".$_GET["i"]."'");
+			$result = $connection -> query("select * from Progetti p join Categorie c on p.category = c.id where p.id = '".$_GET["i"]."'");
             $project  = mysqli_fetch_array($result);
 
-			$nextPrevious = $connection -> query("select * from progetti p where id != '".$_GET["i"]."'");
+			$nextPrevious = $connection -> query("select * from Progetti p where id != '".$_GET["i"]."'");
 			$previous = mysqli_fetch_array($nextPrevious);
 			$next = mysqli_fetch_array($nextPrevious);
 		?>
@@ -43,18 +43,18 @@
 			</div>
 			<p class="category"><?= $project["Name"]?></p>
 			<p class="title"><?= $project["Title"] ?></p>
-			<p class="subtitle"><?= $project["Subtitle"] ?></p>
+			<p class="subtitle"><?= $project["Subtitle_".$_SESSION["lang"]] ?></p>
 			<div class="detailsRow">
 				<div class="detailsItem">
-					<p class="detailTitle">info</p>
-					<p class="detailContent"><?= $project["Info"]?></p>
+					<p class="detailTitle"><?=tr_("dettaglioInfo")?></p>
+					<p class="detailContent"><?= $project["Info_".$_SESSION["lang"]]?></p>
 				</div>
 				<div class="detailsItem">
-					<p class="detailTitle">year</p>
+					<p class="detailTitle"><?=tr_("dettaglioYear")?></p>
 					<p class="detailContent"><?= $project["Year"]?></p>
 				</div>
 				<div class="detailsItem">
-					<p class="detailTitle">role</p>
+					<p class="detailTitle"><?=tr_("dettaglioRole")?></p>
 					<p class="detailContent"><?= $project["Role"]?></p>
 				</div>
 			</div>
@@ -69,19 +69,19 @@
 				<div class="previous">
 					<a class="prevNextLink" href="projectDetails?i=<?=$previous['id']?>">
 						<img class="prevNextImg" src = "projects/<?=$previous["Title"]?>/front.png">
-						<p class="prevNextText">Precedente</p>
+						<p class="prevNextText"><?=tr_("dettaglioPreviousButton")?></p>
 					</a>
 				</div>
 				<div class="next">
 					<a class="prevNextLink" href="projectDetails?i=<?=$next['id']?>">
 						<img class="prevNextImg" src = "projects/<?=$next["Title"]?>/front.png">
-						<p class="prevNextText">Successivo</p>
+						<p class="prevNextText"><?=tr_("dettaglioNextButton")?></p>
 					</a>
 				</div>
 			</div>
 			<div class="bottomRow">
-				<p class="bottomRowText">Ti è piaciuto questo lavoro? Se sei interassato possiamo parlare di un tuo progetto!</p>
-				<a class="bottomRowButton" href="#">CONTATTAMI</a>
+				<p class="bottomRowText"><?=tr_("dettaglioLostText")?></p>
+				<a class="bottomRowButton" href="contact"><?=tr_("dettaglioContactButton")?></a>
 			</div>
 		</div>
 	<?php }

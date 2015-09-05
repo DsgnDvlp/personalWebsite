@@ -20,15 +20,15 @@
             		<div class="subtitle">
 						<p><?=tr_("portfolioSubtitle")?></p>
             		</div>
-					<button class="mainButton" onclick="location.href = 'progetti'"><?=tr_("portfolioButtonText")?></button>
+					<a class="mainButton" href='progetti'><?=tr_("portfolioButtonText")?></a>
             	</div>
             	<div class="pageTitle">portfolio</div>
             </div>
 		</div>
 		<div class="breadCrumbs">
-			<span class="whatido"><a href="#whatido"><?=tr_("portfolioBreadCrumbs1")?></a></span>
-			<span class="software"><a href="#software"><?=tr_("portfolioBreadCrumbs2")?></a></span>
-			<span class="mycv"><a href="#mycv"><?=tr_("portfolioBreadCrumbs3")?></a></span>
+			<span class="whatido"><a href="progetti#ux"><?=tr_("portfolioBreadCrumbs1")?></a></span>
+			<span class="software"><a href="progetti#branding"><?=tr_("portfolioBreadCrumbs2")?></a></span>
+			<span class="mycv"><a href="progetti#digital"><?=tr_("portfolioBreadCrumbs3")?></a></span>
 		</div>
 	<?php }
 

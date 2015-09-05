@@ -1,4 +1,12 @@
 @import master
+html, body
+	height: 100%
+
+.generalContainer
+	background-position: 100% 100%
+	background-size: 40%
+	background-repeat: no-repeat
+	height: calc(100% - 50px)
 
 .container
 	position: absolute
@@ -57,13 +65,13 @@
 
 			.homeButton
 				+subtitleBold
-				line-height: 50px
+				line-height: 55px
 				height: 55px
-				//width: 100%
-				//max-width: 200px
 				border: 1px solid #000
 				background: transparent
 				text-transform: uppercase
+				cursor: pointer
+				color: #383838
 				@include transition(color .5s ease, background-color .5s ease)
 				+span-columns(2, block)
 
@@ -83,20 +91,6 @@
 					color: #fff
 					background-color: $generalOrange
 					border-color: $generalOrange
-
-	//.lowRow
-		text-align: center
-		font-family: $fontEffra
-		font-weight: bold
-		font-size: 16px
-		letter-spacing: 2px
-		position: absolute
-		bottom: 30px
-		left: 0
-		right: 0
-		line-height: 76px
-		text-transform: uppercase
-		+row()
 
 		.first
 			text-align: right

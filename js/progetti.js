@@ -22,4 +22,8 @@ $(document).ready(function(){
             $(this).addClass("active");
         }
     });
+
+    if(location.hash != ""){
+        $(".breadCrumbs span[data-filter='"+location.hash.substr(1)+"']").click();
+    }
 });

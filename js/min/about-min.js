@@ -10,19 +10,19 @@ $(document).ready(function() {
             if(index == 2){
 				if(!$(".section.second").hasClass("loaded")){
                     $(".section.second").addClass("loaded");
-                    animateBorderDiv(".section.second .centerBlock", "1s", "2s", "s");
+                    animateBorderDiv(".section.second .centerBlock", "0.8s", ".8s", "s");
                 }
             }
             if(index == 3){
                 if(!$(".section.third").hasClass("loaded")){
                     $(".section.third").addClass("loaded");
-                    animateBorderDiv(".section.third .centerBlock", "1s", "2s", "n");
+                    animateBorderDiv(".section.third .centerBlock", ".8s", ".8s", "n");
                 }
             }
             if(index == 4){
                 if(!$(".section.fourth").hasClass("loaded")){
                     $(".section.fourth").addClass("loaded");
-                    animateBorderDivThird(".section.fourth .centerBlock", "1s", "2s");
+                    animateBorderDivThird(".section.fourth .centerBlock", ".8s", ".8s");
                 }
             }
 			$(".breadCrumbs span").removeClass("active");

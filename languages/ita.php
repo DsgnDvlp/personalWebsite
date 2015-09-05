@@ -1,13 +1,25 @@
 <?php
 
     $resource = array(
+        //============================= MASTER PAGE =============================//
+        "menuAbout" => "about",
+        "menuAboutSubtitle" => "Vuoi sapere chi sono e cosa so fare?",
+        "menuPortfolio" => "portfolio",
+        "menuPortfolioSubtitle" => "Vieni a vedere qualche mio lavoro",
+        "menuFreeStuff" => "co\$e fighe",
+        "menuFreeStuffSubtitle" => "Cose fighe da scaricare per amici designer",
+        "menuContact" => "contattami",
+        "menuContactSubtitle" => "Usa l’internet! Mandami un messaggio!",
+
         //============================= HOME PAGE =============================//
         //HOUR LANGUAGE
         "morningTitle" => "Buongiorno",
-        "noonTitle" => "Time to eat something",
-        "afternoonTitle" => "Good afternoon",
-        "eveningTitle" => "Party time",
-        "nightTitle" => "Zzzz",
+        "workTitle" => "Al lavoro!",
+        "noonTitle" => "Ora di pranzo",
+        "afternoonTitle" => "Si lavoro duro!",
+        "eveningTitle" => "Se magna",
+        "partyTitle" => "Birra time",
+        "nightTitle" => "Buonanotte",
         //SUBTITLE
         "subtitleRow1" => "My name is Paul Jesus Benites Romero &amp;",
         "subtitleRow2" => "I’m a ",
@@ -22,8 +34,8 @@
         "lowRowString1" => "Sono le %s. Bisogno di un caffè?",
         "lowRowString2" => "COME BACK FOR NEW GIFTS",
         //BUTTONS
-        "homeButtonDeath" => "Who am I?",
-        "homeButtonStuff" => " Good \$tuff",
+        "homeButtonAbout" => "chi sono",
+        "homeButtonPortfolio" => "portfolio",
         //FOOTER
         "footerContent1" => "Da qualche parte in questo sito vivono dei dinosauri",
         "footerContent2" => "Sono in cerca di un lavoro figo! Contattami",
@@ -105,6 +117,13 @@
         "progettiPageTitle" => "progetti",
 
         //============================= DETTAGLIO PORTFOLIO PAGE =============================//
+        "dettaglioInfo" => "info",
+        "dettaglioRole" => "role",
+        "dettaglioYear" => "year",
+        "dettaglioPreviousButton" => "Precedente",
+        "dettaglioNextButton" => "Successivo",
+        "dettaglioLostText" => "Ti è piaciuto questo lavoro? Se sei interassato possiamo parlare di un tuo progetto!",
+        "dettaglioContactButton" => "CONTATTAMI",
 
         //============================= FREESTUFF PAGE =============================//
         "freestuffPageTitle" => "co\$e fighe",

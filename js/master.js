@@ -1,16 +1,21 @@
 $(document).ready(function(){
-//    $(".languageBar").hover(function(){
-//        $("languageBar").toggleClass("opened");
-//    },function(){
-//        $("languageBar").toggleClass("opened");
-//    });
-//
-//    $(".languageBar").click(function((){
-//        if('ontouchstart' in document.documentElement){
-//            alert("touch");
-//        }
-//    }));
-	$("body").addClass("loaded");
+	$(".animsition").animsition({
+		inClass: 'fade-in',
+		outClass: 'fade-out-right-sm',
+		inDuration: 1500,
+		outDuration: 600,
+		linkElement: "a:not([target='_blank']):not([href^=#])",
+		loading: true,
+		loadingParentElement: "body",
+		loadingClass: 'animsition-loading',
+		unSupportCss:[
+			'animation-duration',
+			'-webkit-animation-duration',
+			'-o-animation-duration'
+		],
+		overlay: false
+	}).one('animsition.end', function(){
+	});
 });
 
 function switchLanguage(language){

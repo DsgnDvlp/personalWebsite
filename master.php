@@ -7,22 +7,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <title>Paul Romero</title>
-        <link rel="icon" type="image/png" href="img/Favicon.png" />
+        <link rel="icon" type="image/png" href="img/Monogramma.jpg" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="author" content="DsgnDvlp" />
 
+        <link type="text/css" rel = "stylesheet" href = "css/animsition.min.css"/>
+
         <script src="//use.typekit.net/cqp8ytj.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
 
-        <!--Import materialize.css-->
-
-        <!--Let browser know website is optimized for mobile-->
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="js/master.js"></script>
-        <script type="text/javascript">
+        <script type="text/javascript" src="js/jquery.animsition.min.js"></script>
 
-        </script>
+        <script type="text/javascript" src="js/master.js"></script>
 
         <!-- SPECIFIC PAGE HEADER PLACEHOLDER -->
         <?php echo head($path); ?>
@@ -31,7 +29,7 @@
     </head>
 
 
-    <body>
+    <body class="animsition">
        <div class="menuRow">
             <div class="logoContainer">
                 <div class="logo">
@@ -52,7 +50,7 @@
             </div>
        </div>
         <!-- SPECIFIC PAGE CONTENT PLACEHOLDER -->
-        <div class="generalContainer">
+        <div class="generalContainer" style="background-image:url('<?= $backgroundImage?>')">
         	<?php echo content($path); ?>
         </div>
         <!--   MENU   -->
@@ -61,57 +59,57 @@
                 <ul class="menuContent">
                     <li class="menuEntry">
                         <a href="about">
-                            <span class="description">Wanna know something about me?</span>
-                            About
+                            <span class="description"><?=tr_("menuAboutSubtitle")?></span>
+                            <?=tr_("menuAbout")?>
                         </a>
                     </li>
                     <li class="menuEntry">
                         <a href="portfolio">
-                            <span class="description">Wanna know something about me?</span>
-                            Portfolio
+                            <span class="description"><?=tr_("menuPortfolioSubtitle")?></span>
+                            <?=tr_("menuPortfolio")?>
                         </a>
                     </li>
                     <li class="menuEntry">
                         <a href="freeStuff">
-                            <span class="description">Wanna know something about me?</span>
-                            Free Stuff
+                            <span class="description"><?=tr_("menuFreeStuffSubtitle")?></span>
+                            <?=tr_("menuFreeStuff")?>
                         </a>
                     </li>
                     <li class="menuEntry">
                         <a href="contact">
-                            <span class="description">Wanna know something about me?</span>
-                            Contact
+                            <span class="description"><?=tr_("menuContactSubtitle")?></span>
+                            <?=tr_("menuContact")?>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="socialBar">
                 <div class="socialEntry">
-                	<a class="socialEntryLink" href="#">
+                	<a class="socialEntryLink" href="https://www.facebook.com/promerodesign" target="_blank">
                 		<span class="socialDesktop">facebook</span>
                 		<img class="socialMobile" src="img/facebook.svg" alt=""/>
                 	</a>
                 </div>
                 <div class="socialEntry">
-                	<a class="socialEntryLink" href="#">
+                	<a class="socialEntryLink" href="https://twitter.com/p_romerodesign" target="_blank">
                 		<span class="socialDesktop">twitter</span>
                 		<img class="socialMobile" src="img/twitter.svg" alt=""/>
                 	</a>
                 </div>
                 <div class="socialEntry">
-                	<a class="socialEntryLink" href="#">
+                	<a class="socialEntryLink" href="https://www.behance.net/paulromerodesign" target="_blank">
                 		<span class="socialDesktop">behance</span>
                 		<img class="socialMobile" src="img/behance.svg" alt=""/>
                 	</a>
                 </div>
                 <div class="socialEntry">
-                	<a class="socialEntryLink" href="#">
+                	<a class="socialEntryLink" href="https://medium.com/@paulromero/" target="_blank">
                 		<span class="socialDesktop">medium</span>
                 		<img class="socialMobile" src="img/medium.svg" alt="">
                 	</a>
                 </div>
                 <div class="socialEntry">
-					<a class="socialEntryLink" href="#">
+					<a class="socialEntryLink" href="https://it.linkedin.com/in/paulromerodesign" target="_blank">
                 		<span class="socialDesktop">linkedin</span>
                 		<img class="socialMobile" src="img/linkedin.svg" alt="">
                 	</a>
