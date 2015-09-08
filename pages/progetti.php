@@ -26,7 +26,7 @@
 					<div class="gridItem <?= $row['class'];?>">
 						<div class="itemCover">
 							<img src="projects/<?= $row['Title'] ?>/front.png" />
-							<p class="itemTitle"><span class="itemTitleText"><?=$row['Title']?></span></p>
+							<!-- <p class="itemTitle"><span class="itemTitleText"><?=$row['Title']?></span></p> -->
 						</div>
 						<p class="itemCategory"><?=$row["Name"]?></p>
 						<a class="itemButton" href="projectDetails?i=<?=$row['id']?>">scopri</a>
@@ -34,7 +34,7 @@
 				<?php endwhile ?>
 			</div>
 		</div>
-		<div class="pageTitle"><?=tr_("progettiPageTitle")?></div>
+		<!-- <div class="pageTitle"><?=tr_("progettiPageTitle")?></div> -->
 		<div class="breadCrumbs">
 			<span data-filter="ux">UI/UX DESIGN</span>
 			<span data-filter="branding">BRANDING</span>

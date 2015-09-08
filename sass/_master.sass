@@ -42,8 +42,36 @@ body
 		color: $generalOrange
 		text-decoration: none
 
+.clearFix
+	clear: both
+
 .animsition-loading
 	background-color: $generalOrange
+
+.mobileBlocker
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: $generalOrange
+	text-align: center
+	z-index: 9999999999
+	overflow: hidden
+	@include align-items(stretch)
+	@include display(flex)
+	@include flex-direction(row)
+	@include justify-content(flex-start)
+	display: none
+
+
+	p
+		color: #fff
+		text-transform: uppercase
+		+mobileWarningText
+		@include flex(1)
+		margin: auto
+		display: inline
 
 /*----------- BORDER FIXED SECTION -----------*/
 
@@ -178,6 +206,7 @@ body
 				@include transition(fill .7s ease)
 
 	.languageBar
+		display: none
 		float: right
 		margin-right: 45px
 		line-height: 26px

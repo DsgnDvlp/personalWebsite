@@ -36,13 +36,13 @@
 		<div id="fullpage">
 			<div class="royalSlider rsDefault">
 			    <!-- simple image slide -->
-			    <img class="rsImg" src="img/dino.png" alt="image desc" />
+			    <img class="rsImg" src="projects/<?=$project['Title']?>/slide1.png" alt="image desc" />
 
-				<img class="rsImg" src="img/dino.png" alt="image desc" />
-				<img class="rsImg" src="img/dino.png" alt="image desc" />
+				<!-- <img class="rsImg" src="projects/<?=$project['Title']?>/slide2.png" alt="image desc" /> -->
+				<!-- <img class="rsImg" src="projects/<?=$project['Title']?>/slide3.png" alt="image desc" /> -->
 			</div>
 			<p class="category"><?= $project["Name"]?></p>
-			<p class="title"><?= $project["Title"] ?></p>
+			<!-- <p class="title"><?= $project["Title"] ?></p> -->
 			<p class="subtitle"><?= $project["Subtitle_".$_SESSION["lang"]] ?></p>
 			<div class="detailsRow">
 				<div class="detailsItem">
@@ -63,6 +63,7 @@
 				<img class="fullWidth" src="projects/<?=$project['Title']?>/2.png"/>
 				<img class="middleWidth left" src="projects/<?=$project['Title']?>/3.png"/>
 				<img class="middleWidth right" src="projects/<?=$project['Title']?>/4.png"/>
+				<div class="clearFix"></div>
 				<img class="fullWidth" src="projects/<?=$project['Title']?>/5.png"/>
 			</div>
 			<div class="prevNextContainer">

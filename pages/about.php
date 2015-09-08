@@ -35,7 +35,7 @@
 						<p><?=tr_("aboutSubtitleRow4")?></p>
             		</div>
             	</div>
-            	<div class="pageTitle">about</div>
+            	<div class="pageTitle"><?=tr_("aboutTitlePage")?></div>
             	<div class="footer">
             		<div class="goDown"><a href="#whatido"><span class="text"><?=tr_("aboutFirstNext")?></span></a><br/>
             			<div class="lineDown"></div>
@@ -85,7 +85,7 @@
             	</div>
             </div>
 			<div class="section third">
-				<div class="topPanel"><a href="#software"><span class="text"><?=tr_("aboutThirdBack")?></span></a></div>
+				<div class="topPanel"><a href="#whatido"><span class="text"><?=tr_("aboutThirdBack")?></span></a></div>
             	<div class="centerLine"></div>
             	<div class="centerBlocksContainer">
 					<div class="centerBlock"><span class="text"><?=tr_("aboutThirdTitle")?></span></div>

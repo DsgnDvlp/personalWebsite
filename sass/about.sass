@@ -49,6 +49,7 @@ body
 					.goDown
 						.text
 							opacity: 1
+							background-color: transparent
 				.container
 					margin-bottom: -17vh
 
@@ -117,7 +118,11 @@ body
 						opacity: 0
 						position: relative
 						bottom: 20px
-						@include transition(opacity .5s ease 2s)
+						@include transition(opacity .5s ease 2s, color .5s ease, background-color .5s ease)
+						&:hover
+							color: #fff
+							background-color: $generalOrange
+							border-color: $generalOrange
 
 			.topPanel
 				position: absolute
@@ -259,10 +264,11 @@ body
 					.contentBlock
 						left: -430px
 						position: relative
+						opacity: 0
 						&:first-child
-							@include transition(left .3s ease 2.5s)
+							@include transition(left .5s ease 2.5s, opacity .5s ease 2.7s)
 						&:last-child
-							@include transition(left .3s ease 2.7s)
+							@include transition(left .5s ease 2.7s, opacity .5s ease 2.9s)
 
 						img
 							right: 25%
@@ -274,10 +280,11 @@ body
 					.contentBlock
 						left: 430px
 						position: relative
+						opacity: 0
 						&:first-child
-							@include transition(left .3s ease 2.9s)
+							@include transition(left .5s ease 2.9s, opacity .53s ease 3.1s)
 						&:last-child
-							@include transition(left .3s ease 3.1s)
+							@include transition(left .5s ease 3.1s, opacity .53s ease 3.3s)
 
 						.number
 							text-align: left
@@ -290,6 +297,7 @@ body
 			&.second.loaded
 				.contentBlock
 					left: 0
+					opacity: 1
 
 				.centerLine
 					@include animation(centerLineConstruction 2.5s ease)
@@ -306,6 +314,7 @@ body
 			&.third.loaded
 				.contentBlock
 					left: 0
+					opacity: 1
 
 				.centerLine
 					@include animation(centerLineConstruction 2.5s ease)
@@ -324,16 +333,18 @@ body
 					&.left
 						.contentBlock
 							left: 0
+							opacity: 1
 							&:first-child
-								@include transition(left .3s ease 2.5s)
+								@include transition(left .5s ease 2.5s, opacity .5s 2.7)
 							&:last-child
-								@include transition(left .3s ease 2.7s)
+								@include transition(left .5s ease 2.7s, opacity .5s 2.9)
 					&.right
 						.contentBlock
 							left: 0
+							opacity: 1
 							margin-bottom: 0
 							&:last-child
-								@include transition(left .3s ease 2.9s)
+								@include transition(left .5s ease 2.9s, opacity .5s 3.1)
 
 
 				.centerLine

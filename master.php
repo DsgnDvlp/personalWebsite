@@ -21,6 +21,7 @@
         <script type="text/javascript" src="js/jquery.animsition.min.js"></script>
 
         <script type="text/javascript" src="js/master.js"></script>
+        <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 
         <!-- SPECIFIC PAGE HEADER PLACEHOLDER -->
         <?php echo head($path); ?>
@@ -30,6 +31,10 @@
 
 
     <body class="animsition">
+        <div class="mobileBlocker">
+            <p>Hamsters are working for the mobile version, it will be ready in:<br/>
+            <span class="countdown"></span></p>
+        </div>
        <div class="menuRow">
             <div class="logoContainer">
                 <div class="logo">
