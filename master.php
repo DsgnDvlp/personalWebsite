@@ -31,7 +31,7 @@
 
 
     <body class="animsition">
-        <div class="mobileBlocker">
+        <div class="mobileBlocker hidden">
             <p>Hamsters are working for the mobile version, it will be ready in:<br/>
             <span class="countdown"></span></p>
         </div>

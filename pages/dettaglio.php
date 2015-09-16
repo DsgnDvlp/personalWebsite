@@ -66,12 +66,19 @@
 				<div class="clearFix"></div>
 				<img class="fullWidth" src="projects/<?=$project['Title']?>/5.png"/>
 			</div>
+			<div class="behanceContainer">
+				<?=tr_("dettaglioBehanceText")?>
+			</div>
 			<div class="prevNextContainer">
 				<div class="previous">
 					<a class="prevNextLink" href="projectDetails?i=<?=$previous['id']?>">
 						<img class="prevNextImg" src = "projects/<?=$previous["Title"]?>/front.png">
 						<p class="prevNextText"><?=tr_("dettaglioPreviousButton")?></p>
 					</a>
+				</div>
+				<div class="center">
+					<p class="bottomRowText"><?=tr_("dettaglioLostText")?></p>
+					<a class="bottomRowButton" href="contact"><?=tr_("dettaglioContactButton")?></a>
 				</div>
 				<div class="next">
 					<a class="prevNextLink" href="projectDetails?i=<?=$next['id']?>">
@@ -80,10 +87,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="bottomRow">
-				<p class="bottomRowText"><?=tr_("dettaglioLostText")?></p>
-				<a class="bottomRowButton" href="contact"><?=tr_("dettaglioContactButton")?></a>
-			</div>
+
 		</div>
 	<?php }
 

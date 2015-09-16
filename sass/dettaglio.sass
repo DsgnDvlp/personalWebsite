@@ -21,13 +21,13 @@ body
 
 		.royalSlider
 			width: 100%
-			height: 360px
-			margin-top: 210px
-			background-color: #f0f0f0
+			height: auto
+			margin-top: 190px
+			background-color: #fff
 
 			img.rsImg
 				margin: auto !important
-				height: 100%
+				height: auto
 				max-width: 100%
 				float: none
 
@@ -69,7 +69,7 @@ body
 
 		.subtitle
 			//max-width: 600px
-			margin: 30px auto
+			margin: 90px auto
 			+titleLight
 
 		.detailsRow
@@ -114,12 +114,17 @@ body
 				&.right
 					float: right
 
+		.behanceContainer
+			+titleLight
+			margin: 60px auto
+			text-align: center
+
 		.prevNextContainer
 			margin-top: 30px
 			display: inline-block
 
-			.previous, .next
-				width: calc(50% - 15px)
+			.previous, .next, .center
+				width: calc(33% - 15px)
 				img
 					width: 100%
 
@@ -140,37 +145,39 @@ body
 				.prevNextText
 					margin-left: -10px
 
+			.center
+				text-align: center
+				display: inline-block
+				margin-top: 180px
+
+				.bottomRowText
+					+titleLight
+					max-width: 600px
+					margin: auto
+
+				.bottomRowButton
+					margin: 40px auto 0px
+					+subtitleBold
+					height: 55px
+					width: 173px
+					line-height: 55px
+					border: 1px solid #383838
+					display: block
+					color: #383838
+					@include transition(color .4s ease, background-color .4s ease)
+
+					&:hover
+						color: #fff
+						background-color: $generalOrange
+						border-color: $generalOrange
 			.next
 				float: right
 				.prevNextText
 					float: right
 					margin-right: -10px
 
-		.bottomRow
-			margin-top: 70px
-			clear: both
-			text-align: center
-
-			.bottomRowText
-				+titleLight
-				max-width: 600px
-				margin: auto
-
-			.bottomRowButton
-				margin: 40px auto 90px
-				+subtitleBold
-				height: 55px
-				width: 173px
-				line-height: 55px
-				border: 1px solid #383838
-				display: block
-				color: #383838
-				@include transition(color .4s ease, background-color .4s ease)
-
-				&:hover
-					color: #fff
-					background-color: $generalOrange
-					border-color: $generalOrange
 
 	.footer
-		display: none
+		position: static
+		clear: both
+		margin: 60px

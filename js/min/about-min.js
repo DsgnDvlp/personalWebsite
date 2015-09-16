@@ -10,7 +10,9 @@ $(document).ready(function() {
             if(index == 2){
 				if(!$(".section.second").hasClass("loaded")){
                     $(".section.second").addClass("loaded");
-                    animateBorderDiv(".section.second .centerBlock", "0.8s", ".8s", "s");
+                    if(window.width() > 769){
+                        animateBorderDiv(".section.second .centerBlock", "0.8s", ".8s", "s");
+                    }
                 }
             }
             if(index == 3){

@@ -11,7 +11,7 @@ $generalOrange: #F24E41
 $borderDimension: 15px
 $borderDimensionMobile: 10px
 $marginTopFromBorder: 50px
-$marginTopFromBorderMobile: 15px
+$marginTopFromBorderMobile: 25px
 $mobileMaxWidth: 769px
 $lateralMarginFromBorder: 45px
 
@@ -62,7 +62,9 @@ body
 	@include display(flex)
 	@include flex-direction(row)
 	@include justify-content(flex-start)
-	display: none
+
+	&.hidden
+		display: none
 
 
 	p
@@ -121,8 +123,14 @@ body
 	margin-top: $marginTopFromBorder
 	z-index: 999999
 	position: relative
+	border-color: transparent
+	@include transition(background-color .4s ease, border-color .5s ease)
 	@media screen and (max-width: $mobileMaxWidth)
-		margin-top: $marginTopFromBorderMobile
+		padding-top: $marginTopFromBorderMobile
+		height: 99px
+		margin-top: 0
+		padding-top: 25px
+		background-color: rgba(255,255,255,.8)
 
 	.menu
 		cursor: pointer
@@ -131,7 +139,7 @@ body
 		float: right
 		margin-right: $lateralMarginFromBorder
 		@media screen and (max-width: $mobileMaxWidth)
-			margin-right: 25px
+			margin-right: 20px
 
 		.menuContent
 			height: 26px
@@ -139,6 +147,9 @@ body
 			position: relative
 			@include transform-origin(50%)
 			@include transition(transform .2s ease)
+			@media screen and (max-width: $mobileMaxWidth)
+				height: 19px
+				width: 28px
 
 			.menuItem
 				display: block
@@ -191,8 +202,8 @@ body
 	.logoContainer
 		float: left
 		margin: 0 0 0 $lateralMarginFromBorder
-		@media screen and (max-width: 769px)
-			margin-left: 25px
+		@media screen and (max-width: $mobileMaxWidth)
+			margin-left: 20px
 
 		.logo
 			width: 55px
@@ -200,6 +211,8 @@ body
 			z-index: 9
 			position: relative
 			display: inline-block
+			@media screen and (max-width: $mobileMaxWidth)
+				width: 40px
 
 			svg
 				fill: $generalOrange
@@ -241,6 +254,27 @@ body
 				opacity: 0
 				@include transition(max-width .5s ease, opacity .5s ease)
 
+
+	&.sticky
+		position: fixed
+		top: $borderDimension
+		left: $borderDimension
+		right: $borderDimension
+		margin: 0
+		height: 165px
+		background-color: rgba(255,255,255,.8)
+		border-bottom: 1px solid $generalOrange
+
+		.logoContainer
+			margin-top: 50px
+
+		.menuContainer
+			.menu
+				margin-top: 50px
+
+		.languageBar
+			margin-top: 50px
+
 //---------- FOOTER --------------//
 .footer
 	position: absolute
@@ -248,6 +282,9 @@ body
 	left: 65px
 	+footerFont
 	@include transition(opacity .7s ease)
+	@media screen and (max-width: $mobileMaxWidth)
+		display: none
+
 /*----------- MENU BODY -----------*/
 .overlayMenu
 	background-color: $generalOrange
@@ -282,7 +319,8 @@ body
 				@include transform(translateX(400px))
 				@include transition(transform .4s ease)
 				@media screen and (max-width: $mobileMaxWidth)
-					margin: 30px 0
+					padding: 0
+					margin: 50px 40px
 
 				a
 					color: #fff
@@ -295,6 +333,7 @@ body
 					@include transition(opacity .4s ease)
 					@media screen and (max-width: $mobileMaxWidth)
 						+menuFontMobile
+						opacity: 1
 
 					&:after
 						content: " "
@@ -321,7 +360,14 @@ body
 						letter-spacing: 0
 						@include transition(transform .5s ease .3s, opacity .5s ease .3s)
 						@media screen and (max-width: 992px)
-							display: none
+							opacity: 1
+							@include transform(translateY(0px))
+							float: none
+							margin-top: 30px
+							position: absolute
+							left: 0
+							right: 0
+							+mobileNormalFont
 
 					&:hover
 						opacity: 1
@@ -341,7 +387,7 @@ body
 		text-align: center
 		+row()
 		@media screen and (max-width: 769px)
-			bottom: 55px
+			bottom: 21px
 
 		.socialEntry
 			font-family: $fontEffra
@@ -380,6 +426,7 @@ body
 					@include transition(opacity .4s ease)
 					@media screen and (max-width: 769px)
 						opacity: 1
+						height: 19px
 
 				&:hover
 					.socialDesktop
@@ -391,6 +438,9 @@ body
 
 body.openedMenu
 	overflow: hidden
+
+	.menuRow.sticky
+		background-color: transparent
 
 	.logoContainer
 		.logo

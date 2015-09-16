@@ -7,25 +7,25 @@
 	$hour = intVal(Date("G"));
 	$minutes = intval(Date("i"));
 	if($hour >= 6 && ($hour < 9 || $hour == 9 && $minutes <= 30)){
-		$backgroundImage = "img/01.png";
+		$backgroundImage = "img/morning.png";
 		$title = tr_("morningTitle");
 	} else if( $hour >= 9 && ($hour<12 || $hour == 12 && $minutes <= 30 )){
-		$backgroundImage = "img/01.png";
+		$backgroundImage = "img/work.png";
 		$title = tr_("workTitle");
 	} else if($hour >= 12 && $hour < 14){
-		$backgroundImage = "img/01.png";
+		$backgroundImage = "img/noon.png";
 		$title = tr_("noonTitle");
 	} else if($hour >= 14 && $hour < 19){
-		$backgroundImage = "img/01.png";
+		$backgroundImage = "img/afternoon.png";
 		$title = tr_("afternoonTitle");
 	} else if($hour >=19 && ($hour < 21 || $hour == 21 && $minutes <= 30)){
-		$backgroundImage = "img/01.png";
+		$backgroundImage = "img/evening.png";
 		$title = tr_("eveningTitle");
 	} else if($hour >=21 && ($hour < 23 || $hour == 23 && $minutes <= 30)){
-		$backgroundImage = "img/01.png";
+		$backgroundImage = "img/party.png";
 		$title = tr_("partyTitle");
 	} else{
-		$backgroundImage = "img/01.png";
+		$backgroundImage = "img/night.png";
 		$title = tr_("nightTitle");
 	}
 
@@ -46,7 +46,7 @@
                 <p class="mainTitle">
                     <?=$title?>
                 </p>
-                <p class="subtitle">
+                <p class="subtitle firstSub">
                     <?=tr_("subtitleRow1")?>
 				</p>
 				<p class="subtitle">

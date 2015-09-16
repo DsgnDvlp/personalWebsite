@@ -35,6 +35,9 @@
 						<p><?=tr_("aboutSubtitleRow4")?></p>
             		</div>
             	</div>
+				<div class="mobileBackgroundContainer">
+					<img src = "img/about.png"/>
+				</div>
             	<div class="pageTitle"><?=tr_("aboutTitlePage")?></div>
             	<div class="footer">
             		<div class="goDown"><a href="#whatido"><span class="text"><?=tr_("aboutFirstNext")?></span></a><br/>
@@ -82,6 +85,7 @@
             	<div class="footer">
 					<div class="goDown"><a href="#software"><span class="text"><?=tr_("aboutSecondNext")?></span></a><br/>
             		</div>
+					<div class="mobileBottomLine"></div>
             	</div>
             </div>
 			<div class="section third">

@@ -11,6 +11,14 @@ $(document).ready(function() {
     //         pauseOnHover: false
     //     }
     // });
+
+    $(window).scroll(function(){
+        if($("body").scrollTop() > 0){
+            $(".menuRow").addClass("sticky");
+        }else{
+            $(".menuRow").removeClass("sticky");
+        }
+    });
 });
 
 

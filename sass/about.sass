@@ -32,6 +32,8 @@
 
 body
 	padding: 15px
+	@media screen and (max-width: $mobileMaxWidth)
+		padding: 10px
 
 	#fullpage
 		position: absolute !important
@@ -40,11 +42,16 @@ body
 		right: $borderDimension
 
 		.section
+			.slimScrollBar,.slimScrollRail
+				display: none !important
+
 			&.first
 				background-image: url(../img/about.png)
 				background-position: calc(100% - 45px) 100%
 				background-size: 44%
 				background-repeat: no-repeat
+				@media screen and (max-width: $mobileMaxWidth)
+					background-image: none
 				.footer
 					.goDown
 						.text
@@ -52,23 +59,50 @@ body
 							background-color: transparent
 				.container
 					margin-bottom: -17vh
+					@media screen and (max-width: $mobileMaxWidth)
+						margin-bottom: 0px
 
 			.container
 				+outer-container()
 				max-width: 85em
 				margin-left: 2.813em
+				@media screen and (max-width: $mobileMaxWidth)
+					display: block
+					margin-left: 0
+					margin-top: 140px
+					text-align: center
 				.title
 					+titleBold
 					+span-columns(12)
 					margin-bottom: 10px
+					@media screen and (max-width: $mobileMaxWidth)
+						+titleBoldMobile
+						margin: 0 auto 10px
+						float: none
+
 
 				.subtitle
 					+titleLight
 					max-width: 20em
 					+span-columns(12)
+					@media screen and (max-width: $mobileMaxWidth)
+						+titleLightMobile
+						margin: 0 auto !important
+						float: none
+
 					p
 						margin-bottom: 25px
 
+
+			.mobileBackgroundContainer
+				display: none
+				@media screen and (max-width: $mobileMaxWidth)
+					display: block
+					height: 304px
+					overflow: hidden
+					margin-bottom: 30px
+					img
+						width: 100%
 
 			.pageTitle
 				position: absolute
@@ -83,6 +117,8 @@ body
 				text-transform: uppercase
 				@include transform-origin(100% 100%)
 				@include transform(rotate(-90deg))
+				@media screen and (max-width: $mobileMaxWidth)
+					display: none
 
 
 			.footer
@@ -91,12 +127,18 @@ body
 				left: 0
 				right: 0
 				height: 77px
+				@media screen and (max-width: $mobileMaxWidth)
+					display: block
+					position: relative
+					height: 52px
 
 				.goDown
 					+subtitleBold
 					color: $generalOrange
 					text-transform: uppercase
 					text-align: center
+					@media screen and (max-width: $mobileMaxWidth)
+						+subtitleBoldMobile
 
 					.text
 						cursor: pointer
@@ -110,6 +152,8 @@ body
 						border-left: 1px solid $generalOrange
 						height: 50px
 						margin-top: 10px
+						@media screen and (max-width: $mobileMaxWidth)
+							height: 28px
 
 					.downloadButton
 						color: #000
@@ -123,6 +167,14 @@ body
 							color: #fff
 							background-color: $generalOrange
 							border-color: $generalOrange
+				.mobileBottomLine
+					display: none
+					@media screen and (max-width: $mobileMaxWidth)
+						display: block
+						border-left: 1px solid $generalOrange
+						height: 28px
+						margin: auto
+						width: 0
 
 			.topPanel
 				position: absolute
@@ -131,6 +183,12 @@ body
 				right: 0
 				height: 77px
 				text-align: center
+				@media screen and (max-width: $mobileMaxWidth)
+					margin-top: 124px
+					height: auto
+					position: static
+
+
 
 				.text
 					+subtitleBold
@@ -144,6 +202,9 @@ body
 					position: relative
 					opacity: 0
 					@include transition(opacity .3s ease 0.3s)
+					@media screen and (max-width: $mobileMaxWidth)
+						+subtitleBoldMobile
+						opacity: 1
 
 			.centerLine
 				position: absolute
@@ -155,6 +216,9 @@ body
 				top: 0
 				bottom: 0
 				bottom: 100%
+				@media screen and (max-width: $mobileMaxWidth)
+					height: 115px
+					position: static
 
 			.centerBlocksContainer
 				position: absolute
@@ -166,6 +230,11 @@ body
 				height: 321px
 				width: 300px
 				background-color: #fff
+				@media screen and (max-width: $mobileMaxWidth)
+					position: relative
+					margin-top: 0px
+					margin-bottom: 35px
+					height: auto
 
 				.centerBlock
 					border: 3px solid $generalOrange
@@ -183,6 +252,11 @@ body
 					text-align: center
 					opacity: 0
 					@include transition(opacity .5s ease)
+					@media screen and (max-width: $mobileMaxWidth)
+						opacity: 1
+						width: 150px
+						height: 150px
+						+aboutSubtitleBoldMobile
 
 					.text
 						@include flex(1)
@@ -204,8 +278,16 @@ body
 					text-align: center
 					opacity: 0
 					@include transition(opacity .5s ease)
+					@media screen and (max-width: $mobileMaxWidth)
+						opacity: 1
+						+normalFontMobile
+						max-width: 270px
+						padding: 15px 0 0px
+
 					i
 						+italicNormalFont
+						@media screen and (max-width: $mobileMaxWidth)
+							+italicNormalFontMobile
 
 			.contentBlockContainer
 				position: absolute
@@ -216,10 +298,16 @@ body
 				@include display(flex)
 				@include flex-direction(column)
 				@include justify-content(space-around)
+				@media screen and (max-width: $mobileMaxWidth)
+					position: static
+
 
 				.contentBlock
 					position: relative
 					//@include flex(1)
+					@media screen and (max-width: $mobileMaxWidth)
+						text-align: center
+						margin-bottom: 50px !important
 					&:first-child
 						margin-bottom: 116px
 
@@ -230,6 +318,11 @@ body
 						width: 120px
 						margin: auto
 						z-index: -1
+						@media screen and (max-width: $mobileMaxWidth)
+							position: static
+							opacity: 1
+							width: 79px
+							margin: auto
 						&.secondRow
 							top: 0
 
@@ -249,11 +342,17 @@ body
 						+mediumFont
 						text-transform: uppercase
 						margin-bottom: 10px
+						@media screen and (max-width: $mobileMaxWidth)
+							margin-top: 15px
+							+menuFontMobile
 
 					.content
 						font-size: 16px
 						max-width: 330px
 						line-height: 18px
+						@media screen and (max-width: $mobileMaxWidth)
+							+normalFontMobileLine
+							margin: 0 15px
 						.contentTitle
 							+smallEffra
 							color: $generalOrange
@@ -261,38 +360,40 @@ body
 
 				&.left
 					left: 45px
-					.contentBlock
-						left: -430px
-						position: relative
-						opacity: 0
-						&:first-child
-							@include transition(left .5s ease 2.5s, opacity .5s ease 2.7s)
-						&:last-child
-							@include transition(left .5s ease 2.7s, opacity .5s ease 2.9s)
+					@media screen and (min-width: $mobileMaxWidth)
+						.contentBlock
+							left: -430px
+							position: relative
+							opacity: 0
+							&:first-child
+								@include transition(left .5s ease 2.5s, opacity .5s ease 2.7s)
+							&:last-child
+								@include transition(left .5s ease 2.7s, opacity .5s ease 2.9s)
 
-						img
-							right: 25%
+							img
+								right: 25%
 
 				&.right
 					right: 45px
 					text-align: right
+					@media screen and (min-width: $mobileMaxWidth)
 
-					.contentBlock
-						left: 430px
-						position: relative
-						opacity: 0
-						&:first-child
-							@include transition(left .5s ease 2.9s, opacity .53s ease 3.1s)
-						&:last-child
-							@include transition(left .5s ease 3.1s, opacity .53s ease 3.3s)
+						.contentBlock
+							left: 430px
+							position: relative
+							opacity: 0
+							&:first-child
+								@include transition(left .5s ease 2.9s, opacity .53s ease 3.1s)
+							&:last-child
+								@include transition(left .5s ease 3.1s, opacity .53s ease 3.3s)
 
-						.number
-							text-align: left
-							left: -30px
-						img
-							left: 30%
-							&.visual
+							.number
+								text-align: left
+								left: -30px
+							img
 								left: 30%
+								&.visual
+									left: 30%
 
 			&.second.loaded
 				.contentBlock
@@ -300,8 +401,10 @@ body
 					opacity: 1
 
 				.centerLine
-					@include animation(centerLineConstruction 2.5s ease)
-					bottom: 0
+					bottom: 50%
+					@media screen and (min-width: $mobileMaxWidth)
+						//@include animation(centerLineConstruction 2.5s ease)
+						bottom: 0
 
 				.topPanel
 					.text
@@ -317,8 +420,10 @@ body
 					opacity: 1
 
 				.centerLine
-					@include animation(centerLineConstruction 2.5s ease)
-					bottom: 0
+					bottom: 50%
+					@media screen and (min-width: $mobileMaxWidth)
+						@include animation(centerLineConstruction 2.5s ease)
+						bottom: 0
 
 				.topPanel
 					.text
@@ -365,6 +470,8 @@ body
 		position: absolute
 		right: 60px
 		bottom: 60px
+		@media screen and (max-width: $mobileMaxWidth)
+			display: none
 
 		span
 			margin-right: 26px

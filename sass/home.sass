@@ -19,8 +19,6 @@ html, body
 	@include display(flex)
 	@include flex-direction(row)
 	@include justify-content(flex-start)
-	@media screen and (max-width: 769px)
-		min-height: 800px
 
 	.homeContent
 		text-align: center
@@ -33,6 +31,8 @@ html, body
 			margin-bottom: 25px
 			@media screen and (max-width: $mobileMaxWidth)
 				+titleBoldMobile
+				margin-top: 24.5vh
+				margin-bottom: 10px
 
 		.subtitle
 			+titleLight
@@ -40,6 +40,8 @@ html, body
 			@media screen and (max-width: $mobileMaxWidth)
 				+titleLightMobile
 				max-width: 350px
+				&.firstSub
+					max-width: 250px
 
 			.flipCont
 				position: relative
@@ -62,6 +64,8 @@ html, body
 		.buttonRow
 			margin-top: 40px
 			+row()
+			@media screen and (max-width: $mobileMaxWidth)
+				margin-top: 26px
 
 			.homeButton
 				+subtitleBold
@@ -78,14 +82,22 @@ html, body
 				&:first-child
 					+shift(4)
 					@include media($tablet)
-						+span-columns(3)
-						+shift(2)
+						display: block
+						float: none
+						margin: auto
+						clear: both
+						width: 270px !important
 
 				&:last-child
 					+span-columns(2, block-collapse)
 					+shift(1)
 					@include media($tablet)
-						display: none
+						display: block
+						float: none
+						margin: auto
+						clear: both
+						width: 270px !important
+						margin-top: 10px
 
 				&:hover, &:active, &:focus
 					color: #fff

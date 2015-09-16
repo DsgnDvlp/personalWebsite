@@ -123,6 +123,7 @@
         "dettaglioNextButton" => "Successivo",
         "dettaglioLostText" => "Ti è piaciuto questo lavoro? Se sei interassato possiamo parlare di un tuo progetto!",
         "dettaglioContactButton" => "CONTATTAMI",
+        "dettaglioBehanceText" => "Vuoi vedere di più?<br/>Visita il mio profilo di <a style='color:#383838; font-style:italic' href='https://www.behance.net/paulromerodesign'>Behance!</a>",
 
         //============================= FREESTUFF PAGE =============================//
         "freestuffPageTitle" => "co\$e fighe",

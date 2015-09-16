@@ -6,7 +6,7 @@
         "menuAboutSubtitle" => "Vuoi sapere chi sono e cosa so fare?",
         "menuPortfolio" => "portfolio",
         "menuPortfolioSubtitle" => "Vuoi vedere qualche mio lavoro?",
-        "menuFreeStuff" => "co\$e fighe",
+        "menuFreeStuff" => "cool \$tuff",
         "menuFreeStuffSubtitle" => "Sei un designer e cerchi cose fighe?",
         "menuContact" => "contattami",
         "menuContactSubtitle" => "Usa l’internet Luke! Mandami un messaggio!",
@@ -35,10 +35,10 @@
         "homeButtonPortfolio" => "portfolio",
         //FOOTER
         "footerContent1" => "Da qualche parte in questo sito vivono dei dinosauri.",
-        "footerContent2" => "Sono in cerca di un lavoro figo! Contattami!",
+        "footerContent2" => "Sono in cerca di un lavoro figo! <a href='mailTo:info@paulromerodesign.com'>Contattami!</a>",
         "footerContent3" => "Siete una startup? Potrei lavorare gratis per voi.",
         "footerContent4" => "Dei criceti lavorano dentro questo sito!",
-        "footerContent5" => "Lavori freelance? Scrivimi!",
+        "footerContent5" => "Lavori freelance? <a href='mailTo:info@paulromerodesign.com'>Scrivimi!</a>",
 
         //============================= ABOUT PAGE =============================//
         "aboutTitlePage" => "chi sono",
@@ -122,9 +122,10 @@
         "dettaglioNextButton" => "Successivo",
         "dettaglioLostText" => "Ti è piaciuto questo lavoro? Sei interassato al mio voodo?",
         "dettaglioContactButton" => "CONTATTAMI",
+        "dettaglioBehanceText" => "Vuoi vedere di più?<br/>Visita il mio profilo di <a style='color:#383838; font-style:italic' href='https://www.behance.net/paulromerodesign'>Behance!</a>",
 
         //============================= FREESTUFF PAGE =============================//
-        "freestuffPageTitle" => "co\$e fighe",
+        "freestuffPageTitle" => "cool \$tuff",
         "freestuffTitle" => "Namaste!",
         "freestuffText1" => "amico designer, sto preparando per te una serie di icone da scaricare gratuitamente,",
         "freestuffText2" => "Vuoi vedere a che punto sono con il progetto?</br>Tieni d’occhio la mia pagina di <span style=\"font-style:italic\">Behance</span> e segui la pagina <span style=\"font-style:italic\">Medium</span> dove caricherò nuovi articoli!",
@@ -144,8 +145,6 @@
         //============================= 404 PAGE =============================//
         "404MainTitle" => "404 Pagina non trovata!",
         "404SubtitleRow1" => "I dinosauri vivono su questa pagina",
-        "404SubtitleRow2" => "ti conviene tornare indietro!",
-        "404ButtonText" => "indietro"
-    );
+        "404SubtitleRow2" => "ti conviene tornare indietro!",    );
 
 ?>
