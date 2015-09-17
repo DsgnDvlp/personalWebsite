@@ -131,6 +131,7 @@ body
 		margin-top: 0
 		padding-top: 25px
 		background-color: rgba(255,255,255,.8)
+		@include transition(background-color .3s ease .2s)
 
 	.menu
 		cursor: pointer
@@ -438,6 +439,10 @@ body
 
 body.openedMenu
 	overflow: hidden
+	.menuRow
+		@media screen and (max-width: $mobileMaxWidth)
+			background: transparent
+			@include transition(background-color .0s ease)
 
 	.menuRow.sticky
 		background-color: transparent

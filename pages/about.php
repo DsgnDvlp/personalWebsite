@@ -130,6 +130,7 @@
             	<div class="footer">
 					<div class="goDown"><a href="#mycv"><span class="text"><?=tr_("aboutThirdNext")?></span></a><br/>
             		</div>
+					<div class="mobileBottomLine"></div>
             	</div>
             </div>
             <div class="section fourth">

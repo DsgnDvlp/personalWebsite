@@ -167,6 +167,10 @@ body
 							color: #fff
 							background-color: $generalOrange
 							border-color: $generalOrange
+						@media screen and (max-width: $mobileMaxWidth)
+							width: calc(100% - 30px)
+							display: block
+							margin: auto
 				.mobileBottomLine
 					display: none
 					@media screen and (max-width: $mobileMaxWidth)
@@ -283,6 +287,7 @@ body
 						+normalFontMobile
 						max-width: 270px
 						padding: 15px 0 0px
+						height: auto
 
 					i
 						+italicNormalFont
@@ -327,8 +332,6 @@ body
 							top: 0
 
 					.number
-						font-size: 100px
-						font-style: italic
 						color: #F24E41
 						opacity: .3
 						text-align: right
@@ -337,6 +340,13 @@ body
 						position: absolute
 						top: -40px
 						z-index: -1
+						+aboutNumbers
+						@media screen and (max-width: $mobileMaxWidth)
+							position: static
+							text-align: center
+							opacity: 1
+							+aboutNumbersMobile
+
 
 					.title
 						+mediumFont
@@ -357,6 +367,9 @@ body
 							+smallEffra
 							color: $generalOrange
 							margin-top: 16px
+							@media screen and (max-width: $mobileMaxWidth)
+								+mobileNormalFontBold
+								text-align: left
 
 				&.left
 					left: 45px
@@ -450,7 +463,8 @@ body
 							margin-bottom: 0
 							&:last-child
 								@include transition(left .5s ease 2.9s, opacity .5s 3.1)
-
+					.content
+						text-align: left
 
 				.centerLine
 					@include animation(centerLineConstructionThird 2.5s ease)
@@ -462,6 +476,8 @@ body
 
 				.footer
 					.goDown
+						@media screen and (max-width: $mobileMaxWidth)
+							margin-top: 50px
 						.downloadButton
 							opacity: 1
 	.breadCrumbs
