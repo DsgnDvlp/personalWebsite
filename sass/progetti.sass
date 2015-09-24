@@ -2,8 +2,6 @@
 
 
 body
-	padding: 15px
-
 	#fullpage
 		position: absolute
 		top: 0
@@ -18,14 +16,14 @@ body
 		@include display(flex)
 		@include flex-direction(row)
 		@include justify-content(flex-start)
-		@media screen and (max-width: 769px)
-			min-height: 800px
-			//sistemare il css per la visualizzazione identica allo sketch!
+		
 		.grid
 			max-width: 1311px
 			margin: auto
 			margin-top: 200px
 			width: 100%
+			@media screen and (max-width: $mobileMaxWidth)
+				margin-top: 140px
 
 			.gridItem
 				width: 370px
@@ -34,14 +32,25 @@ body
 				margin-left: 50px
 				margin-bottom: 50px
 				text-align: center
+				@media screen and (max-width: $mobileMaxWidth)
+					position: static !important
+					width: auto
+					height: auto
+					margin: auto 10px 50px
+					display: block
 
 				.itemCover
 					width: 360px
 					margin-left: 10px
 					position: relative
+					@media screen and (max-width: $mobileMaxWidth)
+						width: 100%
+						margin: 0
 
 					img
 						width: 360px
+						@media screen and (max-width: $mobileMaxWidth)
+							width: 100%
 
 					.itemTitle
 						+titleBold
@@ -66,7 +75,6 @@ body
 				.itemCategory
 					+subtitleBold
 					text-transform: uppercase
-					text-transform: uppercase
 					position: absolute
 					height: 50px
 					width: 180px
@@ -74,6 +82,9 @@ body
 					background-color: #383838
 					color: #fff
 					margin-top: -40px
+					@media screen and (max-width: $mobileMaxWidth)
+						position: relative
+						margin: -25px auto 0
 
 				.itemButton
 					+subtitleBold
@@ -86,6 +97,9 @@ body
 					margin: 30px auto 0
 					border: 1px solid #383838
 					@include transition(color .5s ease, background-color .5s ease)
+					@media screen and (max-width: $mobileMaxWidth)
+						width: auto
+						margin: 20px 10px 0
 					&:hover, &:active, &:focus
 						color: #fff
 						background-color: $generalOrange
@@ -116,6 +130,8 @@ body
 		right: 60px
 		bottom: 60px
 		display: none
+		@media screen and (max-width: $mobileMaxWidth)
+			display: none
 
 		span
 			margin-right: 26px

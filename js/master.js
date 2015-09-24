@@ -17,17 +17,42 @@ $(document).ready(function(){
 	}).one('animsition.end', function(){
 	});
 
-// device detection
-if(window.innerWidth <= 1024 && false)
-{
-	$(".mobileBlocker.hidden").removeClass("hidden");
-	$(".mobileBlocker .countdown").countdown("2015/09/20", function(event) {
-        $(this).text(
-        event.strftime('%D:%H:%M:%S')
-        );
-    });
-}
+	// device detection
+	if(window.innerWidth <= 1024 && false)
+	{
+		$(".mobileBlocker.hidden").removeClass("hidden");
+		$(".mobileBlocker .countdown").countdown("2015/09/20", function(event) {
+	        $(this).text(
+	        event.strftime('%D:%H:%M:%S')
+	        );
+	    });
+	}
 
+	$(window).scroll(function(){
+        if($("body").scrollTop() > 0){
+            $(".menuRow").addClass("sticky");
+        }else{
+            $(".menuRow").removeClass("sticky");
+        }
+    });
+
+	$("#fullpage").scroll(function(){
+		if($("#fullpage").scrollTop() > 0){
+            $(".menuRow").addClass("sticky");
+        }else{
+            $(".menuRow").removeClass("sticky");
+        }
+    });
+
+	setTimeout(function(){
+		$(".fp-scrollable").scroll(function(){
+	        if($(".fp-scrollable").scrollTop() > 0){
+	            $(".menuRow").addClass("sticky");
+	        }else{
+	            $(".menuRow").removeClass("sticky");
+	        }
+	    });
+	}, 100);
 });
 
 function switchLanguage(language){

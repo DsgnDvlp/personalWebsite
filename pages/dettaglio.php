@@ -50,12 +50,12 @@
 					<p class="detailContent"><?= $project["Info_".$_SESSION["lang"]]?></p>
 				</div>
 				<div class="detailsItem">
-					<p class="detailTitle"><?=tr_("dettaglioYear")?></p>
-					<p class="detailContent"><?= $project["Year"]?></p>
-				</div>
-				<div class="detailsItem">
 					<p class="detailTitle"><?=tr_("dettaglioRole")?></p>
 					<p class="detailContent"><?= $project["Role"]?></p>
+				</div>
+				<div class="detailsItem">
+					<p class="detailTitle"><?=tr_("dettaglioYear")?></p>
+					<p class="detailContent"><?= $project["Year"]?></p>
 				</div>
 			</div>
 			<div class="imageContainer">

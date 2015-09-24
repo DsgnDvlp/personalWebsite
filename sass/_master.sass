@@ -26,6 +26,8 @@ body
 	font-family: $fontKep
 	color: #383838
 	padding: $borderDimension
+	@media screen and (max-width: 769px)
+		padding: $borderDimensionMobile
 	//opacity: 1
 	//@include transition(opacity .5s ease .2s)
 
@@ -265,16 +267,28 @@ body
 		height: 165px
 		background-color: rgba(255,255,255,.8)
 		border-bottom: 1px solid $generalOrange
+		@media screen and (max-width: $mobileMaxWidth)
+			top: $borderDimensionMobile
+			left: $borderDimensionMobile
+			right: $borderDimensionMobile
+			height: 111px
+			padding: 0 !important
 
 		.logoContainer
 			margin-top: 50px
+			@media screen and (max-width: $mobileMaxWidth)
+				margin-top: 25px
 
 		.menuContainer
 			.menu
 				margin-top: 50px
+				@media screen and (max-width: $mobileMaxWidth)
+					margin-top: 25px
 
 		.languageBar
 			margin-top: 50px
+			@media screen and (max-width: $mobileMaxWidth)
+				margin-top: 25px
 
 //---------- FOOTER --------------//
 .footer
