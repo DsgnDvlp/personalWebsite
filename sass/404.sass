@@ -14,6 +14,8 @@
     @include display(flex)
     @include flex-direction(row)
     @include justify-content(flex-start)
+    @media screen and (max-width: $mobileMaxWidth)
+        background-image: none
 
 .pageContainer
     margin: auto
@@ -23,8 +25,15 @@
     .mainTitle
         +titleBold
         margin-bottom: 30px
+        @media screen and (max-width: $mobileMaxWidth)
+            +titleBoldMobile
+            padding: 0 20px
+
     .subtitle
         +titleLight
+        @media screen and (max-width: $mobileMaxWidth)
+            +titleLightMobile
+            padding: 0 20px
 
     .buttonRow
         margin-top: 50px
@@ -40,6 +49,8 @@
             text-transform: uppercase
             @include transition(color .5s ease, background-color .5s ease)
             margin: auto
+            @media screen and (max-width: $mobileMaxWidth)
+                width: calc(100% - 40px)
 
             &:hover, &:active, &:focus
                 color: #fff

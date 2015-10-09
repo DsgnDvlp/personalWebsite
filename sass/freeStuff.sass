@@ -2,7 +2,9 @@
 
 
 body
-	padding: 15px
+	padding: $borderDimension
+	@media screen and (max-width: $mobileMaxWidth)
+		padding: $borderDimensionMobile
 
 	#fullpage
 		position: absolute
@@ -18,22 +20,37 @@ body
 		@include display(flex)
 		@include flex-direction(row)
 		@include justify-content(flex-start)
-		@media screen and (max-width: 769px)
-			min-height: 800px
+		@media screen and (max-width: $mobileMaxWidth)
+			//min-height: 800px
+			background-image: none
+			left: $borderDimensionMobile
+			right: $borderDimensionMobile
 
 		.section
 			margin: auto
 			margin-bottom: 21vh
 			@include flex(1)
+			@media screen and (max-width: $mobileMaxWidth)
+				margin-bottom: auto
+				@media screen and (max-height: 600px)
+					margin-top: 134px
+
 
 			.container
 				+outer-container()
 				max-width: 85em
 				margin-left: 2.813em
+				@media screen and (max-width: $mobileMaxWidth)
+					margin-left: 20px
+					margin-right: 20px
+					max-width: 100%
+
 				.title
 					+titleBold
 					+span-columns(12)
 					margin-bottom: 10px
+					@media screen and (max-width: $mobileMaxWidth)
+						+titleBoldMobile
 
 				.subtitle
 					+titleLight
@@ -41,6 +58,8 @@ body
 					+span-columns(12)
 					p
 						margin-bottom: 25px
+					@media screen and (max-width: $mobileMaxWidth)
+						+titleLightMobile
 
 			.pageTitle
 				position: absolute
@@ -55,3 +74,5 @@ body
 				text-transform: uppercase
 				@include transform-origin(100% 100%)
 				@include transform(rotate(-90deg))
+				@media screen and (max-width: $mobileMaxWidth)
+					display: none

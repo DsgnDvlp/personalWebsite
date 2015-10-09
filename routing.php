@@ -11,7 +11,7 @@
 
 <?php
 	$url = explode("/", $_SERVER["REQUEST_URI"]);
-	switch ($url[1]) {
+	switch ($url[2]) {
 		case '':
 		case 'index':
 			include "pages/home.php";
@@ -43,7 +43,7 @@
 
 		default:
             //TODO fix this problem!
-            if(strpos($url[1], "projectDetails") !== false){
+            if(strpos($url[2], "projectDetails") !== false){
                 include "pages/dettaglio.php";
             }else{
 			    include "404.php";

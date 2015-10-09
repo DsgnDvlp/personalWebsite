@@ -145,6 +145,8 @@
         //============================= 404 PAGE =============================//
         "404MainTitle" => "404 Pagina non trovata!",
         "404SubtitleRow1" => "I dinosauri vivono su questa pagina",
-        "404SubtitleRow2" => "ti conviene tornare indietro!",    );
+        "404SubtitleRow2" => "ti conviene tornare indietro!",
+        "404ButtonText" => "Indietro"
+        );
 
 ?>
