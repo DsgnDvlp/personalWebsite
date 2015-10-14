@@ -75,7 +75,7 @@ body {
   font-family: "kepler std", serif;
   color: #383838;
   padding: 15px; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     body {
       padding: 10px; } }
   body a {
@@ -166,7 +166,7 @@ body {
   height: 15px;
   left: 0;
   right: 0; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     .borderGenericOrizzontal, .borderNorth, .borderSouth {
       height: 10px; } }
 
@@ -174,7 +174,7 @@ body {
   width: 15px;
   top: 0;
   bottom: 0; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     .borderGenericVertical, .borderEast, .borderWest {
       width: 10px; } }
 
@@ -200,7 +200,7 @@ body {
   -webkit-transition: background-color 0.4s ease, border-color 0.5s ease;
   -moz-transition: background-color 0.4s ease, border-color 0.5s ease;
   transition: background-color 0.4s ease, border-color 0.5s ease; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     .menuRow {
       padding-top: 25px;
       height: 99px;
@@ -216,7 +216,7 @@ body {
     position: relative;
     float: right;
     margin-right: 45px; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       .menuRow .menu {
         margin-right: 20px; } }
     .menuRow .menu .menuContent {
@@ -231,7 +231,7 @@ body {
       -webkit-transition: -webkit-transform 0.2s ease;
       -moz-transition: -moz-transform 0.2s ease;
       transition: transform 0.2s ease; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow .menu .menuContent {
           height: 19px;
           width: 28px; } }
@@ -296,7 +296,7 @@ body {
   .menuRow .logoContainer {
     float: left;
     margin: 0 0 0 45px; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       .menuRow .logoContainer {
         margin-left: 20px; } }
     .menuRow .logoContainer .logo {
@@ -305,7 +305,7 @@ body {
       z-index: 9;
       position: relative;
       display: inline-block; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow .logoContainer .logo {
           width: 40px; } }
       .menuRow .logoContainer .logo svg {
@@ -354,7 +354,7 @@ body {
     height: 165px;
     background-color: rgba(255, 255, 255, 0.8);
     border-bottom: 1px solid #F24E41; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       .menuRow.sticky {
         top: 10px;
         left: 10px;
@@ -363,17 +363,17 @@ body {
         padding: 0 !important; } }
     .menuRow.sticky .logoContainer {
       margin-top: 50px; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow.sticky .logoContainer {
           margin-top: 25px; } }
     .menuRow.sticky .menuContainer .menu {
       margin-top: 50px; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow.sticky .menuContainer .menu {
           margin-top: 25px; } }
     .menuRow.sticky .languageBar {
       margin-top: 50px; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow.sticky .languageBar {
           margin-top: 25px; } }
 
@@ -390,7 +390,7 @@ body {
   -webkit-transition: opacity 0.7s ease;
   -moz-transition: opacity 0.7s ease;
   transition: opacity 0.7s ease; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     .footer {
       display: none; } }
 
@@ -468,7 +468,7 @@ body {
         -webkit-transition: -webkit-transform 0.4s ease;
         -moz-transition: -moz-transform 0.4s ease;
         transition: transform 0.4s ease; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           .overlayMenu .overlayMenuContainer .menuContent .menuEntry {
             padding: 0;
             margin: 50px 40px; } }
@@ -486,7 +486,7 @@ body {
           -webkit-transition: opacity 0.4s ease;
           -moz-transition: opacity 0.4s ease;
           transition: opacity 0.4s ease; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             .overlayMenu .overlayMenuContainer .menuContent .menuEntry a {
               font-family: "effra", sans-serif;
               font-weight: bold;
@@ -567,7 +567,7 @@ body {
       clear: both;
       content: "";
       display: table; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       .overlayMenu .socialBar {
         bottom: 21px; } }
     .overlayMenu .socialBar .socialEntry {
@@ -585,7 +585,7 @@ body {
         margin-right: 0; }
       .overlayMenu .socialBar .socialEntry:first-child {
         margin-left: 11.6803278689%; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           .overlayMenu .socialBar .socialEntry:first-child {
             margin-left: 7.7868852459%; } }
       .overlayMenu .socialBar .socialEntry .socialEntryLink {
@@ -598,7 +598,7 @@ body {
           -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
           -moz-transition: opacity 0.4s ease, -moz-transform 0.4s ease;
           transition: opacity 0.4s ease, transform 0.4s ease; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             .overlayMenu .socialBar .socialEntry .socialEntryLink .socialDesktop {
               display: none; } }
         .overlayMenu .socialBar .socialEntry .socialEntryLink .socialMobile {
@@ -612,7 +612,7 @@ body {
           -webkit-transition: opacity 0.4s ease;
           -moz-transition: opacity 0.4s ease;
           transition: opacity 0.4s ease; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             .overlayMenu .socialBar .socialEntry .socialEntryLink .socialMobile {
               opacity: 1;
               height: 19px; } }
@@ -628,7 +628,7 @@ body {
 
 body.openedMenu {
   overflow: hidden; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     body.openedMenu .menuRow {
       background: transparent;
       -webkit-transition: background-color 0s ease;
@@ -684,7 +684,7 @@ body.openedMenu {
 
 body {
   padding: 15px; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     body {
       padding: 10px; } }
   body #fullpage {
@@ -732,7 +732,7 @@ body {
     -o-justify-content: flex-start;
     justify-content: flex-start;
     -ms-flex-pack: start; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       body #fullpage {
         background-image: none;
         left: 10px;
@@ -746,7 +746,7 @@ body {
       -moz-flex: 1;
       -ms-flex: 1;
       flex: 1; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section {
           margin-top: 134px; } }
       body #fullpage .section .container {
@@ -760,7 +760,7 @@ body {
           clear: both;
           content: "";
           display: table; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .container {
             margin-bottom: auto;
             max-width: 100%;
@@ -780,7 +780,7 @@ body {
           margin-bottom: 10px; }
           body #fullpage .section .container .title:last-child {
             margin-right: 0; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .container .title {
               font-size: 25px;
               letter-spacing: 5px;
@@ -802,7 +802,7 @@ body {
             color: #383838; }
           body #fullpage .section .container .subtitle p {
             margin-bottom: 25px; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .container .subtitle {
               font-size: 20px;
               line-height: 26px;
@@ -841,7 +841,7 @@ body {
             body #fullpage .section .container .formContainer .formRow .formField.right {
               float: right;
               width: calc(50% - 25px); }
-            @media screen and (max-width: 769px) {
+            @media screen and (max-width: 669px) {
               body #fullpage .section .container .formContainer .formRow .formField {
                 float: none !important;
                 width: 100% !important;
@@ -864,7 +864,7 @@ body {
           -webkit-transition: color 0.5s ease, background-color 0.5s ease;
           -moz-transition: color 0.5s ease, background-color 0.5s ease;
           transition: color 0.5s ease, background-color 0.5s ease; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .container .mainButton {
               width: 100%; } }
           body #fullpage .section .container .mainButton:hover, body #fullpage .section .container .mainButton:active, body #fullpage .section .container .mainButton:focus {
@@ -895,6 +895,6 @@ body {
         -ms-transform: rotate(-90deg);
         -o-transform: rotate(-90deg);
         transform: rotate(-90deg); }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .pageTitle {
             display: none; } }

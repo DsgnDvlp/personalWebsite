@@ -40,9 +40,11 @@
 
 				<!-- <img class="rsImg" src="projects/<?=$project['Title']?>/slide2.png" alt="image desc" /> -->
 				<!-- <img class="rsImg" src="projects/<?=$project['Title']?>/slide3.png" alt="image desc" /> -->
+
+			    <img class="rsImg mobileSlideImage" src="projects/<?=$project['Title']?>/slide1Mobile.png" alt="image desc" />
 			</div>
 			<p class="category"><?= $project["Name"]?></p>
-			<!-- <p class="title"><?= $project["Title"] ?></p> -->
+			<p class="title"><?= $project["Title"] ?></p>
 			<p class="subtitle"><?= $project["Subtitle_".$_SESSION["lang"]] ?></p>
 			<div class="detailsRow">
 				<div class="detailsItem">
@@ -65,6 +67,9 @@
 				<img class="middleWidth right" src="projects/<?=$project['Title']?>/4.png"/>
 				<div class="clearFix"></div>
 				<img class="fullWidth" src="projects/<?=$project['Title']?>/5.png"/>
+				<img class="fullWidth mobileImage" src="projects/<?=$project['Title']?>/mobile1.png"/>
+				<img class="fullWidth mobileImage" src="projects/<?=$project['Title']?>/mobile2.png"/>
+				<img class="fullWidth mobileImage" src="projects/<?=$project['Title']?>/mobile3.png"/>
 			</div>
 			<div class="behanceContainer">
 				<?=tr_("dettaglioBehanceText")?>

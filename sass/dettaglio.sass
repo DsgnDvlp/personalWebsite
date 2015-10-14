@@ -3,24 +3,22 @@
 
 body
 	.menuRow
-		@media screen and (max-width: $mobileMaxWidth)
+		@media screen and (max-width: $tabletMaxWidth)
 			position: absolute
 			left: 10px
 			right: 10px
 
 	.generalContainer
 		padding: 0 120px
+		@media screen and (max-width: $tabletMaxWidth)
+			padding: 0
 		@media screen and (max-width: $mobileMaxWidth)
 			padding: 100px 0
 
 	#fullpage
-		background-position: 100% 100%
-		background-size: 50%
-		background-repeat: no-repeat
 		max-width: 1200px
 		margin: auto
 		text-align: center
-
 
 		.royalSlider
 			width: 100%
@@ -36,8 +34,15 @@ body
 				height: auto
 				max-width: 100%
 				float: none
+				&.mobileSlideImage
+					display: none
+				@media screen and (max-width: $tabletMaxWidth)
+					max-width: calc(100% - 60px)
 				@media screen and (max-width: $mobileMaxWidth)
 					max-width: calc(100% - 20px)
+					display: none
+					&.mobileSlideImage
+						display: block
 
 			.rsNav.rsBullets
 				float: right
@@ -69,7 +74,7 @@ body
 			color: #fff
 			margin-top: -40px
 			margin-left: -10px
-			@media screen and (max-width: $mobileMaxWidth)
+			@media screen and (max-width: $tabletMaxWidth)
 				margin: -40px auto 0
 				left: 0
 				right: 0
@@ -79,19 +84,30 @@ body
 		.title
 			+titleBold
 			margin-top: 50px
+			display: none
+			@media screen and (max-width: $mobileMaxWidth)
+				+titleBoldMobile
+				display: block
 
 
 		.subtitle
 			//max-width: 600px
 			margin: 90px auto
 			+titleLight
-			@media screen and (max-width: $mobileMaxWidth)
+			@media screen and (max-width: $tabletMaxWidth)
+				width: calc(100% - 40px)
 				margin: 50px auto
+				+subtitleLightTablet
+			@media screen and (max-width: $mobileMaxWidth)
 				max-width: calc(100% - 20px)
 				+subtitleLightMobile
 
 		.detailsRow
 			margin-top: 50px
+			@media screen and (max-width: $tabletMaxWidth)
+				display: inline-block
+				margin: auto
+				width: calc(100% - 40px)
 			.detailsItem
 				width: 29.8%
 				margin: 0 2.4%
@@ -133,32 +149,64 @@ body
 				width: 100%
 				margin: 15px auto
 				height: auto
+				&.mobileImage
+					display: none
+				@media screen and (max-width: $tabletMaxWidth)
+					width: calc(100% - 40px)
+				@media screen and (max-width: $mobileMaxWidth)
+					display: none
+					&.mobileImage
+						display: block
+
+
 
 			img.middleWidth
 				width: calc(50% - 8px)
 				display: inline-block
+				@media screen and (max-width: $tabletMaxWidth)
+					width: calc(50% - 28px)
+					display: none
 				&.left
 					float: left
+					@media screen and (max-width: $tabletMaxWidth)
+						margin-left: 20px
 				&.right
 					float: right
+					@media screen and (max-width: $tabletMaxWidth)
+						margin-right: 20px
+
 
 		.behanceContainer
 			+titleLight
 			margin: 60px auto
 			text-align: center
+			@media screen and (max-width: $tabletMaxWidth)
+				+subtitleLightTablet
+			@media screen and (max-width: $mobileMaxWidth)
+				display: none
+
 
 		.prevNextContainer
 			margin-top: 30px
 			display: inline-block
+			@media screen and (max-width: $tabletMaxWidth)
+				width: calc(100% - 40px)
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 80px
 
 			.previous, .next, .center
 				width: calc(33% - 15px)
+				@media screen and (max-width: $mobileMaxWidth)
+					width: calc(50% - 10px)
+
 				img
 					width: 100%
+					@media screen and (max-width: $mobileMaxWidth)
+						display: none
 
 				.prevNextText
 					+subtitleBold
-					text-transform: uppercase
 					text-transform: uppercase
 					position: relative
 					height: 50px
@@ -167,21 +215,45 @@ body
 					background-color: #383838
 					color: #fff
 					margin-top: -40px
+					@media screen and (max-width: $mobileMaxWidth)
+						height: 120px
+						width: 100%
+						margin-top: 0
+						+subtitleBoldMobile
+						line-height: 120px
 
 			.previous
 				float: left
 				.prevNextText
 					margin-left: -10px
+					@media screen and (max-width: $mobileMaxWidth)
+						margin-left: 0
 
 			.center
 				text-align: center
 				display: inline-block
 				margin-top: 180px
+				@media screen and (max-width: $tabletMaxWidth)
+					margin-top: 0
+				@media screen and (max-width: $mobileMaxWidth)
+					position: absolute
+					left: 10px
+					right: 10px
+					margin-top: 130px
+					margin-left: auto
+					margin-right: auto
+					width: auto
+
 
 				.bottomRowText
 					+titleLight
 					max-width: 600px
 					margin: auto
+					@media screen and (max-width: $tabletMaxWidth)
+						+subtitleLightTablet
+					@media screen and (max-width: $mobileMaxWidth)
+						display: none
+
 
 				.bottomRowButton
 					margin: 40px auto 0px
@@ -193,6 +265,9 @@ body
 					display: block
 					color: #383838
 					@include transition(color .4s ease, background-color .4s ease)
+					@media screen and (max-width: $mobileMaxWidth)
+						width: calc(100% - 40px)
+
 
 					&:hover
 						color: #fff
@@ -203,9 +278,12 @@ body
 				.prevNextText
 					float: right
 					margin-right: -10px
-
+					@media screen and (max-width: $mobileMaxWidth)
+						margin-right: 0
 
 	.footer
 		position: static
 		clear: both
 		margin: 60px
+		@media screen and (max-width: $tabletMaxWidth)
+			display: none

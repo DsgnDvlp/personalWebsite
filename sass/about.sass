@@ -40,6 +40,9 @@ body
 		top: 0
 		left: $borderDimension
 		right: $borderDimension
+		@media screen and (max-width: $mobileMaxWidth)
+			left: $borderDimensionMobile
+			right: $borderDimensionMobile
 
 		.section
 			.slimScrollBar,.slimScrollRail
@@ -98,7 +101,7 @@ body
 				display: none
 				@media screen and (max-width: $mobileMaxWidth)
 					display: block
-					height: 304px
+					height: auto
 					overflow: hidden
 					margin-bottom: 30px
 					img
@@ -167,7 +170,7 @@ body
 							color: #fff
 							background-color: $generalOrange
 							border-color: $generalOrange
-						@media screen and (max-width: $mobileMaxWidth)
+						@media screen and (max-width: $tabletMaxWidth)
 							width: calc(100% - 30px)
 							display: block
 							margin: auto
@@ -362,7 +365,8 @@ body
 						line-height: 18px
 						@media screen and (max-width: $mobileMaxWidth)
 							+normalFontMobileLine
-							margin: 0 15px
+							margin: 0 auto
+
 						.contentTitle
 							+smallEffra
 							color: $generalOrange

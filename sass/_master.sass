@@ -12,7 +12,8 @@ $borderDimension: 15px
 $borderDimensionMobile: 10px
 $marginTopFromBorder: 50px
 $marginTopFromBorderMobile: 25px
-$mobileMaxWidth: 769px
+$mobileMaxWidth: 669px
+$tabletMaxWidth: 1024px
 $lateralMarginFromBorder: 45px
 
 //General styles
@@ -26,7 +27,7 @@ body
 	font-family: $fontKep
 	color: #383838
 	padding: $borderDimension
-	@media screen and (max-width: 769px)
+	@media screen and (max-width: $mobileMaxWidth)
 		padding: $borderDimensionMobile
 	//opacity: 1
 	//@include transition(opacity .5s ease .2s)
@@ -401,7 +402,7 @@ body
 		right: 0
 		text-align: center
 		+row()
-		@media screen and (max-width: 769px)
+		@media screen and (max-width: $mobileMaxWidth)
 			bottom: 21px
 
 		.socialEntry
@@ -415,7 +416,7 @@ body
 
 			&:first-child
 				+shift(1.5)
-				@media screen and (max-width: 769px)
+				@media screen and (max-width: $mobileMaxWidth)
 					+shift(1)
 
 			.socialEntryLink
@@ -427,7 +428,7 @@ body
 					opacity: .3
 					display: block
 					@include transition(opacity .4s ease, transform .4s ease)
-					@media screen and (max-width: 769px)
+					@media screen and (max-width: $mobileMaxWidth)
 						display: none
 
 				.socialMobile
@@ -439,7 +440,7 @@ body
 					opacity: 0
 					vertical-align: bottom !important
 					@include transition(opacity .4s ease)
-					@media screen and (max-width: 769px)
+					@media screen and (max-width: $mobileMaxWidth)
 						opacity: 1
 						height: 19px
 

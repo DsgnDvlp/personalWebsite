@@ -75,7 +75,7 @@ body {
   font-family: "kepler std", serif;
   color: #383838;
   padding: 15px; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     body {
       padding: 10px; } }
   body a {
@@ -166,7 +166,7 @@ body {
   height: 15px;
   left: 0;
   right: 0; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     .borderGenericOrizzontal, .borderNorth, .borderSouth {
       height: 10px; } }
 
@@ -174,7 +174,7 @@ body {
   width: 15px;
   top: 0;
   bottom: 0; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     .borderGenericVertical, .borderEast, .borderWest {
       width: 10px; } }
 
@@ -200,7 +200,7 @@ body {
   -webkit-transition: background-color 0.4s ease, border-color 0.5s ease;
   -moz-transition: background-color 0.4s ease, border-color 0.5s ease;
   transition: background-color 0.4s ease, border-color 0.5s ease; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     .menuRow {
       padding-top: 25px;
       height: 99px;
@@ -216,7 +216,7 @@ body {
     position: relative;
     float: right;
     margin-right: 45px; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       .menuRow .menu {
         margin-right: 20px; } }
     .menuRow .menu .menuContent {
@@ -231,7 +231,7 @@ body {
       -webkit-transition: -webkit-transform 0.2s ease;
       -moz-transition: -moz-transform 0.2s ease;
       transition: transform 0.2s ease; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow .menu .menuContent {
           height: 19px;
           width: 28px; } }
@@ -296,7 +296,7 @@ body {
   .menuRow .logoContainer {
     float: left;
     margin: 0 0 0 45px; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       .menuRow .logoContainer {
         margin-left: 20px; } }
     .menuRow .logoContainer .logo {
@@ -305,7 +305,7 @@ body {
       z-index: 9;
       position: relative;
       display: inline-block; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow .logoContainer .logo {
           width: 40px; } }
       .menuRow .logoContainer .logo svg {
@@ -354,7 +354,7 @@ body {
     height: 165px;
     background-color: rgba(255, 255, 255, 0.8);
     border-bottom: 1px solid #F24E41; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       .menuRow.sticky {
         top: 10px;
         left: 10px;
@@ -363,17 +363,17 @@ body {
         padding: 0 !important; } }
     .menuRow.sticky .logoContainer {
       margin-top: 50px; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow.sticky .logoContainer {
           margin-top: 25px; } }
     .menuRow.sticky .menuContainer .menu {
       margin-top: 50px; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow.sticky .menuContainer .menu {
           margin-top: 25px; } }
     .menuRow.sticky .languageBar {
       margin-top: 50px; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         .menuRow.sticky .languageBar {
           margin-top: 25px; } }
 
@@ -390,7 +390,7 @@ body {
   -webkit-transition: opacity 0.7s ease;
   -moz-transition: opacity 0.7s ease;
   transition: opacity 0.7s ease; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     .footer {
       display: none; } }
 
@@ -468,7 +468,7 @@ body {
         -webkit-transition: -webkit-transform 0.4s ease;
         -moz-transition: -moz-transform 0.4s ease;
         transition: transform 0.4s ease; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           .overlayMenu .overlayMenuContainer .menuContent .menuEntry {
             padding: 0;
             margin: 50px 40px; } }
@@ -486,7 +486,7 @@ body {
           -webkit-transition: opacity 0.4s ease;
           -moz-transition: opacity 0.4s ease;
           transition: opacity 0.4s ease; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             .overlayMenu .overlayMenuContainer .menuContent .menuEntry a {
               font-family: "effra", sans-serif;
               font-weight: bold;
@@ -567,7 +567,7 @@ body {
       clear: both;
       content: "";
       display: table; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       .overlayMenu .socialBar {
         bottom: 21px; } }
     .overlayMenu .socialBar .socialEntry {
@@ -585,7 +585,7 @@ body {
         margin-right: 0; }
       .overlayMenu .socialBar .socialEntry:first-child {
         margin-left: 11.6803278689%; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           .overlayMenu .socialBar .socialEntry:first-child {
             margin-left: 7.7868852459%; } }
       .overlayMenu .socialBar .socialEntry .socialEntryLink {
@@ -598,7 +598,7 @@ body {
           -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
           -moz-transition: opacity 0.4s ease, -moz-transform 0.4s ease;
           transition: opacity 0.4s ease, transform 0.4s ease; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             .overlayMenu .socialBar .socialEntry .socialEntryLink .socialDesktop {
               display: none; } }
         .overlayMenu .socialBar .socialEntry .socialEntryLink .socialMobile {
@@ -612,7 +612,7 @@ body {
           -webkit-transition: opacity 0.4s ease;
           -moz-transition: opacity 0.4s ease;
           transition: opacity 0.4s ease; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             .overlayMenu .socialBar .socialEntry .socialEntryLink .socialMobile {
               opacity: 1;
               height: 19px; } }
@@ -628,7 +628,7 @@ body {
 
 body.openedMenu {
   overflow: hidden; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     body.openedMenu .menuRow {
       background: transparent;
       -webkit-transition: background-color 0s ease;
@@ -828,7 +828,7 @@ body.openedMenu {
     bottom: calc(50% + 100px); } }
 body {
   padding: 15px; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 669px) {
     body {
       padding: 10px; } }
   body #fullpage {
@@ -836,6 +836,10 @@ body {
     top: 0;
     left: 15px;
     right: 15px; }
+    @media screen and (max-width: 669px) {
+      body #fullpage {
+        left: 10px;
+        right: 10px; } }
     body #fullpage .section .slimScrollBar, body #fullpage .section .slimScrollRail {
       display: none !important; }
     body #fullpage .section.first {
@@ -843,7 +847,7 @@ body {
       background-position: calc(100% - 45px) 100%;
       background-size: 44%;
       background-repeat: no-repeat; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section.first {
           background-image: none; } }
       body #fullpage .section.first .footer .goDown .text {
@@ -851,7 +855,7 @@ body {
         background-color: transparent; }
       body #fullpage .section.first .container {
         margin-bottom: -17vh; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section.first .container {
             margin-bottom: 0px; } }
     body #fullpage .section .container {
@@ -864,7 +868,7 @@ body {
         clear: both;
         content: "";
         display: table; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section .container {
           display: block;
           margin-left: 0;
@@ -883,7 +887,7 @@ body {
         margin-bottom: 10px; }
         body #fullpage .section .container .title:last-child {
           margin-right: 0; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .container .title {
             font-size: 25px;
             letter-spacing: 5px;
@@ -903,7 +907,7 @@ body {
         width: 92.2131147541%; }
         body #fullpage .section .container .subtitle:last-child {
           margin-right: 0; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .container .subtitle {
             font-size: 20px;
             line-height: 26px;
@@ -914,10 +918,10 @@ body {
           margin-bottom: 25px; }
     body #fullpage .section .mobileBackgroundContainer {
       display: none; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section .mobileBackgroundContainer {
           display: block;
-          height: 304px;
+          height: auto;
           overflow: hidden;
           margin-bottom: 30px; }
           body #fullpage .section .mobileBackgroundContainer img {
@@ -946,7 +950,7 @@ body {
       -ms-transform: rotate(-90deg);
       -o-transform: rotate(-90deg);
       transform: rotate(-90deg); }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section .pageTitle {
           display: none; } }
     body #fullpage .section .footer {
@@ -955,7 +959,7 @@ body {
       left: 0;
       right: 0;
       height: 77px; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section .footer {
           display: block;
           position: relative;
@@ -969,7 +973,7 @@ body {
         color: #F24E41;
         text-transform: uppercase;
         text-align: center; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .footer .goDown {
             font-family: "effra", sans-serif;
             font-weight: bold;
@@ -989,7 +993,7 @@ body {
           border-left: 1px solid #F24E41;
           height: 50px;
           margin-top: 10px; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .footer .goDown .lineDown {
               height: 28px; } }
         body #fullpage .section .footer .goDown .downloadButton {
@@ -1006,14 +1010,14 @@ body {
             color: #fff;
             background-color: #F24E41;
             border-color: #F24E41; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 1024px) {
             body #fullpage .section .footer .goDown .downloadButton {
               width: calc(100% - 30px);
               display: block;
               margin: auto; } }
       body #fullpage .section .footer .mobileBottomLine {
         display: none; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .footer .mobileBottomLine {
             display: block;
             border-left: 1px solid #F24E41;
@@ -1027,7 +1031,7 @@ body {
       right: 0;
       height: 77px;
       text-align: center; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section .topPanel {
           margin-top: 124px;
           height: auto;
@@ -1050,7 +1054,7 @@ body {
         -webkit-transition: opacity 0.3s ease 0.3s;
         -moz-transition: opacity 0.3s ease 0.3s;
         transition: opacity 0.3s ease 0.3s; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .topPanel .text {
             font-family: "effra", sans-serif;
             font-weight: bold;
@@ -1068,7 +1072,7 @@ body {
       top: 0;
       bottom: 0;
       bottom: 100%; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section .centerLine {
           height: 115px;
           position: static; } }
@@ -1082,7 +1086,7 @@ body {
       height: 321px;
       width: 300px;
       background-color: #fff; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section .centerBlocksContainer {
           position: relative;
           margin-top: 0px;
@@ -1140,7 +1144,7 @@ body {
         -webkit-transition: opacity 0.5s ease;
         -moz-transition: opacity 0.5s ease;
         transition: opacity 0.5s ease; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .centerBlocksContainer .centerBlock {
             opacity: 1;
             width: 150px;
@@ -1209,7 +1213,7 @@ body {
         -webkit-transition: opacity 0.5s ease;
         -moz-transition: opacity 0.5s ease;
         transition: opacity 0.5s ease; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .centerBlocksContainer .secondCenteredBlock {
             opacity: 1;
             font-size: 14px;
@@ -1224,7 +1228,7 @@ body {
           font-size: 16px;
           font-style: italic;
           line-height: 16px; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .centerBlocksContainer .secondCenteredBlock i {
               font-family: "kepler std", serif;
               font-size: 16px;
@@ -1272,12 +1276,12 @@ body {
       -o-justify-content: space-around;
       justify-content: space-around;
       -ms-flex-pack: distribute; }
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 669px) {
         body #fullpage .section .contentBlockContainer {
           position: static; } }
       body #fullpage .section .contentBlockContainer .contentBlock {
         position: relative; }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 669px) {
           body #fullpage .section .contentBlockContainer .contentBlock {
             text-align: center;
             margin-bottom: 50px !important; } }
@@ -1290,7 +1294,7 @@ body {
           width: 120px;
           margin: auto;
           z-index: -1; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .contentBlockContainer .contentBlock img {
               position: static;
               opacity: 1;
@@ -1311,7 +1315,7 @@ body {
           font-size: 100px;
           font-style: italic;
           letter-spacing: 0; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .contentBlockContainer .contentBlock .number {
               position: static;
               text-align: center;
@@ -1329,7 +1333,7 @@ body {
           line-height: 38px;
           text-transform: uppercase;
           margin-bottom: 10px; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .contentBlockContainer .contentBlock .title {
               margin-top: 15px;
               font-family: "effra", sans-serif;
@@ -1343,14 +1347,14 @@ body {
           font-size: 16px;
           max-width: 330px;
           line-height: 18px; }
-          @media screen and (max-width: 769px) {
+          @media screen and (max-width: 669px) {
             body #fullpage .section .contentBlockContainer .contentBlock .content {
               font-size: 14px;
               line-height: 14px;
               letter-spacing: 0;
               font-family: "kepler std", serif;
               line-height: 16px;
-              margin: 0 15px; } }
+              margin: 0 auto; } }
           body #fullpage .section .contentBlockContainer .contentBlock .content .contentTitle {
             font-family: "effra", sans-serif;
             font-weight: bold;
@@ -1358,7 +1362,7 @@ body {
             line-height: 16px;
             color: #F24E41;
             margin-top: 16px; }
-            @media screen and (max-width: 769px) {
+            @media screen and (max-width: 669px) {
               body #fullpage .section .contentBlockContainer .contentBlock .content .contentTitle {
                 font-family: "kepler std", serif;
                 font-size: 14px;
@@ -1369,7 +1373,7 @@ body {
                 text-align: left; } }
       body #fullpage .section .contentBlockContainer.left {
         left: 45px; }
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 669px) {
           body #fullpage .section .contentBlockContainer.left .contentBlock {
             left: -430px;
             position: relative;
@@ -1387,7 +1391,7 @@ body {
       body #fullpage .section .contentBlockContainer.right {
         right: 45px;
         text-align: right; }
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 669px) {
           body #fullpage .section .contentBlockContainer.right .contentBlock {
             left: 430px;
             position: relative;
@@ -1412,7 +1416,7 @@ body {
       opacity: 1; }
     body #fullpage .section.second.loaded .centerLine {
       bottom: 50%; }
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 669px) {
         body #fullpage .section.second.loaded .centerLine {
           bottom: 0; } }
     body #fullpage .section.second.loaded .topPanel .text {
@@ -1424,7 +1428,7 @@ body {
       opacity: 1; }
     body #fullpage .section.third.loaded .centerLine {
       bottom: 50%; }
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 669px) {
         body #fullpage .section.third.loaded .centerLine {
           -webkit-animation: centerLineConstruction 2.5s ease;
           -moz-animation: centerLineConstruction 2.5s ease;
@@ -1462,7 +1466,7 @@ body {
       bottom: 50%; }
     body #fullpage .section.fourth.loaded .topPanel .text {
       opacity: 1; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       body #fullpage .section.fourth.loaded .footer .goDown {
         margin-top: 50px; } }
     body #fullpage .section.fourth.loaded .footer .goDown .downloadButton {
@@ -1477,7 +1481,7 @@ body {
     position: absolute;
     right: 60px;
     bottom: 60px; }
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 669px) {
       body .breadCrumbs {
         display: none; } }
     body .breadCrumbs span {

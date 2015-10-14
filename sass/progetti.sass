@@ -32,7 +32,7 @@ body
 				margin-left: 50px
 				margin-bottom: 50px
 				text-align: center
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					position: static !important
 					width: auto
 					height: auto
@@ -43,7 +43,7 @@ body
 					width: 360px
 					margin-left: 10px
 					position: relative
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						width: 100%
 						margin: 0
 
@@ -82,7 +82,7 @@ body
 					background-color: #383838
 					color: #fff
 					margin-top: -40px
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						position: relative
 						margin: -25px auto 0
 
@@ -97,6 +97,8 @@ body
 					margin: 30px auto 0
 					border: 1px solid #383838
 					@include transition(color .5s ease, background-color .5s ease)
+					@media screen and (max-width: $tabletMaxWidth)
+						width: 350px
 					@media screen and (max-width: $mobileMaxWidth)
 						width: auto
 						margin: 20px 10px 0
@@ -142,3 +144,8 @@ body
 				margin-right: 0px
 			&.active, &:hover
 				color: $generalOrange
+
+
+.footer
+	@media screen and (max-width: $tabletMaxWidth)
+		display: none
