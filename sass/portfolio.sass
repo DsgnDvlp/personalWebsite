@@ -33,14 +33,16 @@ body
 				max-width: 85em
 				margin-left: 2.813em
 				@media screen and (max-width: $tabletMaxWidth)
-					margin: auto 15px
 					max-width: 100%
+				@media screen and (max-width: $mobileMaxWidth)
 					text-align: center
+					margin: auto 15px
+				
 				.title
 					+titleBold
 					+span-columns(12)
 					margin-bottom: 10px
-					@media screen and (max-width: $tabletMaxWidth)
+					@media screen and (max-width: $mobileMaxWidth)
 						+titleBoldMobile
 						letter-spacing: 1px
 						margin-left: auto
@@ -51,7 +53,7 @@ body
 					+titleLight
 					max-width: 20em
 					+span-columns(12)
-					@media screen and (max-width: $tabletMaxWidth)
+					@media screen and (max-width: $mobileMaxWidth)
 						+titleLightMobile
 						margin: 0 auto
 						margin-bottom: 50px
@@ -79,7 +81,7 @@ body
 					color: #383838
 					@include transition(color .5s ease, background-color .5s ease)
 					@media screen and (max-width: $tabletMaxWidth)
-						margin: auto
+						
 					@media screen and (max-width: $mobileMaxWidth)
 						width: auto
 						margin: auto 10px

@@ -53,13 +53,18 @@ body
 				background-position: calc(100% - 45px) 100%
 				background-size: 44%
 				background-repeat: no-repeat
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					background-image: none
 				.footer
+					@media screen and (max-width: $tabletMaxWidth) and (min-width: $mobileMaxWidth)
+						position: absolute !important
+						bottom: 15px !important
+					
 					.goDown
 						.text
 							opacity: 1
 							background-color: transparent
+
 				.container
 					margin-bottom: -17vh
 					@media screen and (max-width: $mobileMaxWidth)
@@ -120,7 +125,7 @@ body
 				text-transform: uppercase
 				@include transform-origin(100% 100%)
 				@include transform(rotate(-90deg))
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					display: none
 
 
@@ -130,7 +135,7 @@ body
 				left: 0
 				right: 0
 				height: 77px
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					display: block
 					position: relative
 					height: 52px
@@ -140,7 +145,7 @@ body
 					color: $generalOrange
 					text-transform: uppercase
 					text-align: center
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						+subtitleBoldMobile
 
 					.text
@@ -155,7 +160,7 @@ body
 						border-left: 1px solid $generalOrange
 						height: 50px
 						margin-top: 10px
-						@media screen and (max-width: $mobileMaxWidth)
+						@media screen and (max-width: $tabletMaxWidth)
 							height: 28px
 
 					.downloadButton
@@ -171,12 +176,15 @@ body
 							background-color: $generalOrange
 							border-color: $generalOrange
 						@media screen and (max-width: $tabletMaxWidth)
-							width: calc(100% - 30px)
 							display: block
 							margin: auto
+							width: 200px
+						@media screen and (max-width: $mobileMaxWidth)
+							width: calc(100% - 30px)
+
 				.mobileBottomLine
 					display: none
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						display: block
 						border-left: 1px solid $generalOrange
 						height: 28px
@@ -190,10 +198,16 @@ body
 				right: 0
 				height: 77px
 				text-align: center
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
+					position: static
 					margin-top: 124px
 					height: auto
-					position: static
+					margin-bottom: -50px
+				@media screen and (max-width: $mobileMaxWidth)
+					margin-top: 124px
+					margin-bottom: 0
+					
+					
 
 
 
@@ -209,9 +223,11 @@ body
 					position: relative
 					opacity: 0
 					@include transition(opacity .3s ease 0.3s)
+					@media screen and (max-width: $tabletMaxWidth)
+						opacity: 1
 					@media screen and (max-width: $mobileMaxWidth)
 						+subtitleBoldMobile
-						opacity: 1
+						
 
 			.centerLine
 				position: absolute
@@ -223,7 +239,7 @@ body
 				top: 0
 				bottom: 0
 				bottom: 100%
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					height: 115px
 					position: static
 
@@ -237,7 +253,8 @@ body
 				height: 321px
 				width: 300px
 				background-color: #fff
-				@media screen and (max-width: $mobileMaxWidth)
+				
+				@media screen and (max-width: $tabletMaxWidth)
 					position: relative
 					margin-top: 0px
 					margin-bottom: 35px
@@ -259,8 +276,10 @@ body
 					text-align: center
 					opacity: 0
 					@include transition(opacity .5s ease)
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						opacity: 1
+						
+					@media screen and (max-width: $mobileMaxWidth)
 						width: 150px
 						height: 150px
 						+aboutSubtitleBoldMobile
@@ -285,8 +304,10 @@ body
 					text-align: center
 					opacity: 0
 					@include transition(opacity .5s ease)
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						opacity: 1
+						
+					@media screen and (max-width: $mobileMaxWidth)
 						+normalFontMobile
 						max-width: 270px
 						padding: 15px 0 0px
@@ -306,14 +327,14 @@ body
 				@include display(flex)
 				@include flex-direction(column)
 				@include justify-content(space-around)
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					position: static
 
 
 				.contentBlock
 					position: relative
 					//@include flex(1)
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						text-align: center
 						margin-bottom: 50px !important
 					&:first-child
@@ -326,11 +347,12 @@ body
 						width: 120px
 						margin: auto
 						z-index: -1
-						@media screen and (max-width: $mobileMaxWidth)
+						@media screen and (max-width: $tabletMaxWidth)
 							position: static
 							opacity: 1
-							width: 79px
 							margin: auto
+						@media screen and (max-width: $mobileMaxWidth)
+							width: 79px
 						&.secondRow
 							top: 0
 
@@ -344,10 +366,11 @@ body
 						top: -40px
 						z-index: -1
 						+aboutNumbers
-						@media screen and (max-width: $mobileMaxWidth)
+						@media screen and (max-width: $tabletMaxWidth)
 							position: static
 							text-align: center
 							opacity: 1
+						@media screen and (max-width: $tabletMaxWidth)
 							+aboutNumbersMobile
 
 
@@ -355,29 +378,32 @@ body
 						+mediumFont
 						text-transform: uppercase
 						margin-bottom: 10px
-						@media screen and (max-width: $mobileMaxWidth)
+						@media screen and (max-width: $tabletMaxWidth)
 							margin-top: 15px
+						@media screen and (max-width: $mobileMaxWidth)
 							+menuFontMobile
 
 					.content
 						font-size: 16px
 						max-width: 330px
 						line-height: 18px
+						@media screen and (max-width: $tabletMaxWidth)
+							margin: 0 auto
 						@media screen and (max-width: $mobileMaxWidth)
 							+normalFontMobileLine
-							margin: 0 auto
 
 						.contentTitle
 							+smallEffra
 							color: $generalOrange
 							margin-top: 16px
-							@media screen and (max-width: $mobileMaxWidth)
-								+mobileNormalFontBold
+							@media screen and (max-width: $tabletMaxWidth)
 								text-align: left
+							@media screen and (max-width: $tabletMaxWidth)
+								+mobileNormalFontBold
 
 				&.left
 					left: 45px
-					@media screen and (min-width: $mobileMaxWidth)
+					@media screen and (min-width: $tabletMaxWidth)
 						.contentBlock
 							left: -430px
 							position: relative
@@ -393,7 +419,7 @@ body
 				&.right
 					right: 45px
 					text-align: right
-					@media screen and (min-width: $mobileMaxWidth)
+					@media screen and (min-width: $tabletMaxWidth)
 
 						.contentBlock
 							left: 430px
@@ -419,7 +445,7 @@ body
 
 				.centerLine
 					bottom: 50%
-					@media screen and (min-width: $mobileMaxWidth)
+					@media screen and (min-width: $tabletMaxWidth)
 						//@include animation(centerLineConstruction 2.5s ease)
 						bottom: 0
 
@@ -438,7 +464,7 @@ body
 
 				.centerLine
 					bottom: 50%
-					@media screen and (min-width: $mobileMaxWidth)
+					@media screen and (min-width: $tabletMaxWidth)
 						@include animation(centerLineConstruction 2.5s ease)
 						bottom: 0
 
@@ -449,6 +475,13 @@ body
 					.goDown
 						.text
 							opacity: 1
+
+			&.fourth
+				.contentBlockContainer
+					.content
+						text-align: left
+						@media screen and (max-width: $tabletMaxWidth)
+							margin-left: 20px
 
 			&.fourth.loaded
 				.contentBlockContainer
@@ -467,8 +500,6 @@ body
 							margin-bottom: 0
 							&:last-child
 								@include transition(left .5s ease 2.9s, opacity .5s 3.1)
-					.content
-						text-align: left
 
 				.centerLine
 					@include animation(centerLineConstructionThird 2.5s ease)
@@ -480,7 +511,7 @@ body
 
 				.footer
 					.goDown
-						@media screen and (max-width: $mobileMaxWidth)
+						@media screen and (max-width: $tabletMaxWidth)
 							margin-top: 50px
 						.downloadButton
 							opacity: 1
@@ -490,7 +521,7 @@ body
 		position: absolute
 		right: 60px
 		bottom: 60px
-		@media screen and (max-width: $mobileMaxWidth)
+		@media screen and (max-width: $tabletMaxWidth)
 			display: none
 
 		span
@@ -506,3 +537,8 @@ body
 				margin-right: 0px
 			&.active a
 				color: $generalOrange
+
+
+
+body > .footer
+	display: none

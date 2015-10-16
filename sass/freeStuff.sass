@@ -20,9 +20,10 @@ body
 		@include display(flex)
 		@include flex-direction(row)
 		@include justify-content(flex-start)
-		@media screen and (max-width: $mobileMaxWidth)
+		@media screen and (max-width: $tabletMaxWidth)
 			//min-height: 800px
 			background-image: none
+		@media screen and (max-width: $mobileMaxWidth)
 			left: $borderDimensionMobile
 			right: $borderDimensionMobile
 
@@ -32,8 +33,7 @@ body
 			@include flex(1)
 			@media screen and (max-width: $mobileMaxWidth)
 				margin-bottom: auto
-				@media screen and (max-height: 600px)
-					margin-top: 134px
+				margin-top: 134px
 
 
 			.container
@@ -74,5 +74,5 @@ body
 				text-transform: uppercase
 				@include transform-origin(100% 100%)
 				@include transform(rotate(-90deg))
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					display: none

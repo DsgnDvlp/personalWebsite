@@ -224,15 +224,14 @@ body
 
 	.languageBar
 		display: none
+		//display: inline
 		float: right
 		margin-right: 45px
 		line-height: 26px
 		width: 100px
-		//max-width: 40px
 		height: 30px
 		overflow: hidden
 		text-align: right
-		//@include transition(max-width .2s ease)
 
 
 		&:hover
@@ -334,7 +333,7 @@ body
 				padding-right: 60px
 				@include transform(translateX(400px))
 				@include transition(transform .4s ease)
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					padding: 0
 					margin: 50px 40px
 
@@ -347,9 +346,11 @@ body
 					width: 100%
 					max-width: 900px
 					@include transition(opacity .4s ease)
+					@media screen and (max-width: $tabletMaxWidth)
+						opacity: 1
+
 					@media screen and (max-width: $mobileMaxWidth)
 						+menuFontMobile
-						opacity: 1
 
 					&:after
 						content: " "
@@ -360,7 +361,7 @@ body
 						margin-top: 18px
 						margin-left: 105%
 						@include transition(margin-left .4s ease)
-						@media screen and (max-width: 992px)
+						@media screen and (max-width: $tabletMaxWidth)
 							display: none
 
 					.description
@@ -375,15 +376,19 @@ body
 						margin-top: 10px
 						letter-spacing: 0
 						@include transition(transform .5s ease .3s, opacity .5s ease .3s)
-						@media screen and (max-width: 992px)
+						@media screen and (max-width: $tabletMaxWidth)
 							opacity: 1
 							@include transform(translateY(0px))
 							float: none
-							margin-top: 30px
+							margin-top: 35px
 							position: absolute
 							left: 0
 							right: 0
+							
+						@media screen and (max-width: $mobileMaxWidth)
 							+mobileNormalFont
+							margin-top: 30px
+
 
 					&:hover
 						opacity: 1
@@ -416,7 +421,7 @@ body
 
 			&:first-child
 				+shift(1.5)
-				@media screen and (max-width: $mobileMaxWidth)
+				@media screen and (max-width: $tabletMaxWidth)
 					+shift(1)
 
 			.socialEntryLink
@@ -428,7 +433,7 @@ body
 					opacity: .3
 					display: block
 					@include transition(opacity .4s ease, transform .4s ease)
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						display: none
 
 				.socialMobile
@@ -440,7 +445,7 @@ body
 					opacity: 0
 					vertical-align: bottom !important
 					@include transition(opacity .4s ease)
-					@media screen and (max-width: $mobileMaxWidth)
+					@media screen and (max-width: $tabletMaxWidth)
 						opacity: 1
 						height: 19px
 
@@ -455,7 +460,7 @@ body
 body.openedMenu
 	overflow: hidden
 	.menuRow
-		@media screen and (max-width: $mobileMaxWidth)
+		@media screen and (max-width: $tabletMaxWidth)
 			background: transparent
 			@include transition(background-color .0s ease)
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -rf ./deploy
+rm -rf ./deploy;
 
 mkdir deploy;
 
@@ -32,6 +32,6 @@ cp switchLanguage.php ./deploy/switchLanguage.php;
 
 cp lang.php ./deploy/lang.php;
 
-cp sendMail.php ./deploy/sendMail.php
+cp sendMail.php ./deploy/sendMail.php;
 
-cp -r ./file ./deploy/file
+cp -r ./file ./deploy/file;
