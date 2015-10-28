@@ -36,6 +36,7 @@ $(document).ready(function(){
         }
     });
 
+
 	$("#fullpage").scroll(function(){
 		if($("#fullpage").scrollTop() > 0){
             $(".menuRow").addClass("sticky");
@@ -44,15 +45,15 @@ $(document).ready(function(){
         }
     });
 
-	setTimeout(function(){
-		$(".fp-scrollable").scroll(function(){
-	        if($(".fp-scrollable").scrollTop() > 0){
-	            $(".menuRow").addClass("sticky");
-	        }else{
-	            $(".menuRow").removeClass("sticky");
-	        }
-	    });
-	}, 100);
+	// setTimeout(function(){
+	// 	$(".fp-scrollable").scroll(function(){
+	//         if($(".fp-scrollable").scrollTop() > 0){
+	//             $(".menuRow").addClass("sticky");
+	//         }else{
+	//             $(".menuRow").removeClass("sticky");
+	//         }
+	//     });
+	// }, 100);
 });
 
 function switchLanguage(language){

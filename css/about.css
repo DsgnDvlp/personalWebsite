@@ -471,7 +471,8 @@ body {
         @media screen and (max-width: 1024px) {
           .overlayMenu .overlayMenuContainer .menuContent .menuEntry {
             padding: 0;
-            margin: 50px 40px; } }
+            margin: 50px 40px;
+            overflow: visible; } }
         .overlayMenu .overlayMenuContainer .menuContent .menuEntry a {
           color: #fff;
           font-family: "effra", sans-serif;
@@ -488,7 +489,8 @@ body {
           transition: opacity 0.4s ease; }
           @media screen and (max-width: 1024px) {
             .overlayMenu .overlayMenuContainer .menuContent .menuEntry a {
-              opacity: 1; } }
+              opacity: 1;
+              overflow: visible; } }
           @media screen and (max-width: 669px) {
             .overlayMenu .overlayMenuContainer .menuContent .menuEntry a {
               font-family: "effra", sans-serif;
@@ -831,6 +833,11 @@ body.openedMenu {
   100% {
     bottom: -webkit-calc(50% + 100px);
     bottom: calc(50% + 100px); } }
+@media screen and (max-width: 1024px) {
+  html, body {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; } }
+
 body {
   padding: 15px; }
   @media screen and (max-width: 669px) {
@@ -840,13 +847,24 @@ body {
     position: absolute !important;
     top: 0;
     left: 15px;
-    right: 15px; }
+    right: 15px;
+    -webkit-overflow-scrolling: touch; }
     @media screen and (max-width: 669px) {
       body #fullpage {
         left: 10px;
-        right: 10px; } }
+        right: 10px;
+        height: 100%;
+        overflow: scroll; } }
+    @media screen and (max-width: 1024px) {
+      body #fullpage .section {
+        min-height: calc(100vh - 40px); } }
+    @media screen and (max-width: 669px) {
+      body #fullpage .section {
+        min-height: +calc(100vh - 30px); } }
     body #fullpage .section .slimScrollBar, body #fullpage .section .slimScrollRail {
       display: none !important; }
+    body #fullpage .section .fp-tableCell .slimScrollDiv .fp-scrollable {
+      -webkit-overflow-scrolling: touch; }
     body #fullpage .section.first {
       background-image: url(../img/about.png);
       background-position: calc(100% - 45px) 100%;
@@ -854,7 +872,42 @@ body {
       background-repeat: no-repeat; }
       @media screen and (max-width: 1024px) {
         body #fullpage .section.first {
-          background-image: none; } }
+          background-image: none;
+          -webkit-box-align: stretch;
+          -moz-box-align: stretch;
+          box-align: stretch;
+          -webkit-align-items: stretch;
+          -moz-align-items: stretch;
+          -ms-align-items: stretch;
+          -o-align-items: stretch;
+          align-items: stretch;
+          -ms-flex-align: stretch;
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -moz-box-orient: vertical;
+          box-orient: vertical;
+          -webkit-box-direction: normal;
+          -moz-box-direction: normal;
+          box-direction: normal;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          flex-direction: column;
+          -ms-flex-direction: column;
+          -webkit-box-pack: center;
+          -moz-box-pack: center;
+          box-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          -o-justify-content: center;
+          justify-content: center;
+          -ms-flex-pack: center; } }
       @media screen and (max-width: 1024px) and (min-width: 669px) {
         body #fullpage .section.first .footer {
           position: absolute !important;
@@ -1004,7 +1057,7 @@ body {
           margin-top: 10px; }
           @media screen and (max-width: 1024px) {
             body #fullpage .section .footer .goDown .lineDown {
-              height: 28px; } }
+              height: 52px; } }
         body #fullpage .section .footer .goDown .downloadButton {
           color: #000;
           border: 1px solid #000;
@@ -1023,7 +1076,8 @@ body {
             body #fullpage .section .footer .goDown .downloadButton {
               display: block;
               margin: auto;
-              width: 200px; } }
+              width: 200px;
+              opacity: 1; } }
           @media screen and (max-width: 669px) {
             body #fullpage .section .footer .goDown .downloadButton {
               width: calc(100% - 30px); } }
@@ -1033,7 +1087,7 @@ body {
           body #fullpage .section .footer .mobileBottomLine {
             display: block;
             border-left: 1px solid #F24E41;
-            height: 28px;
+            height: 52px;
             margin: auto;
             width: 0; } }
     body #fullpage .section .topPanel {
@@ -1046,12 +1100,11 @@ body {
       @media screen and (max-width: 1024px) {
         body #fullpage .section .topPanel {
           position: static;
-          margin-top: 124px;
+          margin-top: 0;
           height: auto;
           margin-bottom: -50px; } }
       @media screen and (max-width: 669px) {
         body #fullpage .section .topPanel {
-          margin-top: 124px;
           margin-bottom: 0; } }
       body #fullpage .section .topPanel .text {
         font-family: "effra", sans-serif;
@@ -1073,7 +1126,8 @@ body {
         transition: opacity 0.3s ease 0.3s; }
         @media screen and (max-width: 1024px) {
           body #fullpage .section .topPanel .text {
-            opacity: 1; } }
+            opacity: 1;
+            display: none; } }
         @media screen and (max-width: 669px) {
           body #fullpage .section .topPanel .text {
             font-family: "effra", sans-serif;
@@ -1093,7 +1147,7 @@ body {
       bottom: 100%; }
       @media screen and (max-width: 1024px) {
         body #fullpage .section .centerLine {
-          height: 115px;
+          height: 55px;
           position: static; } }
     body #fullpage .section .centerBlocksContainer {
       position: absolute;
@@ -1307,7 +1361,9 @@ body {
         @media screen and (max-width: 1024px) {
           body #fullpage .section .contentBlockContainer .contentBlock {
             text-align: center;
-            margin-bottom: 50px !important; } }
+            margin-bottom: 50px !important; }
+            body #fullpage .section .contentBlockContainer .contentBlock.noMarginMobile {
+              margin-bottom: 10px !important; } }
         body #fullpage .section .contentBlockContainer .contentBlock:first-child {
           margin-bottom: 116px; }
         body #fullpage .section .contentBlockContainer .contentBlock img {

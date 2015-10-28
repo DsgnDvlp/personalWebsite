@@ -1,36 +1,38 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-        scrollOverflow: true,
-		anchors: ['about', 'whatido', 'software', 'mycv'],
-		afterLoad: function(anchorLink, index, slideAnchor, slideIndex){
-			if(index == 1){
-                $(".section.first").addClass("loaded");
-            }
+    if($(window).width() > 1024){
+        $('#fullpage').fullpage({
+            scrollOverflow: true,
+    		anchors: ['about', 'whatido', 'software', 'mycv'],
+    		afterLoad: function(anchorLink, index, slideAnchor, slideIndex){
+    			if(index == 1){
+                    $(".section.first").addClass("loaded");
+                }
 
-            if(index == 2){
-				if(!$(".section.second").hasClass("loaded")){
-                    $(".section.second").addClass("loaded");
-                    if($(window).width() > 769){
-                        animateBorderDiv(".section.second .centerBlock", "0.8s", ".8s", "s");
+                if(index == 2){
+    				if(!$(".section.second").hasClass("loaded")){
+                        $(".section.second").addClass("loaded");
+                        if($(window).width() > 769){
+                            animateBorderDiv(".section.second .centerBlock", "0.8s", ".8s", "s");
+                        }
                     }
                 }
-            }
-            if(index == 3){
-                if(!$(".section.third").hasClass("loaded")){
-                    $(".section.third").addClass("loaded");
-                    animateBorderDiv(".section.third .centerBlock", ".8s", ".8s", "n");
+                if(index == 3){
+                    if(!$(".section.third").hasClass("loaded")){
+                        $(".section.third").addClass("loaded");
+                        animateBorderDiv(".section.third .centerBlock", ".8s", ".8s", "n");
+                    }
                 }
-            }
-            if(index == 4){
-                if(!$(".section.fourth").hasClass("loaded")){
-                    $(".section.fourth").addClass("loaded");
-                    animateBorderDivThird(".section.fourth .centerBlock", ".8s", ".8s");
+                if(index == 4){
+                    if(!$(".section.fourth").hasClass("loaded")){
+                        $(".section.fourth").addClass("loaded");
+                        animateBorderDivThird(".section.fourth .centerBlock", ".8s", ".8s");
+                    }
                 }
-            }
-			$(".breadCrumbs span").removeClass("active");
-			$(".breadCrumbs span." + anchorLink).addClass("active");
-		},
-    });
+    			$(".breadCrumbs span").removeClass("active");
+    			$(".breadCrumbs span." + anchorLink).addClass("active");
+    		},
+        });
+    }
 });
 
 $(document).on("animationFinished", function(){

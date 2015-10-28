@@ -30,6 +30,12 @@
 	100%
 		@include calc(bottom, "50% + 100px")
 
+
+html, body
+	@media screen and (max-width: $tabletMaxWidth)
+		overflow: scroll
+		-webkit-overflow-scrolling: touch
+
 body
 	padding: $borderDimension
 	@media screen and (max-width: $mobileMaxWidth)
@@ -40,13 +46,26 @@ body
 		top: 0
 		left: $borderDimension
 		right: $borderDimension
+		-webkit-overflow-scrolling: touch
 		@media screen and (max-width: $mobileMaxWidth)
 			left: $borderDimensionMobile
 			right: $borderDimensionMobile
+			height: 100%
+			overflow: scroll
 
 		.section
+			@media screen and (max-width: $tabletMaxWidth)
+				min-height: calc(100vh - 40px)
+			@media screen and (max-width: $mobileMaxWidth)
+				min-height: +calc(100vh - 30px)
+
 			.slimScrollBar,.slimScrollRail
 				display: none !important
+
+			.fp-tableCell
+				.slimScrollDiv
+					.fp-scrollable
+						-webkit-overflow-scrolling: touch
 
 			&.first
 				background-image: url(../img/about.png)
@@ -55,6 +74,10 @@ body
 				background-repeat: no-repeat
 				@media screen and (max-width: $tabletMaxWidth)
 					background-image: none
+					@include align-items(stretch)
+					@include display(flex)
+					@include flex-direction(column)
+					@include justify-content(center)
 				.footer
 					@media screen and (max-width: $tabletMaxWidth) and (min-width: $mobileMaxWidth)
 						position: absolute !important
@@ -161,7 +184,7 @@ body
 						height: 50px
 						margin-top: 10px
 						@media screen and (max-width: $tabletMaxWidth)
-							height: 28px
+							height: 52px
 
 					.downloadButton
 						color: #000
@@ -179,6 +202,7 @@ body
 							display: block
 							margin: auto
 							width: 200px
+							opacity: 1
 						@media screen and (max-width: $mobileMaxWidth)
 							width: calc(100% - 30px)
 
@@ -187,7 +211,7 @@ body
 					@media screen and (max-width: $tabletMaxWidth)
 						display: block
 						border-left: 1px solid $generalOrange
-						height: 28px
+						height: 52px
 						margin: auto
 						width: 0
 
@@ -200,11 +224,11 @@ body
 				text-align: center
 				@media screen and (max-width: $tabletMaxWidth)
 					position: static
-					margin-top: 124px
+					margin-top: 0
 					height: auto
 					margin-bottom: -50px
 				@media screen and (max-width: $mobileMaxWidth)
-					margin-top: 124px
+					//margin-top: 124px
 					margin-bottom: 0
 					
 					
@@ -225,6 +249,7 @@ body
 					@include transition(opacity .3s ease 0.3s)
 					@media screen and (max-width: $tabletMaxWidth)
 						opacity: 1
+						display: none
 					@media screen and (max-width: $mobileMaxWidth)
 						+subtitleBoldMobile
 						
@@ -240,7 +265,7 @@ body
 				bottom: 0
 				bottom: 100%
 				@media screen and (max-width: $tabletMaxWidth)
-					height: 115px
+					height: 55px
 					position: static
 
 			.centerBlocksContainer
@@ -337,6 +362,8 @@ body
 					@media screen and (max-width: $tabletMaxWidth)
 						text-align: center
 						margin-bottom: 50px !important
+						&.noMarginMobile
+							margin-bottom: 10px !important
 					&:first-child
 						margin-bottom: 116px
 

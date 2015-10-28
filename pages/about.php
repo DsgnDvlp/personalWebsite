@@ -12,7 +12,7 @@
         <script src="js/jquery.easings.min.js"></script>
 
         <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
-        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
         <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 
         <script type="text/javascript" src="js/about.js"></script>
@@ -76,7 +76,7 @@
             				<p class="title"><?=tr_("aboutSecondAbility3Title")?></p>
             				<p class="content"><?=tr_("aboutSecondAbility3Text")?></p>
             			</div>
-            			<div class="contentBlock">
+            			<div class="contentBlock noMarginMobile">
             				<p class="title"><?=tr_("aboutSecondAbility4Title")?></p>
             				<p class="content"><?=tr_("aboutSecondAbility4Text")?></p>
             			</div>
@@ -120,7 +120,7 @@
             				<p class="title">PROTOTYPING</p>
             				<p class="content"><?=tr_("aboutThirdSkill3Text")?></p>
             			</div>
-            			<div class="contentBlock">
+            			<div class="contentBlock noMarginMobile">
             				<span class="number">85%</span>
             				<p class="title">HTML &amp; CSS</p>
             				<p class="content"><?=tr_("aboutThirdSkill4Text")?></p>
